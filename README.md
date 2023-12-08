@@ -1,0 +1,5 @@
+- 👋 Hi, I’m @bitscoid
+- 👀 I’m interested in PHP
+- 🌱 I’m currently learning Laravel + InertiaJS + VueJS
+- 💞️ I’m looking to collaborate on Web Developers
+- 📫 How to reach me ? Visit https://bits.co.id
