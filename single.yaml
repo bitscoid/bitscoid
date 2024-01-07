@@ -823,9 +823,6 @@ bind-address: "*"
 mode: rule
 log-level: silent
 ipv6: true
-unified-delay: true
-global-client-fingerprint: chrome
-keep-alive-interval: 15
 external-controller: 0.0.0.0:9090
 external-ui: "/usr/share/openclash/ui"
 secret: '123456'
