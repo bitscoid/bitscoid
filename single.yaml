@@ -797,7 +797,7 @@ proxies:
     type: vmess
     server: 103.150.102.129
     port: 443
-    uuid: b5f3949a-956f-44a1-8781-5046f0b08cd3                                                                
+    uuid: 5c2b2495-bd34-416d-901d-17c646bb95f8                                                                
     alterId: 0
     cipher: auto
     tls: true
