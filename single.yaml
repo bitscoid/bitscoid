@@ -875,20 +875,6 @@ dns:
   - https://1dot1dot1dot1.cloudflare-dns.com
   fallback:
   - tls://1dot1dot1dot1.cloudflare-dns.com
-  nameserver-policy:
-    GEOSITE:oisd-full,d3ward,rule-doh,rule-malicious: rcode://success
-    GEOSITE:google-ads: 208.67.222.222#Ads
-    GEOSITE:oisd-nsfw,category-porn: 208.67.220.220#Adults
-    GEOSITE:rule-speedtest: 8.8.4.4#Internet
-    GEOSITE:rule-umum: 9.9.9.9#Internet
-    GEOSITE:rule-indo,bank-id: 149.112.112.112#Indonesia
-    GEOSITE:youtube: 8.8.8.8#Streaming
-    GEOSITE:rule-streaming,videoconference: 1.1.1.1#Streaming
-    GEOSITE:rule-sosmed: 1.0.0.1#Social
-    GEOSITE:rule-gaming: 8.8.8.8#Game
-  proxy-server-nameserver:
-  - 208.67.222.222#DIRECT
-  - 208.67.220.220#DIRECT
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
   - "*.lan"
