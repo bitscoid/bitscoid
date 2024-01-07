@@ -751,24 +751,187 @@ proxy-groups:
       - 🇮🇩 Jala
       - 🇮🇩 Biznet
       - 🇮🇩 Cloudflare
-redir-port: 7892
+rules:
+  - DST-PORT,7895,REJECT
+  - DST-PORT,7892,REJECT
+  - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
+  - GEOIP,private,DIRECT,no-resolve
+  - GEOIP,id,Indonesia
+  - GEOIP,netflix,Indonesia
+  - GEOIP,facebook,Social
+  - GEOIP,twitter,Social
+  - GEOIP,telegram,Social
+  - GEOSITE,google-ads,Ads
+  - GEOSITE,rule-malicious,REJECT
+  - GEOSITE,oisd-full,REJECT
+  - GEOSITE,d3ward,REJECT
+  - GEOSITE,rule-ads,REJECT
+  - GEOSITE,oisd-nsfw,Adults
+  - GEOSITE,category-porn,Adults
+  - GEOSITE,bank-id,Indonesia
+  - GEOSITE,rule-indo,Indonesia
+  - GEOSITE,rule-sosmed,Social
+  - GEOSITE,youtube,Streaming
+  - GEOSITE,rule-streaming,Streaming
+  - GEOSITE,videoconference,Streaming
+  - GEOSITE,rule-gaming,Game
+  - GEOSITE,rule-umum,Internet
+  - DST-PORT,21,Internet
+  - DST-PORT,22,Internet
+  - DST-PORT,23,Internet
+  - DST-PORT,53,Internet
+  - DST-PORT,80,Internet
+  - DST-PORT,81,Internet
+  - DST-PORT,123,Internet
+  - DST-PORT,143,Internet
+  - DST-PORT,182,Internet
+  - DST-PORT,183,Internet
+  - DST-PORT,194,Internet
+  - DST-PORT,443,Internet
+  - DST-PORT,465,Internet
+  - DST-PORT,587,Internet
+  - DST-PORT,853,Internet
+  - DST-PORT,993,Internet
+  - DST-PORT,995,Internet
+  - DST-PORT,998,Internet
+  - DST-PORT,2052,Internet
+  - DST-PORT,2053,Internet
+  - DST-PORT,2082,Internet
+  - DST-PORT,2083,Internet
+  - DST-PORT,2086,Internet
+  - DST-PORT,2095,Internet
+  - DST-PORT,2096,Internet
+  - DST-PORT,5222,Internet
+  - DST-PORT,5228,Internet
+  - DST-PORT,5229,Internet
+  - DST-PORT,5230,Internet
+  - DST-PORT,8000,Internet
+  - DST-PORT,8080,Internet
+  - DST-PORT,8081,Internet
+  - DST-PORT,8088,Internet
+  - DST-PORT,8443,Internet
+  - DST-PORT,8880,Internet
+  - DST-PORT,8883,Internet
+  - DST-PORT,8888,Internet
+  - DST-PORT,8889,Internet
+  - DST-PORT,42069,Internet
+  - DST-PORT,3478-3497/8801-8810/16384-16387/1853/8200/5004/9000/5090-5091/5349/10000/19302-19309/5938/5060-5061/500/4500,Streaming
+  - DST-PORT,5000-5221/5224-5227/5229-5241/5243-5287/5289-5352/5354-5509/5517/5520-5529/5551-5559/5601-5700/8443/9000-9010/9443/10003/30000-30300,Game,tcp
+  - DST-PORT,5517-5529/5551-5559/5601-5700/8001/8130/8443/9000-9010/9120/9992/10003/30000-30300,Game,udp
+  - DST-PORT,6006/6008/6674/7006-7008/7889/8001-8012/9006/9137/10000-10012/11000-11019/12006/12008/13006/15006/20561/39003/39006/39698/39779/39800,Game,tcp
+  - DST-PORT,6006/6008/6674/7006-7008/7889/8008/8001-8012/8130/8443/9008/9120/10000-10015/10100/11000-11019/12008/13008,Game,udp
+  - DST-PORT,7889/10012/13004/14000/17000/17500/18081/20000-20002/20371,Game,tcp
+  - DST-PORT,8011/9030/10491/10612/12235/13004/13748/17000/17500/20000-20002/7086-7995/10039/10096/11455/12070-12460/13894/13972/41182-41192,Game,udp
+  - DST-PORT,3013/10000-10019/18082/50000/65010/65050,Game,tcp
+  - DST-PORT,7085-7995/8700/9030/10010-10019/17000-20100,Game,udp
+  - DST-PORT,10001-10094,Game,tcp
+  - DST-PORT,10101-10201/10080-10110/17000-18000,Game,udp
+  - DST-PORT,5055-5058,Game,udp
+  - DST-PORT,42472,Game,tcp
+  - DST-PORT,42472/22101-22102,Game,udp
+  - DST-PORT,9330-9340,Game,tcp
+  - DST-PORT,9330-9340,Game,udp
+  - DST-PORT,2080-2099,Game,tcp
+  - DST-PORT,5100,Game,udp
+  - DST-PORT,9100-9200/8230-8250/8110-8120/27000-28998,Game,tcp
+  - DST-PORT,27000-28998/39000,Game,udp
+  - DST-PORT,7770-7790,Game,tcp
+  - DST-PORT,16300-16350,Game,udp
+  - DST-PORT,44590-44610,Game,tcp
+  - DST-PORT,40000-40010,Game,udp
+  - DST-PORT,10500-10515,Game,tcp
+  - DST-PORT,60970-60980,Game,udp
+  - DST-PORT,27015-27030/27036-27037,Game,tcp
+  - DST-PORT,4380/27000-27031/27036,Game,udp
+  - DST-PORT,14422,Game
+  - DST-PORT,16999,Game
+  - DST-PORT,8013/8888,Game
+  - DST-PORT,39190-39200/49001-49190,Game,tcp
+  - DST-PORT,40000-40010,Game,udp
+  - DST-PORT,14009/40005,Game
 port: 7890
 socks-port: 7891
+redir-port: 7892
 mixed-port: 7893
+tproxy-port: 7895
+geodata-mode: true
+geodata-loader: memconservative
+tcp-concurrent: true
+find-process-mode: 'off'
+allow-lan: true
+bind-address: "*"
 mode: rule
 log-level: silent
-allow-lan: true
+ipv6: true
+unified-delay: true
+global-client-fingerprint: chrome
+keep-alive-interval: 15
 external-controller: 0.0.0.0:9090
-secret: '123456'
-bind-address: "*"
 external-ui: "/usr/share/openclash/ui"
+secret: '123456'
+profile:
+  store-selected: true
+  store-fakeip: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  parse-pure-ip: true
+  force-domain:
+  - "+.netflix.com"
+  - "+.nflxvideo.net"
+  - "+.amazonaws.com"
+  - "+.media.dssott.com"
+  skip-domain:
+  - "+.apple.com"
+  - Mijia Cloud
+  - dlg.io.mi.com
+  sniff:
+    TLS:
+      ports:
+      - 443
+      - 2053
+      - 2083
+      - 2087
+      - 2096
+      - 8443
+    HTTP:
+      ports:
+      - 80
+      - 8080
+      - 8880
+      - 2052
+      - 2082
+      - 2086
+      - 2095
+      override-destination: true
 experimental:
   ignore-resolve-fail: true
 dns:
   enable: true
   ipv6: true
+  prefer-h3: false
   enhanced-mode: fake-ip
   listen: 0.0.0.0:7874
+  default-nameserver:
+  - 1.1.1.1
+  nameserver:
+  - https://1dot1dot1dot1.cloudflare-dns.com
+  fallback:
+  - tls://1dot1dot1dot1.cloudflare-dns.com
+  nameserver-policy:
+    GEOSITE:oisd-full,d3ward,rule-doh,rule-malicious: rcode://success
+    GEOSITE:google-ads: 208.67.222.222#Ads
+    GEOSITE:oisd-nsfw,category-porn: 208.67.220.220#Adults
+    GEOSITE:rule-speedtest: 8.8.4.4#Internet
+    GEOSITE:rule-umum: 9.9.9.9#Internet
+    GEOSITE:rule-indo,bank-id: 149.112.112.112#Indonesia
+    GEOSITE:youtube: 8.8.8.8#Streaming
+    GEOSITE:rule-streaming,videoconference: 1.1.1.1#Streaming
+    GEOSITE:rule-sosmed: 1.0.0.1#Social
+    GEOSITE:rule-gaming: 8.8.8.8#Game
+  proxy-server-nameserver:
+  - 208.67.222.222#DIRECT
+  - 208.67.220.220#DIRECT
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
   - "*.lan"
@@ -783,6 +946,7 @@ dns:
   - time.*.gov
   - time.*.edu.cn
   - time.*.apple.com
+  - time-ios.apple.com
   - time1.*.com
   - time2.*.com
   - time3.*.com
@@ -869,8 +1033,16 @@ dns:
   - ff.dorado.sdo.com
   - "*.mcdn.bilivideo.cn"
   - "+.media.dssott.com"
-  - time-ios.apple.com
   - shark007.net
+  - "+.qq.com"
+  - "+.tencent.com"
+  - na.b.g-tun.com
+  - Mijia Cloud
+  - "+.cmbchina.com"
+  - "+.cmbimg.com"
+  - local.adguard.org
+  - "+.sandai.net"
+  - "+.n0808.com"
   fallback-filter:
     geoip: true
     geoip-code: ID
@@ -902,86 +1074,11 @@ dns:
     - msftconnecttest.com
     - msftncsi.com
     - "+.*"
-  default-nameserver:
-  - 1.1.1.1
-  nameserver:
-  - https://cloudflare-dns.com/dns-query
-  fallback:
-  - tls://1dot1dot1dot1.cloudflare-dns.com
-profile:
-  store-selected: true
-  store-fakeip: true
-  store-fake-ip: true
-rules:
-- DST-PORT,7895,REJECT
-- DST-PORT,7892,REJECT
-- IP-CIDR,198.18.0.1/16,REJECT,no-resolve
-- DST-PORT,7895,REJECT
-- DST-PORT,7892,REJECT
-- IP-CIDR,198.18.0.1/16,REJECT,no-resolve
-- DST-PORT,22,Internet
-- GEOIP,private,DIRECT,no-resolve
-- GEOIP,netflix,Indonesia
-- GEOIP,facebook,Social
-- GEOIP,twitter,Social
-- GEOIP,telegram,Social
-- GEOSITE,rule-malicious,REJECT
-- GEOSITE,oisd-full,Ads
-- GEOSITE,rule-ads,Ads
-- GEOSITE,oisd-nsfw,Adults
-- GEOSITE,category-porn,Adults
-- GEOSITE,rule-indo,Indonesia
-- GEOSITE,rule-sosmed,Social
-- GEOSITE,rule-streaming,Streaming
-- GEOSITE,videoconference,Streaming
-- GEOSITE,rule-gaming,Game
-- GEOSITE,rule-umum,Internet
-- RULE-SET,rule_direct,DIRECT
-- RULE-SET,rule_umum,Internet
-- DST-PORT,3478-3497/8801-8810/16384-16387/1853/8200/5004/9000/5090-5091/5349/10000/19302-19309/5938/5060-5061/500/4500,Streaming
-- DST-PORT,5000-5221/5224-5227/5229-5241/5243-5287/5289-5352/5354-5509/5517/5520-5529/5551-5559/5601-5700/8443/9000-9010/9443/10003/30000-30300,Game,tcp
-- DST-PORT,5517-5529/5551-5559/5601-5700/8001/8130/8443/9000-9010/9120/9992/10003/30000-30300,Game,udp
-- DST-PORT,6006/6008/6674/7006-7008/7889/8001-8012/9006/9137/10000-10012/11000-11019/12006/12008/13006/15006/20561/39003/39006/39698/39779/39800,Game,tcp
-- DST-PORT,6006/6008/6674/7006-7008/7889/8008/8001-8012/8130/8443/9008/9120/10000-10015/10100/11000-11019/12008/13008,Game,udp
-- DST-PORT,7889/10012/13004/14000/17000/17500/18081/20000-20002/20371,Game,tcp
-- DST-PORT,8011/9030/10491/10612/12235/13004/13748/17000/17500/20000-20002/7086-7995/10039/10096/11455/12070-12460/13894/13972/41182-41192,Game,udp
-- DST-PORT,3013/10000-10019/18082/50000/65010/65050,Game,tcp
-- DST-PORT,7085-7995/8700/9030/10010-10019/17000-20100,Game,udp
-- DST-PORT,10001-10094,Game,tcp
-- DST-PORT,10101-10201/10080-10110/17000-18000,Game,udp
-- DST-PORT,5055-5058,Game,udp
-- DST-PORT,42472,Game,tcp
-- DST-PORT,42472/22101-22102,Game,udp
-- DST-PORT,9330-9340,Game,tcp
-- DST-PORT,9330-9340,Game,udp
-- DST-PORT,2080-2099,Game,tcp
-- DST-PORT,5100,Game,udp
-- DST-PORT,9100-9200/8230-8250/8110-8120/27000-28998,Game,tcp
-- DST-PORT,27000-28998/39000,Game,udp
-- DST-PORT,7770-7790,Game,tcp
-- DST-PORT,16300-16350,Game,udp
-- DST-PORT,44590-44610,Game,tcp
-- DST-PORT,40000-40010,Game,udp
-- DST-PORT,10500-10515,Game,tcp
-- DST-PORT,60970-60980,Game,udp
-- DST-PORT,27015-27030/27036-27037,Game,tcp
-- DST-PORT,4380/27000-27031/27036,Game,udp
-- DST-PORT,14422,Game
-- DST-PORT,16999,Game
-- DST-PORT,8013/8888,Game
-- DST-PORT,39190-39200/49001-49190,Game,tcp
-- DST-PORT,40000-40010,Game,udp
-- DST-PORT,14009/40005,Game
-- NOT,((RULE-SET,rule_umum)),Game
-rule-providers:
-  rule_direct:
-    type: file
-    behavior: classical
-    path: "./rule_direct.yaml"
-  rule_umum:
-    type: file
-    behavior: classical
-    path: "./rule_umum.yaml"
+  use-hosts: true
+hosts:
+  iptunnels.com: 23.106.53.56
+  www.iptunnels.com: 23.106.53.56
+  cdn.iptunnels.com: 23.106.53.56
 tun:
   enable: true
   stack: system
@@ -990,29 +1087,3 @@ tun:
   auto-detect-interface: false
   dns-hijack:
   - tcp://any:53
-tproxy-port: 7895
-ipv6: true
-geodata-mode: true
-geodata-loader: memconservative
-tcp-concurrent: true
-sniffer:
-  enable: true
-  parse-pure-ip: true
-  force-domain:
-  - "+.netflix.com"
-  - "+.nflxvideo.net"
-  - "+.amazonaws.com"
-  - "+.media.dssot.com"
-  skip-domain:
-  - "+.apple.com"
-  - Mijia Cloud
-  - "+.jd.com"
-  sniff:
-    TLS:
-    HTTP:
-      ports:
-      - 80
-      - 8080-8880
-      override-destination: true
-authentication:
-- Clash:1GSB9jNG
