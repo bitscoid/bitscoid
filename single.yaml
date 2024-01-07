@@ -187,6 +187,11 @@ dns:
     - https://1dot1dot1dot1.cloudflare-dns.com
   fallback:
     - tls://1dot1dot1dot1.cloudflare-dns.com
+  use-hosts: true
+hosts:
+  iptunnels.com: 23.106.53.56
+  www.iptunnels.com: 23.106.53.56
+  cdn.iptunnels.com: 23.106.53.56
 profile:
   store-selected: true
   store-fakeip: true
