@@ -1,4 +1,3 @@
----
 proxies:
   - name: 🇮🇩 Incapsula
     type: vless
@@ -819,7 +818,6 @@ tproxy-port: 7895
 geodata-mode: true
 geodata-loader: memconservative
 tcp-concurrent: true
-find-process-mode: 'off'
 allow-lan: true
 bind-address: "*"
 mode: rule
