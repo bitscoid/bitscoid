@@ -777,8 +777,6 @@ rules:
   - GEOSITE,videoconference,Streaming
   - GEOSITE,rule-gaming,Game
   - GEOSITE,rule-umum,Internet
-  - RULE-SET,rule_direct,DIRECT
-  - RULE-SET,rule_umum,Internet
   - DST-PORT,3478-3497/8801-8810/16384-16387/1853/8200/5004/9000/5090-5091/5349/10000/19302-19309/5938/5060-5061/500/4500,Streaming
   - DST-PORT,5000-5221/5224-5227/5229-5241/5243-5287/5289-5352/5354-5509/5517/5520-5529/5551-5559/5601-5700/8443/9000-9010/9443/10003/30000-30300,Game,tcp
   - DST-PORT,5517-5529/5551-5559/5601-5700/8001/8130/8443/9000-9010/9120/9992/10003/30000-30300,Game,udp
@@ -813,7 +811,6 @@ rules:
   - DST-PORT,39190-39200/49001-49190,Game,tcp
   - DST-PORT,40000-40010,Game,udp
   - DST-PORT,14009/40005,Game
-  - NOT,((RULE-SET,rule_umum)),Game
 port: 7890
 socks-port: 7891
 redir-port: 7892
@@ -894,8 +891,6 @@ dns:
     GEOSITE:rule-streaming,videoconference: 1.1.1.1#Streaming
     GEOSITE:rule-sosmed: 1.0.0.1#Social
     GEOSITE:rule-gaming: 8.8.8.8#Game
-    RULE-SET:rule_direct: 1.1.1.1#DIRECT
-    RULE-SET:rule_umum: 9.9.9.9#Internet
   proxy-server-nameserver:
   - 208.67.222.222#DIRECT
   - 208.67.220.220#DIRECT
