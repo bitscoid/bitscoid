@@ -446,7 +446,7 @@ proxies:
     type: trojan
     server: 202.74.239.121
     port: 443
-    password: jala1
+    password: 0e54cbbdb546862d                                                                
     alterId: 0
     cipher: auto
     tls: true
@@ -462,7 +462,7 @@ proxies:
     type: vmess
     server: 202.74.239.121
     port: 443
-    uuid: jala2
+    uuid: 67572284-4ae7-44c8-9d9d-dc892ffa1870                                                                
     alterId: 0
     cipher: auto
     tls: true
@@ -478,7 +478,7 @@ proxies:
     type: vless
     server: 202.74.239.121
     port: 443
-    uuid: jala3
+    uuid: 5a06f18e-f911-4d03-b044-bcc9f1cf5f37                                                                
     alterId: 0
     cipher: auto
     tls: true
@@ -494,7 +494,7 @@ proxies:
     type: trojan
     server: 202.74.239.121
     port: 443
-    password: jala4
+    password: 6789c0a33612e34e                                                                
     alterId: 0
     cipher: auto
     tls: true
@@ -508,7 +508,7 @@ proxies:
     type: vmess
     server: 202.74.239.121
     port: 443
-    uuid: jala5
+    uuid: 33386557-9f50-4932-ac32-9cc9dd9beef8                                                                
     alterId: 0
     cipher: auto
     tls: true
@@ -522,7 +522,7 @@ proxies:
     type: vless
     server: 202.74.239.121
     port: 443
-    uuid: jala6
+    uuid: 72d45f38-1ed7-4de0-b46d-ce09fbe8bc9d                                                                
     alterId: 0
     cipher: auto
     tls: true
@@ -536,7 +536,7 @@ proxies:
     type: vless
     server: 202.74.239.121
     port: 41763
-    uuid: jala7
+    uuid: 62e08466-4b36-44e7-9eec-67bae18a5699                                                                
     udp: true
     xudp: true
     skip-cert-verify: true
@@ -556,7 +556,7 @@ proxies:
     type: trojan
     server: 202.74.239.121
     port: 443
-    password: jala8
+    password: 1223706262d1619a                                                                
     alterId: 0
     cipher: auto
     tls: true
@@ -572,7 +572,7 @@ proxies:
     type: vmess
     server: 202.74.239.121
     port: 443
-    uuid: jala9
+    uuid: b54a7c50-5ef9-4a5d-9e51-bac24270c070                                                                
     alterId: 0
     cipher: auto
     tls: true
@@ -588,7 +588,7 @@ proxies:
     type: trojan
     server: 103.150.102.129
     port: 443
-    password: bgn10
+    password: 0bef1d2820adf7cf                                                                
     alterId: 0
     cipher: auto
     tls: true
@@ -604,7 +604,7 @@ proxies:
     type: vmess
     server: 103.150.102.129
     port: 443
-    uuid: bgn11
+    uuid: 5c2b2495-bd34-416d-901d-17c646bb95f8                                                                
     alterId: 0
     cipher: auto
     tls: true
@@ -620,7 +620,7 @@ proxies:
     type: vless
     server: 103.150.102.129
     port: 443
-    uuid: bgn12
+    uuid: eac386a7-457b-4406-83cd-8dfa8aee968a                                                                
     alterId: 0
     cipher: auto
     tls: true
