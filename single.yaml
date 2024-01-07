@@ -1017,11 +1017,6 @@ dns:
     - msftconnecttest.com
     - msftncsi.com
     - "+.*"
-  use-hosts: true
-hosts:
-  iptunnels.com: 23.106.53.56
-  www.iptunnels.com: 23.106.53.56
-  cdn.iptunnels.com: 23.106.53.56
 tun:
   enable: true
   stack: system
