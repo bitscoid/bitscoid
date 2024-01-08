@@ -19,49 +19,31 @@
   "dns": {
     "servers": [
       {
-        "tag": "Internet-dns",
-        "address": "1.0.0.1",
+        "tag": "Cloudflare",
+        "address": "1.1.1.1",
         "strategy": "ipv4_only",
         "detour": "Internet"
       },
       {
-        "tag": "Best Latency-dns",
-        "address": "1.1.1.1",
-        "strategy": "ipv4_only",
-        "detour": "Best Latency"
-      },
-      {
-        "tag": "Lock Region ID-dns",
-        "address": "8.8.8.8",
-        "strategy": "ipv4_only",
-        "detour": "Lock Region ID"
-      },
-      {
-        "tag": "WhatsApp-dns",
-        "address": "8.8.4.4",
-        "strategy": "ipv4_only",
-        "detour": "WhatsApp"
-      },
-      {
-        "tag": "GAMESMAX(ML/FF/AOV)-dns",
-        "address": "8.8.4.4",
-        "strategy": "ipv4_only",
-        "detour": "GAMESMAX(ML/FF/AOV)"
-      },
-      {
-        "tag": "Route Port Game-dns",
+        "tag": "Quad",
         "address": "9.9.9.9",
         "strategy": "ipv4_only",
-        "detour": "Route Port Game"
+        "detour": "Game"
       },
       {
-        "tag": "direct-dns",
+        "tag": "Google",
+        "address": "8.8.8.8",
+        "strategy": "ipv4_only",
+        "detour": "Indonesia"
+      },
+      {
+        "tag": "Local",
         "address": "local",
         "strategy": "ipv4_only",
-        "detour": "direct"
+        "detour": "Direct"
       },
       {
-        "tag": "block-dns",
+        "tag": "Block",
         "address": "rcode://success"
       }
     ],
@@ -71,48 +53,48 @@
           ".arpa.",
           ".arpa"
         ],
-        "server": "block-dns",
+        "server": "Block",
         "rewrite_ttl": 20
       },
       {
         "network": "udp",
         "port": 443,
-        "server": "block-dns",
+        "server": "Block",
         "rewrite_ttl": 20
       },
       {
         "geosite": "rule-malicious",
-        "server": "block-dns",
+        "server": "Block",
         "rewrite_ttl": 20
       },
       {
         "outbound": "Internet",
-        "server": "Internet-dns",
+        "server": "Cloudflare",
         "rewrite_ttl": 20
       },
       {
-        "outbound": "Best Latency",
-        "server": "Best Latency-dns",
+        "outbound": "Game",
+        "server": "Quad",
         "rewrite_ttl": 20
       },
       {
-        "outbound": "Lock Region ID",
-        "server": "Lock Region ID-dns",
+        "outbound": "Indonesia",
+        "server": "Google",
         "rewrite_ttl": 20
       },
       {
         "outbound": "WhatsApp",
-        "server": "WhatsApp-dns",
+        "server": "Cloudflare",
         "rewrite_ttl": 20
       },
       {
-        "outbound": "GAMESMAX(ML/FF/AOV)",
-        "server": "GAMESMAX(ML/FF/AOV)-dns",
+        "outbound": "Game",
+        "server": "Quad",
         "rewrite_ttl": 20
       },
       {
-        "outbound": "Route Port Game",
-        "server": "Route Port Game-dns",
+        "outbound": "Game",
+        "server": "Quad",
         "rewrite_ttl": 20
       }
     ],
@@ -147,7 +129,7 @@
       "type": "selector",
       "tag": "Internet",
       "outbounds": [
-        "Best Latency",
+        "Game",
         "🇮🇩 1 Trojan WS",
         "🇮🇩 2 Vmess WS",
         "🇮🇩 3 Vless WS",
@@ -164,7 +146,7 @@
     },
     {
       "type": "urltest",
-      "tag": "Best Latency",
+      "tag": "Game",
       "outbounds": [
         "🇮🇩 1 Trojan WS",
         "🇮🇩 2 Vmess WS",
@@ -184,7 +166,7 @@
     },
     {
       "type": "selector",
-      "tag": "Lock Region ID",
+      "tag": "Indonesia",
       "outbounds": [
         "🇮🇩 1 Trojan WS",
         "🇮🇩 2 Vmess WS",
@@ -542,59 +524,59 @@
       "type": "selector",
       "tag": "WhatsApp",
       "outbounds": [
-        "direct",
+        "Direct",
         "Internet",
-        "Best Latency",
-        "Lock Region ID"
+        "Game",
+        "Indonesia"
       ]
     },
     {
       "type": "selector",
-      "tag": "GAMESMAX(ML/FF/AOV)",
+      "tag": "Game",
       "outbounds": [
-        "direct",
+        "Direct",
         "Internet",
-        "Best Latency",
-        "Lock Region ID"
+        "Game",
+        "Indonesia"
       ]
     },
     {
       "type": "selector",
-      "tag": "Route Port Game",
+      "tag": "Game",
       "outbounds": [
-        "direct",
+        "Direct",
         "Internet",
-        "Best Latency",
-        "Lock Region ID"
+        "Game",
+        "Indonesia"
       ]
     },
     {
       "type": "selector",
-      "tag": "Option ADs",
+      "tag": "Ads",
       "outbounds": [
-        "block",
+        "Reject",
         "Internet"
       ]
     },
     {
       "type": "selector",
-      "tag": "Option P0rn",
+      "tag": "Adults",
       "outbounds": [
-        "block",
+        "Reject",
         "Internet"
       ]
     },
     {
       "type": "direct",
-      "tag": "direct"
+      "tag": "Direct"
     },
     {
       "type": "block",
-      "tag": "block"
+      "tag": "Reject"
     },
     {
       "type": "dns",
-      "tag": "dns-out"
+      "tag": "DNS"
     }
   ],
   "route": {
@@ -603,15 +585,15 @@
     "final": "Internet",
     "geoip": {
       "download_url": "https://github.com/malikshi/sing-box-geo/releases/latest/download/geoip.db",
-      "download_detour": "Best Latency"
+      "download_detour": "Direct"
     },
     "geosite": {
       "download_url": "https://github.com/malikshi/v2ray-rules-dat/releases/latest/download/geosite.db",
-      "download_detour": "Best Latency"
+      "download_detour": "Direct"
     },
     "rules": [
       {
-        "outbound": "dns-out",
+        "outbound": "DNS",
         "port": [
           53
         ]
@@ -621,7 +603,7 @@
         "port": [
           443
         ],
-        "outbound": "block"
+        "outbound": "Reject"
       },
       {
         "domain_suffix": [
@@ -634,14 +616,14 @@
           "rule-ads",
           "oisd-full"
         ],
-        "outbound": "Option ADs"
+        "outbound": "Ads"
       },
       {
         "geosite": [
           "oisd-nsfw",
           "category-porn"
         ],
-        "outbound": "Option P0rn"
+        "outbound": "Adults"
       },
       {
         "geosite": "whatsapp",
@@ -669,7 +651,7 @@
         "geosite": [
           "rule-indo"
         ],
-        "outbound": "Lock Region ID"
+        "outbound": "Indonesia"
       },
       {
         "network": "udp",
@@ -727,7 +709,7 @@
           "10080:10110",
           "17000:18000"
         ],
-        "outbound": "GAMESMAX(ML/FF/AOV)"
+        "outbound": "Game"
       },
       {
         "network": "tcp",
@@ -829,7 +811,7 @@
           "49001:49190",
           "8393:8400"
         ],
-        "outbound": "Route Port Game"
+        "outbound": "Game"
       },
       {
         "network": "udp",
@@ -947,7 +929,7 @@
           "27016:27024",
           "54000:54012"
         ],
-        "outbound": "Route Port Game"
+        "outbound": "Game"
       },
       {
         "geoip": [
@@ -993,7 +975,7 @@
           8889,
           42069
         ],
-        "outbound": "Lock Region ID"
+        "outbound": "Indonesia"
       },
       {
         "port": [
@@ -1043,7 +1025,7 @@
           "1023:42068",
           "42070:65535"
         ],
-        "outbound": "Route Port Game"
+        "outbound": "Game"
       }
     ]
   }
