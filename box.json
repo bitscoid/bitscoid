@@ -9,7 +9,7 @@
       "external_controller": "0.0.0.0:9090",
       "external_ui": "yacd",
       "external_ui_download_url": "https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
-      "external_ui_download_detour": "Internet",
+      "external_ui_download_detour": "⛅ Internet",
       "secret": "",
       "default_mode": "rule",
       "store_selected": true,
@@ -22,19 +22,19 @@
         "tag": "Cloudflare",
         "address": "1.1.1.1",
         "strategy": "ipv4_only",
-        "detour": "Internet"
+        "detour": "⛅ Internet"
       },
       {
         "tag": "Quad",
         "address": "9.9.9.9",
         "strategy": "ipv4_only",
-        "detour": "Game"
+        "detour": "🎮 Game"
       },
       {
         "tag": "Google",
         "address": "8.8.8.8",
         "strategy": "ipv4_only",
-        "detour": "Indonesia"
+        "detour": "🌏 Indonesia"
       },
       {
         "tag": "Local",
@@ -68,27 +68,27 @@
         "rewrite_ttl": 20
       },
       {
-        "outbound": "Internet",
+        "outbound": "⛅ Internet",
         "server": "Cloudflare",
         "rewrite_ttl": 20
       },
       {
-        "outbound": "Indonesia",
+        "outbound": "🌏 Indonesia",
         "server": "Cloudflare",
         "rewrite_ttl": 20
       },
       {
-        "outbound": "Streaming",
+        "outbound": "📺 Streaming",
         "server": "Google",
         "rewrite_ttl": 20
       },
       {
-        "outbound": "Social",
+        "outbound": "💎 Social",
         "server": "Cloudflare",
         "rewrite_ttl": 20
       },
       {
-        "outbound": "Game",
+        "outbound": "🎮 Game",
         "server": "Quad",
         "rewrite_ttl": 20
       }
@@ -639,7 +639,7 @@
 
     //=== Route Traffic ===//
     {
-      "tag": "Internet",
+      "tag": "⛅ Internet",
       "type": "selector",
       "outbounds": [
         "🇮🇩 Jala",
@@ -650,7 +650,7 @@
       ]
     },
     {
-      "tag": "Indonesia",
+      "tag": "🌏 Indonesia",
       "type": "selector",
       "outbounds": [
         "🇮🇩 Jala",
@@ -660,18 +660,7 @@
       ]
     },
     {
-      "tag": "Social",
-      "type": "selector",
-      "outbounds": [
-        "🇮🇩 Jala",
-        "🇮🇩 Biznet",
-        "🇮🇩 Cloudflare",
-        "🇸🇬 Cloudflare",
-        "Direct"
-      ]
-    },
-    {
-      "tag": "Streaming",
+      "tag": "💎 Social",
       "type": "selector",
       "outbounds": [
         "🇮🇩 Jala",
@@ -682,7 +671,18 @@
       ]
     },
     {
-      "tag": "Game",
+      "tag": "📺 Streaming",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Jala",
+        "🇮🇩 Biznet",
+        "🇮🇩 Cloudflare",
+        "🇸🇬 Cloudflare",
+        "Direct"
+      ]
+    },
+    {
+      "tag": "🎮 Game",
       "type": "selector",
       "outbounds": [
         "🇮🇩 Indonesia",
@@ -691,19 +691,19 @@
       ]
     },
     {
-      "tag": "Ads",
+      "tag": "⛔ Ads",
       "type": "selector",
       "outbounds": [
         "Reject",
-        "Internet"
+        "⛅ Internet"
       ]
     },
     {
-      "tag": "Adults",
+      "tag": "🔞 Adults",
       "type": "selector",
       "outbounds": [
         "Reject",
-        "Internet"
+        "⛅ Internet"
       ]
     },
     {
@@ -722,14 +722,14 @@
   "route": {
     "auto_detect_interface": true,
     "override_android_vpn": true,
-    "final": "Internet",
+    "final": "⛅ Internet",
     "geoip": {
-      "download_url": "https://github.com/malikshi/sing-box-geo/releases/download/20240108113202/geoip.db",
-      "download_detour": "Internet"
+      "download_url": "https://github.com/malikshi/sing-box-geo/releases/latest/download/geoip.db",
+      "download_detour": "⛅ Internet"
     },
     "geosite": {
-      "download_url": "https://github.com/malikshi/sing-box-geo/releases/download/20240108113202/geosite.db",
-      "download_detour": "Internet"
+      "download_url": "https://github.com/malikshi/v2ray-rules-dat/releases/latest/download/geosite.db",
+      "download_detour": "⛅ Internet"
     },
     "rules": [
       {
@@ -749,25 +749,25 @@
         "domain_suffix": [
           "googlesyndication.com"
         ],
-        "outbound": "Ads"
+        "outbound": "⛔ Ads"
       },
       {
         "geosite": [
           "rule-ads",
           "oisd-full"
         ],
-        "outbound": "Ads"
+        "outbound": "⛔ Ads"
       },
       {
         "geosite": [
           "oisd-nsfw",
           "category-porn"
         ],
-        "outbound": "Adults"
+        "outbound": "🔞 Adults"
       },
       {
         "geosite": "whatsapp",
-        "outbound": "Social"
+        "outbound": "💎 Social"
       },
       {
         "geoip": "facebook",
@@ -781,17 +781,17 @@
           50318,
           59234
         ],
-        "outbound": "Social"
+        "outbound": "💎 Social"
       },
       {
         "protocol": "stun",
-        "outbound": "Internet"
+        "outbound": "⛅ Internet"
       },
       {
         "geosite": [
           "rule-indo"
         ],
-        "outbound": "Indonesia"
+        "outbound": "🌏 Indonesia"
       },
       {
         "network": "udp",
@@ -849,7 +849,7 @@
           "10080:10110",
           "17000:18000"
         ],
-        "outbound": "Game"
+        "outbound": "🎮 Game"
       },
       {
         "network": "tcp",
@@ -951,7 +951,7 @@
           "49001:49190",
           "8393:8400"
         ],
-        "outbound": "Game"
+        "outbound": "🎮 Game"
       },
       {
         "network": "udp",
@@ -1069,7 +1069,7 @@
           "27016:27024",
           "54000:54012"
         ],
-        "outbound": "Game"
+        "outbound": "🎮 Game"
       },
       {
         "geoip": [
@@ -1115,7 +1115,7 @@
           8889,
           42069
         ],
-        "outbound": "Indonesia"
+        "outbound": "🌏 Indonesia"
       },
       {
         "port": [
@@ -1158,14 +1158,14 @@
           8889,
           42069
         ],
-        "outbound": "Internet"
+        "outbound": "⛅ Internet"
       },
       {
         "port_range": [
           "1023:42068",
           "42070:65535"
         ],
-        "outbound": "Game"
+        "outbound": "🎮 Game"
       }
     ]
   }
