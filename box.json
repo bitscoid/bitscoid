@@ -4,16 +4,18 @@
     "level": "warn",
     "timestamp": true
   },
-  "experimental": {
-    "clash_api": {
+  "experimental"  : {
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db",
+      "cache_id": "bits",
+      "store_fakeip": true,
+      "default_mode": "rule",
       "external_controller": "0.0.0.0:9090",
       "external_ui": "yacd",
       "external_ui_download_url": "https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
       "external_ui_download_detour": "Internet",
-      "secret": "",
-      "default_mode": "rule",
-      "store_selected": true,
-      "cache_file": "clash.db"
+      "secret": "123456"
     }
   },
   "dns": {
