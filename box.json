@@ -73,23 +73,18 @@
         "rewrite_ttl": 20
       },
       {
-        "outbound": "Game",
-        "server": "Quad",
-        "rewrite_ttl": 20
-      },
-      {
         "outbound": "Indonesia",
-        "server": "Google",
-        "rewrite_ttl": 20
-      },
-      {
-        "outbound": "WhatsApp",
         "server": "Cloudflare",
         "rewrite_ttl": 20
       },
       {
-        "outbound": "Game",
-        "server": "Quad",
+        "outbound": "Streaming",
+        "server": "Google",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "Social",
+        "server": "Cloudflare",
         "rewrite_ttl": 20
       },
       {
@@ -125,90 +120,36 @@
     }
   ],
   "outbounds": [
-    {
-      "type": "selector",
-      "tag": "Internet",
-      "outbounds": [
-        "Game",
-        "🇮🇩 1 Trojan WS",
-        "🇮🇩 2 Vmess WS",
-        "🇮🇩 3 Vless WS",
-        "🇮🇩 4 Trojan GRPC",
-        "🇮🇩 5 Vmess GRPC",
-        "🇮🇩 6 Vless GRPC",
-        "🇮🇩 7 Vless Reality",
-        "🇮🇩 8 Trojan WS",
-        "🇮🇩 9 Vmess WS",
-        "🇮🇩 10 Trojan WS",
-        "🇮🇩 11 Vmess WS",
-        "🇮🇩 12 Vless WS"
-      ]
-    },
-    {
-      "type": "urltest",
-      "tag": "Game",
-      "outbounds": [
-        "🇮🇩 1 Trojan WS",
-        "🇮🇩 2 Vmess WS",
-        "🇮🇩 3 Vless WS",
-        "🇮🇩 4 Trojan GRPC",
-        "🇮🇩 5 Vmess GRPC",
-        "🇮🇩 6 Vless GRPC",
-        "🇮🇩 7 Vless Reality",
-        "🇮🇩 8 Trojan WS",
-        "🇮🇩 9 Vmess WS",
-        "🇮🇩 10 Trojan WS",
-        "🇮🇩 11 Vmess WS",
-        "🇮🇩 12 Vless WS"
-      ],
-      "url": "https://detectportal.firefox.com/success.txt",
-      "interval": "1m0s"
-    },
-    {
-      "type": "selector",
-      "tag": "Indonesia",
-      "outbounds": [
-        "🇮🇩 1 Trojan WS",
-        "🇮🇩 2 Vmess WS",
-        "🇮🇩 3 Vless WS",
-        "🇮🇩 4 Trojan GRPC",
-        "🇮🇩 5 Vmess GRPC",
-        "🇮🇩 6 Vless GRPC",
-        "🇮🇩 7 Vless Reality",
-        "🇮🇩 8 Trojan WS",
-        "🇮🇩 9 Vmess WS",
-        "🇮🇩 10 Trojan WS",
-        "🇮🇩 11 Vmess WS",
-        "🇮🇩 12 Vless WS"
-      ]
-    },
+    //=== IPTunnels ===//
     {
       "tag": "🇮🇩 1 Trojan WS",
       "type": "trojan",
       "server": "202.74.239.121",
       "server_port": 443,
       "password": "0e54cbbdb546862d",
-      "multiplex": {
-        "enabled": false,
-        "protocol": "smux",
-        "max_streams": 32
-      },
       "tls": {
         "enabled": true,
         "server_name": "media.fcgk35-1.fna.whatsapp.net",
         "insecure": true,
-        "disable_sni": false
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
       },
       "transport": {
         "type": "ws",
         "path": "/buy-trojan-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": null
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "ipv4_only"
+      "domain_strategy": "prefer_ipv6"
     },
     {
       "tag": "🇮🇩 2 Vmess WS",
@@ -221,37 +162,7 @@
       "global_padding": false,
       "authenticated_length": true,
       "multiplex": {
-        "enabled": false,
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "tls": {
         "enabled": true,
-        "server_name": "202.74.239.121",
-        "insecure": true,
-        "disable_sni": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/buy-vmess-ws-pm-telegram-at-synricha",
-        "headers": {
-          "Host": "202.74.239.121"
-        },
-        "max_early_data": 0,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "🇮🇩 3 Vless WS",
-      "type": "vless",
-      "server": "202.74.239.121",
-      "server_port": 443,
-      "uuid": "3e5933d7-ddc8-4f0d-9abf-b9b74a0f6368",
-      "flow": "",
-      "packet_encoding": "xudp",
-      "multiplex": {
-        "enabled": false,
         "protocol": "smux",
         "max_streams": 32
       },
@@ -259,18 +170,51 @@
         "enabled": true,
         "server_name": "media.fcgk35-1.fna.whatsapp.net",
         "insecure": true,
-        "disable_sni": false
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/buy-vmess-ws-pm-telegram-at-synricha",
+        "headers": {
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇮🇩 3 Vless WS",
+      "type": "vless",
+      "server": "202.74.239.121",
+      "server_port": 443,
+      "uuid": "3e5933d7-ddc8-4f0d-9abf-b9b74a0f6368",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
         "path": "/buy-vless-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": null
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "ipv4_only"
+      "domain_strategy": "prefer_ipv6"
     },
     {
       "tag": "🇮🇩 4 Trojan GRPC",
@@ -279,7 +223,7 @@
       "server_port": 443,
       "password": "6789c0a33612e34e",
       "multiplex": {
-        "enabled": false,
+        "enabled": true,
         "protocol": "smux",
         "max_streams": 32
       },
@@ -287,7 +231,9 @@
         "enabled": true,
         "server_name": "media.fcgk35-1.fna.whatsapp.net",
         "insecure": true,
-        "disable_sni": false
+        "utls": {
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "grpc",
@@ -296,7 +242,7 @@
         "ping_timeout": "15s",
         "permit_without_stream": false
       },
-      "domain_strategy": "ipv4_only"
+      "domain_strategy": "prefer_ipv6"
     },
     {
       "tag": "🇮🇩 5 Vmess GRPC",
@@ -309,34 +255,7 @@
       "global_padding": false,
       "authenticated_length": true,
       "multiplex": {
-        "enabled": false,
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "tls": {
         "enabled": true,
-        "server_name": "202.74.239.121",
-        "insecure": true,
-        "disable_sni": false
-      },
-      "transport": {
-        "type": "grpc",
-        "idle_timeout": "15s",
-        "ping_timeout": "15s",
-        "permit_without_stream": false
-      },
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "🇮🇩 6 Vless GRPC",
-      "type": "vless",
-      "server": "202.74.239.121",
-      "server_port": 443,
-      "uuid": "72d45f38-1ed7-4de0-b46d-ce09fbe8bc9d",
-      "flow": "",
-      "packet_encoding": "xudp",
-      "multiplex": {
-        "enabled": false,
         "protocol": "smux",
         "max_streams": 32
       },
@@ -344,16 +263,47 @@
         "enabled": true,
         "server_name": "media.fcgk35-1.fna.whatsapp.net",
         "insecure": true,
-        "disable_sni": false
+        "utls": {
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "grpc",
-        "service_name": null,
+        "service_name": "buy-vmess-grpc-pm-telegram-at-synricha",
         "idle_timeout": "15s",
         "ping_timeout": "15s",
         "permit_without_stream": false
       },
-      "domain_strategy": "ipv4_only"
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇮🇩 6 Vless GRPC",
+      "type": "vless",
+      "server": "202.74.239.121",
+      "server_port": 443,
+      "uuid": "72d45f38-1ed7-4de0-b46d-ce09fbe8bc9d",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "buy-vless-grpc-pm-telegram-at-synricha",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s",
+        "permit_without_stream": false
+      },
+      "domain_strategy": "prefer_ipv6"
     },
     {
       "tag": "🇮🇩 7 Vless Reality",
@@ -361,14 +311,27 @@
       "server": "202.74.239.121",
       "server_port": 41763,
       "uuid": "62e08466-4b36-44e7-9eec-67bae18a5699",
-      "flow": "",
+      "flow": "xtls-rprx-vision",
       "packet_encoding": "xudp",
       "multiplex": {
-        "enabled": false,
+        "enabled": true,
         "protocol": "smux",
         "max_streams": 32
       },
-      "domain_strategy": "ipv4_only"
+      "tls": {
+        "enabled": true,
+        "server_name": "shopee.co.id",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LE6HN-3a_m1ECI2sPnMlTCWOWFDu5yFdjl31NTXrXW8",
+          "short_id": "8d497ac2def4ba69"
+        }
+      },
+      "domain_strategy": "prefer_ipv6"
     },
     {
       "tag": "🇮🇩 8 Trojan WS",
@@ -377,7 +340,7 @@
       "server_port": 443,
       "password": "1223706262d1619a",
       "multiplex": {
-        "enabled": false,
+        "enabled": true,
         "protocol": "smux",
         "max_streams": 32
       },
@@ -385,18 +348,20 @@
         "enabled": true,
         "server_name": "media.fcgk35-1.fna.whatsapp.net",
         "insecure": true,
-        "disable_sni": false
+        "utls": {
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
         "path": "/buy-trojan-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": null
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "ipv4_only"
+      "domain_strategy": "prefer_ipv6"
     },
     {
       "tag": "🇮🇩 9 Vmess WS",
@@ -409,26 +374,28 @@
       "global_padding": false,
       "authenticated_length": true,
       "multiplex": {
-        "enabled": false,
+        "enabled": true,
         "protocol": "smux",
         "max_streams": 32
       },
       "tls": {
         "enabled": true,
-        "server_name": "202.74.239.121",
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
         "insecure": true,
-        "disable_sni": false
+        "utls": {
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
         "path": "/buy-vmess-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "202.74.239.121"
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "ipv4_only"
+      "domain_strategy": "prefer_ipv6"
     },
     {
       "tag": "🇮🇩 10 Trojan WS",
@@ -437,7 +404,7 @@
       "server_port": 443,
       "password": "0ce7facc0d53c050",
       "multiplex": {
-        "enabled": false,
+        "enabled": true,
         "protocol": "smux",
         "max_streams": 32
       },
@@ -445,18 +412,20 @@
         "enabled": true,
         "server_name": "media.fcgk35-1.fna.whatsapp.net",
         "insecure": true,
-        "disable_sni": false
+        "utls": {
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
         "path": "/buy-trojan-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": null
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "ipv4_only"
+      "domain_strategy": "prefer_ipv6"
     },
     {
       "tag": "🇮🇩 11 Vmess WS",
@@ -469,37 +438,7 @@
       "global_padding": false,
       "authenticated_length": true,
       "multiplex": {
-        "enabled": false,
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "tls": {
         "enabled": true,
-        "server_name": "103.150.102.129",
-        "insecure": true,
-        "disable_sni": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/buy-vmess-ws-pm-telegram-at-synricha",
-        "headers": {
-          "Host": "103.150.102.129"
-        },
-        "max_early_data": 0,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "🇮🇩 12 Vless WS",
-      "type": "vless",
-      "server": "103.150.102.129",
-      "server_port": 443,
-      "uuid": "bb763b9f-5f4f-44ab-a439-91c502d7287e",
-      "flow": "",
-      "packet_encoding": "xudp",
-      "multiplex": {
-        "enabled": false,
         "protocol": "smux",
         "max_streams": 32
       },
@@ -507,60 +446,261 @@
         "enabled": true,
         "server_name": "media.fcgk35-1.fna.whatsapp.net",
         "insecure": true,
-        "disable_sni": false
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/buy-vmess-ws-pm-telegram-at-synricha",
+        "headers": {
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇮🇩 12 Vless WS",
+      "type": "vless",
+      "server": "103.150.102.129",
+      "server_port": 443,
+      "uuid": "bb763b9f-5f4f-44ab-a439-91c502d7287e",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
         "path": "/buy-vless-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": null
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "ipv4_only"
+      "domain_strategy": "prefer_ipv6"
     },
+
+    //=== Cloudflare ID ===//
     {
+      "tag": "🇮🇩 Google Cloud",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "x4.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x4.bayarin.my.id"
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+
+    //=== Cloudflare SG ===//
+    {
+      "tag": "🇸🇬 Zhejiang",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "tls": {
+        "enabled": true,
+        "server_name": "x18.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x18.bayarin.my.id"
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+
+    //=== Route Proxy ===//
+    {
+      "tag": "🇮🇩 Cloudflare",
       "type": "selector",
-      "tag": "WhatsApp",
       "outbounds": [
-        "Direct",
-        "Internet",
-        "Game",
-        "Indonesia"
+        // "🇮🇩 Incapsula",
+        // "🇮🇩 Linode",
+        // "🇮🇩 Zhejiang",
+        "🇮🇩 Google Cloud"
       ]
     },
     {
+      "tag": "🇸🇬 Cloudflare",
       "type": "selector",
+      "outbounds": [
+        // "🇸🇬 Akari",
+        // "🇸🇬 Alibaba",
+        // "🇸🇬 Amazon",
+        // "🇸🇬 Aofei",
+        // "🇸🇬 Belnet",
+        // "🇸🇬 CenterHop",
+        // "🇸🇬 DataCamp",
+        // "🇸🇬 DigitalOcean",
+        // "🇸🇬 G Core",
+        // "🇸🇬 Google Cloud Hiddify",
+        // "🇸🇬 Google Cloud",
+        // "🇸🇬 HostHatch",
+        // "🇸🇬 Hostinger",
+        // "🇸🇬 Linode",
+        // "🇸🇬 Microsoft Azure",
+        // "🇸🇬 Oracle Cloud",
+        // "🇸🇬 OVH",
+        // "🇸🇬 Tencent Cloud",
+        // "🇸🇬 UpCloud",
+        // "🇸🇬 Vultr",
+        // "🇸🇬 WebHorizon",
+        "🇸🇬 Zhejiang"
+      ]
+    },
+    {
+      "tag": "🇮🇩 Jala",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 1 Trojan WS",
+        "🇮🇩 2 Vmess WS",
+        "🇮🇩 3 Vless WS",
+        "🇮🇩 4 Trojan GRPC",
+        "🇮🇩 5 Vmess GRPC",
+        "🇮🇩 6 Vless GRPC",
+        "🇮🇩 7 Vless Reality",
+        "🇮🇩 8 Trojan WS",
+        "🇮🇩 9 Vmess WS"
+      ]
+    },
+    {
+      "tag": "🇮🇩 Biznet",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 10 Trojan WS",
+        "🇮🇩 11 Vmess WS",
+        "🇮🇩 12 Vless WS"
+      ]
+    },
+    {
+      "tag": "🇮🇩 Indonesia",
+      "type": "urltest",
+      "outbounds": [
+        "🇮🇩 Jala",
+        "🇮🇩 Biznet",
+        "🇮🇩 Cloudflare"
+      ],
+      "url": "https://detectportal.firefox.com/success.txt",
+      "interval": "1m0s"
+    },
+    {
+      "tag": "🇸🇬 Singapura",
+      "type": "urltest",
+      "outbounds": [
+        "🇸🇬 Cloudflare"
+      ],
+      "url": "https://detectportal.firefox.com/success.txt",
+      "interval": "1m0s"
+    },
+
+    //=== Route Traffic ===//
+    {
+      "tag": "Internet",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Jala",
+        "🇮🇩 Biznet",
+        "🇮🇩 Cloudflare",
+        "🇸🇬 Cloudflare",
+        "Direct"
+      ]
+    },
+    {
+      "tag": "Indonesia",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Jala",
+        "🇮🇩 Biznet",
+        "🇮🇩 Cloudflare",
+        "Direct"
+      ]
+    },
+    {
+      "tag": "Social",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Jala",
+        "🇮🇩 Biznet",
+        "🇮🇩 Cloudflare",
+        "🇸🇬 Cloudflare",
+        "Direct"
+      ]
+    },
+    {
+      "tag": "Streaming",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Jala",
+        "🇮🇩 Biznet",
+        "🇮🇩 Cloudflare",
+        "🇸🇬 Cloudflare",
+        "Direct"
+      ]
+    },
+    {
       "tag": "Game",
+      "type": "selector",
       "outbounds": [
-        "Direct",
-        "Internet",
-        "Game",
-        "Indonesia"
+        "🇮🇩 Indonesia",
+        "🇸🇬 Singapura",
+        "Direct"
       ]
     },
     {
-      "type": "selector",
-      "tag": "Game",
-      "outbounds": [
-        "Direct",
-        "Internet",
-        "Game",
-        "Indonesia"
-      ]
-    },
-    {
-      "type": "selector",
       "tag": "Ads",
+      "type": "selector",
       "outbounds": [
         "Reject",
         "Internet"
       ]
     },
     {
-      "type": "selector",
       "tag": "Adults",
+      "type": "selector",
       "outbounds": [
         "Reject",
         "Internet"
@@ -609,7 +749,7 @@
         "domain_suffix": [
           "googlesyndication.com"
         ],
-        "outbound": "Internet"
+        "outbound": "Ads"
       },
       {
         "geosite": [
@@ -627,7 +767,7 @@
       },
       {
         "geosite": "whatsapp",
-        "outbound": "WhatsApp"
+        "outbound": "Social"
       },
       {
         "geoip": "facebook",
@@ -641,7 +781,7 @@
           50318,
           59234
         ],
-        "outbound": "WhatsApp"
+        "outbound": "Social"
       },
       {
         "protocol": "stun",
