@@ -135,11 +135,6 @@
           "fingerprint": "chrome"
         }
       },
-      "multiplex": {
-        "enabled": true,
-        "protocol": "smux",
-        "max_streams": 32
-      },
       "transport": {
         "type": "ws",
         "path": "/buy-trojan-ws-pm-telegram-at-synricha",
@@ -162,11 +157,6 @@
       "alter_id": 0,
       "global_padding": false,
       "authenticated_length": true,
-      "multiplex": {
-        "enabled": true,
-        "protocol": "smux",
-        "max_streams": 32
-      },
       "tls": {
         "enabled": true,
         "server_name": "media.fcgk35-1.fna.whatsapp.net",
@@ -193,11 +183,7 @@
       "server": "202.74.239.121",
       "server_port": 443,
       "uuid": "3e5933d7-ddc8-4f0d-9abf-b9b74a0f6368",
-      "multiplex": {
-        "enabled": true,
-        "protocol": "smux",
-        "max_streams": 32
-      },
+      "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "media.fcgk35-1.fna.whatsapp.net",
@@ -224,11 +210,6 @@
       "server": "202.74.239.121",
       "server_port": 443,
       "password": "6789c0a33612e34e",
-      "multiplex": {
-        "enabled": true,
-        "protocol": "smux",
-        "max_streams": 32
-      },
       "tls": {
         "enabled": true,
         "server_name": "media.fcgk35-1.fna.whatsapp.net",
@@ -257,11 +238,6 @@
       "alter_id": 0,
       "global_padding": false,
       "authenticated_length": true,
-      "multiplex": {
-        "enabled": true,
-        "protocol": "smux",
-        "max_streams": 32
-      },
       "tls": {
         "enabled": true,
         "server_name": "media.fcgk35-1.fna.whatsapp.net",
@@ -286,11 +262,7 @@
       "server": "202.74.239.121",
       "server_port": 443,
       "uuid": "72d45f38-1ed7-4de0-b46d-ce09fbe8bc9d",
-      "multiplex": {
-        "enabled": true,
-        "protocol": "smux",
-        "max_streams": 32
-      },
+      "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "media.fcgk35-1.fna.whatsapp.net",
@@ -344,11 +316,6 @@
       "server": "202.74.239.121",
       "server_port": 443,
       "password": "1223706262d1619a",
-      "multiplex": {
-        "enabled": true,
-        "protocol": "smux",
-        "max_streams": 32
-      },
       "tls": {
         "enabled": true,
         "server_name": "media.fcgk35-1.fna.whatsapp.net",
@@ -379,11 +346,6 @@
       "alter_id": 0,
       "global_padding": false,
       "authenticated_length": true,
-      "multiplex": {
-        "enabled": true,
-        "protocol": "smux",
-        "max_streams": 32
-      },
       "tls": {
         "enabled": true,
         "server_name": "media.fcgk35-1.fna.whatsapp.net",
@@ -410,11 +372,6 @@
       "server": "103.150.102.129",
       "server_port": 443,
       "password": "0ce7facc0d53c050",
-      "multiplex": {
-        "enabled": true,
-        "protocol": "smux",
-        "max_streams": 32
-      },
       "tls": {
         "enabled": true,
         "server_name": "media.fcgk35-1.fna.whatsapp.net",
@@ -445,11 +402,6 @@
       "alter_id": 0,
       "global_padding": false,
       "authenticated_length": true,
-      "multiplex": {
-        "enabled": true,
-        "protocol": "smux",
-        "max_streams": 32
-      },
       "tls": {
         "enabled": true,
         "server_name": "media.fcgk35-1.fna.whatsapp.net",
@@ -476,11 +428,7 @@
       "server": "103.150.102.129",
       "server_port": 443,
       "uuid": "bb763b9f-5f4f-44ab-a439-91c502d7287e",
-      "multiplex": {
-        "enabled": true,
-        "protocol": "smux",
-        "max_streams": 32
-      },
+      "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "media.fcgk35-1.fna.whatsapp.net",
@@ -509,11 +457,7 @@
       "server": "sogood.linefriends.com",
       "server_port": 443,
       "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
-      "multiplex": {
-        "enabled": true,
-        "protocol": "smux",
-        "max_streams": 32
-      },
+      "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "x4.bayarin.my.id",
