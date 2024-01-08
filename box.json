@@ -250,7 +250,12 @@
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "x1.bayarin.my.id"
+        "server_name": "x1.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "path": "/bits",
@@ -268,7 +273,12 @@
       "server_port": 443,
       "tls": {
         "enabled": true,
-        "server_name": "x19.bayarin.my.id"
+        "server_name": "x19.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "path": "/bits",
@@ -289,7 +299,7 @@
         "server_name": "media.fcgk35-1.fna.whatsapp.net",
         "insecure": true,
         "utls": {
-          "enabled": false,
+          "enabled": true,
           "fingerprint": "chrome"
         }
       },
@@ -319,7 +329,7 @@
         "server_name": "media.fcgk35-1.fna.whatsapp.net",
         "insecure": true,
         "utls": {
-          "enabled": false,
+          "enabled": true,
           "fingerprint": "chrome"
         }
       },
