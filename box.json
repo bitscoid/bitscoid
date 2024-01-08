@@ -9,7 +9,7 @@
       "external_controller": "0.0.0.0:9090",
       "external_ui": "yacd",
       "external_ui_download_url": "https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
-      "external_ui_download_detour": "✔️ Direct",
+      "external_ui_download_detour": "⛅ Internet",
       "secret": "",
       "default_mode": "rule",
       "store_selected": true,
@@ -149,7 +149,8 @@
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "domain_strategy": "prefer_ipv6",
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 2 Vmess WS",
@@ -183,7 +184,8 @@
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "domain_strategy": "prefer_ipv6",
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 3 Vless WS",
@@ -214,7 +216,8 @@
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "domain_strategy": "prefer_ipv6",
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 4 Trojan GRPC",
@@ -242,7 +245,8 @@
         "ping_timeout": "15s",
         "permit_without_stream": false
       },
-      "domain_strategy": "prefer_ipv6"
+      "domain_strategy": "prefer_ipv6",
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 5 Vmess GRPC",
@@ -274,7 +278,8 @@
         "ping_timeout": "15s",
         "permit_without_stream": false
       },
-      "domain_strategy": "prefer_ipv6"
+      "domain_strategy": "prefer_ipv6",
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 6 Vless GRPC",
@@ -303,7 +308,8 @@
         "ping_timeout": "15s",
         "permit_without_stream": false
       },
-      "domain_strategy": "prefer_ipv6"
+      "domain_strategy": "prefer_ipv6",
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 7 Vless Reality",
@@ -331,7 +337,8 @@
           "short_id": "8d497ac2def4ba69"
         }
       },
-      "domain_strategy": "prefer_ipv6"
+      "domain_strategy": "prefer_ipv6",
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 8 Trojan WS",
@@ -361,7 +368,8 @@
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "domain_strategy": "prefer_ipv6",
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 9 Vmess WS",
@@ -395,7 +403,8 @@
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "domain_strategy": "prefer_ipv6",
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 10 Trojan WS",
@@ -425,7 +434,8 @@
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "domain_strategy": "prefer_ipv6",
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 11 Vmess WS",
@@ -459,7 +469,8 @@
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "domain_strategy": "prefer_ipv6",
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 12 Vless WS",
@@ -490,7 +501,8 @@
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "domain_strategy": "prefer_ipv6",
+      "detour": "✔️ Direct"
     },
 
     //=== Cloudflare ID ===//
@@ -523,7 +535,8 @@
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "domain_strategy": "prefer_ipv6",
+      "detour": "✔️ Direct"
     },
 
     //=== Cloudflare SG ===//
@@ -550,7 +563,8 @@
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "domain_strategy": "prefer_ipv6",
+      "detour": "✔️ Direct"
     },
 
     //=== Route Proxy ===//
