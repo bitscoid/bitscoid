@@ -40,7 +40,7 @@
         "tag": "Local",
         "address": "local",
         "strategy": "ipv4_only",
-        "detour": "Direct"
+        "detour": "✔️ Direct"
       },
       {
         "tag": "Block",
@@ -646,7 +646,7 @@
         "🇮🇩 Biznet",
         "🇮🇩 Cloudflare",
         "🇸🇬 Cloudflare",
-        "Direct"
+        "✔️ Direct"
       ]
     },
     {
@@ -656,7 +656,7 @@
         "🇮🇩 Jala",
         "🇮🇩 Biznet",
         "🇮🇩 Cloudflare",
-        "Direct"
+        "✔️ Direct"
       ]
     },
     {
@@ -667,7 +667,7 @@
         "🇮🇩 Biznet",
         "🇮🇩 Cloudflare",
         "🇸🇬 Cloudflare",
-        "Direct"
+        "✔️ Direct"
       ]
     },
     {
@@ -678,7 +678,7 @@
         "🇮🇩 Biznet",
         "🇮🇩 Cloudflare",
         "🇸🇬 Cloudflare",
-        "Direct"
+        "✔️ Direct"
       ]
     },
     {
@@ -687,14 +687,14 @@
       "outbounds": [
         "🇮🇩 Indonesia",
         "🇸🇬 Singapura",
-        "Direct"
+        "✔️ Direct"
       ]
     },
     {
       "tag": "⛔ Ads",
       "type": "selector",
       "outbounds": [
-        "Reject",
+        "❌ Reject",
         "⛅ Internet"
       ]
     },
@@ -702,21 +702,21 @@
       "tag": "🔞 Adults",
       "type": "selector",
       "outbounds": [
-        "Reject",
+        "❌ Reject",
         "⛅ Internet"
       ]
     },
     {
       "type": "direct",
-      "tag": "Direct"
+      "tag": "✔️ Direct"
     },
     {
       "type": "block",
-      "tag": "Reject"
+      "tag": "❌ Reject"
     },
     {
       "type": "dns",
-      "tag": "DNS"
+      "tag": "🖥️ DNS"
     }
   ],
   "route": {
@@ -724,16 +724,16 @@
     "override_android_vpn": true,
     "final": "⛅ Internet",
     "geoip": {
-      "download_url": "http://nurulimam.my.id/geoip.db",
+      "download_url": "http://192.168.1.1/proxy/geoip.db",
       "download_detour": "⛅ Internet"
     },
     "geosite": {
-      "download_url": "http://nurulimam.my.id/geosite.db",
+      "download_url": "http://192.168.1.1/proxy/geosite.db",
       "download_detour": "⛅ Internet"
     },
     "rules": [
       {
-        "outbound": "DNS",
+        "outbound": "🖥️ DNS",
         "port": [
           53
         ]
@@ -743,7 +743,7 @@
         "port": [
           443
         ],
-        "outbound": "Reject"
+        "outbound": "❌ Reject"
       },
       {
         "domain_suffix": [
