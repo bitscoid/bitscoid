@@ -752,7 +752,7 @@
       }
     },
     {
-      "uuid": "67572284-4ae7-44c8-9d9d-dc892ffa1870",
+      "uuid": "de6add44-ac2a-4e0e-862d-d263f1123957",
       "packet_encoding": "xudp",
       "security": "auto",
       "alter_id": 0,
@@ -785,7 +785,7 @@
       }
     },
     {
-      "uuid": "5a06f18e-f911-4d03-b044-bcc9f1cf5f37",
+      "uuid": "3e5933d7-ddc8-4f0d-9abf-b9b74a0f6368",
       "tag": "🇮🇩 3 Vless WS",
       "type": "vless",
       "server": "202.74.239.121",
@@ -1063,7 +1063,7 @@
       }
     },
     {
-      "uuid": "eac386a7-457b-4406-83cd-8dfa8aee968a",
+      "uuid": "bb763b9f-5f4f-44ab-a439-91c502d7287e",
       "tag": "🇮🇩 12 Vless WS",
       "type": "vless",
       "server": "103.150.102.129",
