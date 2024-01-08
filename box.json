@@ -140,9 +140,7 @@
         "path": "/buy-trojan-ws-pm-telegram-at-synricha",
         "headers": {
           "Host": "media.fcgk35-1.fna.whatsapp.net"
-        },
-        "max_early_data": 0,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "domain_strategy": "prefer_ipv6"
     },
