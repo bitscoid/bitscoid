@@ -144,8 +144,7 @@
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6",
-      "detour": "✔️ Direct"
+      "domain_strategy": "prefer_ipv6"
     },
     {
       "tag": "🇮🇩 2 Vmess WS",
@@ -174,8 +173,7 @@
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6",
-      "detour": "✔️ Direct"
+      "domain_strategy": "prefer_ipv6"
     },
     {
       "tag": "🇮🇩 3 Vless WS",
@@ -201,8 +199,7 @@
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6",
-      "detour": "✔️ Direct"
+      "domain_strategy": "prefer_ipv6"
     },
     {
       "tag": "🇮🇩 4 Trojan GRPC",
@@ -225,8 +222,7 @@
         "ping_timeout": "15s",
         "permit_without_stream": false
       },
-      "domain_strategy": "prefer_ipv6",
-      "detour": "✔️ Direct"
+      "domain_strategy": "prefer_ipv6"
     },
     {
       "tag": "🇮🇩 5 Vmess GRPC",
@@ -253,8 +249,7 @@
         "ping_timeout": "15s",
         "permit_without_stream": false
       },
-      "domain_strategy": "prefer_ipv6",
-      "detour": "✔️ Direct"
+      "domain_strategy": "prefer_ipv6"
     },
     {
       "tag": "🇮🇩 6 Vless GRPC",
@@ -278,8 +273,7 @@
         "ping_timeout": "15s",
         "permit_without_stream": false
       },
-      "domain_strategy": "prefer_ipv6",
-      "detour": "✔️ Direct"
+      "domain_strategy": "prefer_ipv6"
     },
     {
       "tag": "🇮🇩 7 Vless Reality",
@@ -307,8 +301,7 @@
           "short_id": "8d497ac2def4ba69"
         }
       },
-      "domain_strategy": "prefer_ipv6",
-      "detour": "✔️ Direct"
+      "domain_strategy": "prefer_ipv6"
     },
     {
       "tag": "🇮🇩 8 Trojan WS",
@@ -333,8 +326,7 @@
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6",
-      "detour": "✔️ Direct"
+      "domain_strategy": "prefer_ipv6"
     },
     {
       "tag": "🇮🇩 9 Vmess WS",
@@ -363,8 +355,7 @@
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6",
-      "detour": "✔️ Direct"
+      "domain_strategy": "prefer_ipv6"
     },
     {
       "tag": "🇮🇩 10 Trojan WS",
@@ -389,8 +380,7 @@
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6",
-      "detour": "✔️ Direct"
+      "domain_strategy": "prefer_ipv6"
     },
     {
       "tag": "🇮🇩 11 Vmess WS",
@@ -419,8 +409,7 @@
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6",
-      "detour": "✔️ Direct"
+      "domain_strategy": "prefer_ipv6"
     },
     {
       "tag": "🇮🇩 12 Vless WS",
@@ -446,8 +435,7 @@
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6",
-      "detour": "✔️ Direct"
+      "domain_strategy": "prefer_ipv6"
     },
 
     //=== Cloudflare ID ===//
@@ -475,8 +463,7 @@
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6",
-      "detour": "✔️ Direct"
+      "domain_strategy": "prefer_ipv6"
     },
 
     //=== Cloudflare SG ===//
@@ -503,8 +490,7 @@
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6",
-      "detour": "✔️ Direct"
+      "domain_strategy": "prefer_ipv6"
     },
 
     //=== Route Proxy ===//
