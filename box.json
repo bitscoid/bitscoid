@@ -78,7 +78,7 @@
         "rewrite_ttl": 20
       },
       {
-        "outbound": "📺 Streaming",
+        "outbound": "🎬 Streaming",
         "server": "Google",
         "rewrite_ttl": 20
       },
@@ -624,7 +624,7 @@
         "🇮🇩 Biznet",
         "🇮🇩 Cloudflare"
       ],
-      "url": "https://detectportal.firefox.com/success.txt",
+      "url": "https://www.gstatic.com/generate_204",
       "interval": "1m0s"
     },
     {
@@ -633,7 +633,7 @@
       "outbounds": [
         "🇸🇬 Cloudflare"
       ],
-      "url": "https://detectportal.firefox.com/success.txt",
+      "url": "https://www.gstatic.com/generate_204",
       "interval": "1m0s"
     },
 
@@ -671,7 +671,7 @@
       ]
     },
     {
-      "tag": "📺 Streaming",
+      "tag": "🎬 Streaming",
       "type": "selector",
       "outbounds": [
         "🇮🇩 Jala",
@@ -724,11 +724,11 @@
     "override_android_vpn": true,
     "final": "⛅ Internet",
     "geoip": {
-      "download_url": "https://github.com/malikshi/sing-box-geo/releases/latest/download/geoip.db",
+      "download_url": "https://github.com/bitscoid/geo-dat/raw/release/geoip.db",
       "download_detour": "⛅ Internet"
     },
     "geosite": {
-      "download_url": "https://github.com/malikshi/v2ray-rules-dat/releases/latest/download/geosite.db",
+      "download_url": "https://github.com/bitscoid/geo-dat/raw/release/geosite.db",
       "download_detour": "⛅ Internet"
     },
     "rules": [
