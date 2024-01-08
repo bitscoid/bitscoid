@@ -725,11 +725,11 @@
     "final": "Internet",
     "geoip": {
       "download_url": "https://github.com/malikshi/sing-box-geo/releases/download/20240108113202/geoip.db",
-      "download_detour": "Direct"
+      "download_detour": "Internet"
     },
     "geosite": {
       "download_url": "https://github.com/malikshi/sing-box-geo/releases/download/20240108113202/geosite.db",
-      "download_detour": "Direct"
+      "download_detour": "Internet"
     },
     "rules": [
       {
