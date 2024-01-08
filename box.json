@@ -722,7 +722,7 @@
 
 
     {
-      "password": "0e54cbbdb546862d                                                                ",
+      "password": "0e54cbbdb546862d",
       "tag": "🇮🇩 1 Trojan WS",
       "type": "trojan",
       "server": "202.74.239.121",
@@ -752,7 +752,7 @@
       }
     },
     {
-      "uuid": "67572284-4ae7-44c8-9d9d-dc892ffa1870                                                                ",
+      "uuid": "67572284-4ae7-44c8-9d9d-dc892ffa1870",
       "packet_encoding": "xudp",
       "security": "auto",
       "alter_id": 0,
@@ -785,7 +785,7 @@
       }
     },
     {
-      "uuid": "5a06f18e-f911-4d03-b044-bcc9f1cf5f37                                                                ",
+      "uuid": "5a06f18e-f911-4d03-b044-bcc9f1cf5f37",
       "tag": "🇮🇩 3 Vless WS",
       "type": "vless",
       "server": "202.74.239.121",
@@ -815,7 +815,7 @@
       }
     },
     {
-      "password": "6789c0a33612e34e                                                                ",
+      "password": "6789c0a33612e34e",
       "tag": "🇮🇩 4 Trojan GRPC",
       "type": "trojan",
       "server": "202.74.239.121",
@@ -843,7 +843,7 @@
       }
     },
     {
-      "uuid": "33386557-9f50-4932-ac32-9cc9dd9beef8                                                                ",
+      "uuid": "33386557-9f50-4932-ac32-9cc9dd9beef8",
       "packet_encoding": "xudp",
       "security": "auto",
       "alter_id": 0,
@@ -876,7 +876,7 @@
       }
     },
     {
-      "uuid": "72d45f38-1ed7-4de0-b46d-ce09fbe8bc9d                                                                ",
+      "uuid": "72d45f38-1ed7-4de0-b46d-ce09fbe8bc9d",
       "tag": "🇮🇩 6 Vless GRPC",
       "type": "vless",
       "server": "202.74.239.121",
@@ -905,7 +905,7 @@
       }
     },
     {
-      "uuid": "62e08466-4b36-44e7-9eec-67bae18a5699                                                                ",
+      "uuid": "62e08466-4b36-44e7-9eec-67bae18a5699",
       "flow": "xtls-rprx-vision",
       "tag": "🇮🇩 7 Vless Reality",
       "type": "vless",
@@ -933,7 +933,7 @@
       }
     },
     {
-      "password": "1223706262d1619a                                                                ",
+      "password": "1223706262d1619a",
       "tag": "🇮🇩 8 Trojan WS",
       "type": "trojan",
       "server": "202.74.239.121",
@@ -963,7 +963,7 @@
       }
     },
     {
-      "uuid": "b54a7c50-5ef9-4a5d-9e51-bac24270c070                                                                ",
+      "uuid": "b54a7c50-5ef9-4a5d-9e51-bac24270c070",
       "packet_encoding": "xudp",
       "security": "auto",
       "alter_id": 0,
@@ -998,7 +998,7 @@
       }
     },
     {
-      "password": "0bef1d2820adf7cf                                                                ",
+      "password": "0bef1d2820adf7cf",
       "tag": "🇮🇩 10 Trojan WS",
       "type": "trojan",
       "server": "103.150.102.129",
@@ -1028,7 +1028,7 @@
       }
     },
     {
-      "uuid": "5c2b2495-bd34-416d-901d-17c646bb95f8                                                                ",
+      "uuid": "5c2b2495-bd34-416d-901d-17c646bb95f8",
       "packet_encoding": "xudp",
       "security": "auto",
       "alter_id": 0,
@@ -1063,7 +1063,7 @@
       }
     },
     {
-      "uuid": "eac386a7-457b-4406-83cd-8dfa8aee968a                                                                ",
+      "uuid": "eac386a7-457b-4406-83cd-8dfa8aee968a",
       "tag": "🇮🇩 12 Vless WS",
       "type": "vless",
       "server": "103.150.102.129",
