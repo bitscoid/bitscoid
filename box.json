@@ -129,18 +129,25 @@
       "password": "0e54cbbdb546862d",
       "tls": {
         "enabled": true,
-        "server_name": "202.74.239.121",
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
         "insecure": true,
         "utls": {
           "fingerprint": "chrome"
         }
       },
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
       "transport": {
         "type": "ws",
         "path": "/buy-trojan-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "202.74.239.121"
-        }
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
       },
       "domain_strategy": "prefer_ipv6"
     },
@@ -154,9 +161,14 @@
       "alter_id": 0,
       "global_padding": false,
       "authenticated_length": true,
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
       "tls": {
         "enabled": true,
-        "server_name": "202.74.239.121",
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
         "insecure": true,
         "utls": {
           "fingerprint": "chrome"
@@ -166,8 +178,10 @@
         "type": "ws",
         "path": "/buy-vmess-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "202.74.239.121"
-        }
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
       },
       "domain_strategy": "prefer_ipv6"
     },
@@ -178,9 +192,14 @@
       "server_port": 443,
       "uuid": "3e5933d7-ddc8-4f0d-9abf-b9b74a0f6368",
       "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
       "tls": {
         "enabled": true,
-        "server_name": "202.74.239.121",
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
         "insecure": true,
         "utls": {
           "fingerprint": "chrome"
@@ -190,8 +209,10 @@
         "type": "ws",
         "path": "/buy-vless-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "202.74.239.121"
-        }
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
       },
       "domain_strategy": "prefer_ipv6"
     },
@@ -201,9 +222,14 @@
       "server": "202.74.239.121",
       "server_port": 443,
       "password": "6789c0a33612e34e",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
       "tls": {
         "enabled": true,
-        "server_name": "202.74.239.121",
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
         "insecure": true,
         "utls": {
           "fingerprint": "chrome"
@@ -228,9 +254,14 @@
       "alter_id": 0,
       "global_padding": false,
       "authenticated_length": true,
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
       "tls": {
         "enabled": true,
-        "server_name": "202.74.239.121",
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
         "insecure": true,
         "utls": {
           "fingerprint": "chrome"
@@ -252,9 +283,14 @@
       "server_port": 443,
       "uuid": "72d45f38-1ed7-4de0-b46d-ce09fbe8bc9d",
       "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
       "tls": {
         "enabled": true,
-        "server_name": "202.74.239.121",
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
         "insecure": true,
         "utls": {
           "fingerprint": "chrome"
@@ -303,9 +339,14 @@
       "server": "202.74.239.121",
       "server_port": 443,
       "password": "1223706262d1619a",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
       "tls": {
         "enabled": true,
-        "server_name": "202.74.239.121",
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
         "insecure": true,
         "utls": {
           "fingerprint": "chrome"
@@ -315,7 +356,7 @@
         "type": "ws",
         "path": "/buy-trojan-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "202.74.239.121"
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -332,9 +373,14 @@
       "alter_id": 0,
       "global_padding": false,
       "authenticated_length": true,
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
       "tls": {
         "enabled": true,
-        "server_name": "202.74.239.121",
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
         "insecure": true,
         "utls": {
           "fingerprint": "chrome"
@@ -344,7 +390,7 @@
         "type": "ws",
         "path": "/buy-vmess-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "202.74.239.121"
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -357,9 +403,14 @@
       "server": "103.150.102.129",
       "server_port": 443,
       "password": "0ce7facc0d53c050",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
       "tls": {
         "enabled": true,
-        "server_name": "202.74.239.121",
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
         "insecure": true,
         "utls": {
           "fingerprint": "chrome"
@@ -369,7 +420,7 @@
         "type": "ws",
         "path": "/buy-trojan-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "202.74.239.121"
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -386,9 +437,14 @@
       "alter_id": 0,
       "global_padding": false,
       "authenticated_length": true,
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
       "tls": {
         "enabled": true,
-        "server_name": "202.74.239.121",
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
         "insecure": true,
         "utls": {
           "fingerprint": "chrome"
@@ -398,7 +454,7 @@
         "type": "ws",
         "path": "/buy-vmess-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "202.74.239.121"
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -412,9 +468,14 @@
       "server_port": 443,
       "uuid": "bb763b9f-5f4f-44ab-a439-91c502d7287e",
       "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
       "tls": {
         "enabled": true,
-        "server_name": "202.74.239.121",
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
         "insecure": true,
         "utls": {
           "fingerprint": "chrome"
@@ -424,7 +485,7 @@
         "type": "ws",
         "path": "/buy-vless-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "202.74.239.121"
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -440,6 +501,11 @@
       "server_port": 443,
       "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
       "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
       "tls": {
         "enabled": true,
         "server_name": "x4.bayarin.my.id",
