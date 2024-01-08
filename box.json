@@ -129,7 +129,7 @@
       "password": "0e54cbbdb546862d",
       "tls": {
         "enabled": true,
-        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "server_name": "shopee.co.id",
         "insecure": true,
         "utls": {
           "fingerprint": "chrome"
@@ -144,7 +144,7 @@
         "type": "ws",
         "path": "/buy-trojan-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "media.fcgk35-1.fna.whatsapp.net"
+          "Host": "shopee.co.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -168,7 +168,7 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "server_name": "shopee.co.id",
         "insecure": true,
         "utls": {
           "fingerprint": "chrome"
@@ -178,7 +178,7 @@
         "type": "ws",
         "path": "/buy-vmess-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "media.fcgk35-1.fna.whatsapp.net"
+          "Host": "shopee.co.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -199,7 +199,7 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "server_name": "shopee.co.id",
         "insecure": true,
         "utls": {
           "fingerprint": "chrome"
@@ -209,7 +209,7 @@
         "type": "ws",
         "path": "/buy-vless-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "media.fcgk35-1.fna.whatsapp.net"
+          "Host": "shopee.co.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -229,7 +229,7 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "server_name": "shopee.co.id",
         "insecure": true,
         "utls": {
           "fingerprint": "chrome"
@@ -261,7 +261,7 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "server_name": "shopee.co.id",
         "insecure": true,
         "utls": {
           "fingerprint": "chrome"
@@ -290,7 +290,7 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "server_name": "shopee.co.id",
         "insecure": true,
         "utls": {
           "fingerprint": "chrome"
@@ -346,7 +346,7 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "server_name": "shopee.co.id",
         "insecure": true,
         "utls": {
           "fingerprint": "chrome"
@@ -356,7 +356,7 @@
         "type": "ws",
         "path": "/buy-trojan-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "media.fcgk35-1.fna.whatsapp.net"
+          "Host": "shopee.co.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -380,7 +380,7 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "server_name": "shopee.co.id",
         "insecure": true,
         "utls": {
           "fingerprint": "chrome"
@@ -390,7 +390,7 @@
         "type": "ws",
         "path": "/buy-vmess-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "media.fcgk35-1.fna.whatsapp.net"
+          "Host": "shopee.co.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -410,7 +410,7 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "server_name": "shopee.co.id",
         "insecure": true,
         "utls": {
           "fingerprint": "chrome"
@@ -420,7 +420,7 @@
         "type": "ws",
         "path": "/buy-trojan-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "media.fcgk35-1.fna.whatsapp.net"
+          "Host": "shopee.co.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -444,7 +444,7 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "server_name": "shopee.co.id",
         "insecure": true,
         "utls": {
           "fingerprint": "chrome"
@@ -454,7 +454,7 @@
         "type": "ws",
         "path": "/buy-vmess-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "media.fcgk35-1.fna.whatsapp.net"
+          "Host": "shopee.co.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -475,7 +475,7 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "server_name": "shopee.co.id",
         "insecure": true,
         "utls": {
           "fingerprint": "chrome"
@@ -485,7 +485,7 @@
         "type": "ws",
         "path": "/buy-vless-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "media.fcgk35-1.fna.whatsapp.net"
+          "Host": "shopee.co.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -501,11 +501,6 @@
       "server_port": 443,
       "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
       "packet_encoding": "xudp",
-      "multiplex": {
-        "enabled": true,
-        "protocol": "smux",
-        "max_streams": 32
-      },
       "tls": {
         "enabled": true,
         "server_name": "x4.bayarin.my.id",
@@ -533,6 +528,7 @@
       "server": "sogood.linefriends.com",
       "server_port": 443,
       "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "x18.bayarin.my.id",
