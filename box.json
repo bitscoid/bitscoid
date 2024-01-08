@@ -136,7 +136,7 @@
       "tag": "🇸🇬 Cloudflare",
       "type": "selector",
       "outbounds": [
-        "🇸🇬 Akari",
+        "🇸🇬 Akari"
       ]
     },
     {
@@ -180,6 +180,7 @@
         "🇮🇩 Jala",
         "🇮🇩 Biznet",
         "🇮🇩 Cloudflare",
+        "🇸🇬 Cloudflare",
         "Direct"
       ]
     },
@@ -200,6 +201,7 @@
         "🇮🇩 Jala",
         "🇮🇩 Biznet",
         "🇮🇩 Cloudflare",
+        "🇸🇬 Cloudflare",
         "Direct"
       ]
     },
@@ -210,6 +212,7 @@
         "🇮🇩 Jala",
         "🇮🇩 Biznet",
         "🇮🇩 Cloudflare",
+        "🇸🇬 Cloudflare",
         "Direct"
       ]
     },
