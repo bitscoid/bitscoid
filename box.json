@@ -193,7 +193,6 @@
       "server": "202.74.239.121",
       "server_port": 443,
       "uuid": "3e5933d7-ddc8-4f0d-9abf-b9b74a0f6368",
-      "packet_encoding": "xudp",
       "multiplex": {
         "enabled": true,
         "protocol": "smux",
@@ -287,7 +286,6 @@
       "server": "202.74.239.121",
       "server_port": 443,
       "uuid": "72d45f38-1ed7-4de0-b46d-ce09fbe8bc9d",
-      "packet_encoding": "xudp",
       "multiplex": {
         "enabled": true,
         "protocol": "smux",
@@ -478,7 +476,6 @@
       "server": "103.150.102.129",
       "server_port": 443,
       "uuid": "bb763b9f-5f4f-44ab-a439-91c502d7287e",
-      "packet_encoding": "xudp",
       "multiplex": {
         "enabled": true,
         "protocol": "smux",
@@ -512,7 +509,6 @@
       "server": "sogood.linefriends.com",
       "server_port": 443,
       "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
-      "packet_encoding": "xudp",
       "multiplex": {
         "enabled": true,
         "protocol": "smux",
