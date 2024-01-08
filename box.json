@@ -167,15 +167,7 @@
       "tag": "🇮🇩 Jala",
       "type": "selector",
       "outbounds": [
-        "🇮🇩 1 Trojan WS",
-        "🇮🇩 2 Vmess WS",
-        "🇮🇩 3 Vless WS",
-        "🇮🇩 4 Trojan GRPC",
-        "🇮🇩 5 Vmess GRPC",
-        "🇮🇩 6 Vless GRPC",
-        "🇮🇩 7 Vless Reality",
-        "🇮🇩 8 Trojan WS",
-        "🇮🇩 9 Vmess WS"
+        "🇮🇩 1 Trojan WS"
       ]
     },
     {
