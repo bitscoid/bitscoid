@@ -724,11 +724,11 @@
     "override_android_vpn": true,
     "final": "⛅ Internet",
     "geoip": {
-      "download_url": "https://github.com/bitscoid/geo-dat/raw/release/geoip.db",
+      "download_url": "https://raw.githubusercontent.com/bitscoid/geo-dat/release/geoip.db",
       "download_detour": "⛅ Internet"
     },
     "geosite": {
-      "download_url": "https://github.com/bitscoid/geo-dat/raw/release/geosite.db",
+      "download_url": "https://raw.githubusercontent.com/bitscoid/geo-dat/release/geosite.db",
       "download_detour": "⛅ Internet"
     },
     "rules": [
