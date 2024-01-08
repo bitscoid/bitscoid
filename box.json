@@ -725,11 +725,11 @@
     "final": "⛅ Internet",
     "geoip": {
       "download_url": "http://192.168.1.1/proxy/geoip.db",
-      "download_detour": "⛅ Internet"
+      "download_detour": "✔️ Direct"
     },
     "geosite": {
       "download_url": "http://192.168.1.1/proxy/geosite.db",
-      "download_detour": "⛅ Internet"
+      "download_detour": "✔️ Direct"
     },
     "rules": [
       {
