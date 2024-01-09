@@ -245,7 +245,7 @@
       "type": "vmess",
       "server": "202.74.239.121",
       "server_port": 443,
-      "uuid": "33386557-9f50-4932-ac32-9cc9dd9beef8",
+      "uuid": "a1d17150-ffbc-4f35-9fad-5ec27a0de442",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
