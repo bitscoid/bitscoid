@@ -536,7 +536,7 @@ proxies:
     type: vless
     server: 202.74.239.121
     port: 41763
-    uuid: 62e08466-4b36-44e7-9eec-67bae18a5699
+    uuid: 07571238-8eae-4f19-8775-9efcd893e45a
     udp: true
     xudp: true
     skip-cert-verify: true
@@ -572,7 +572,7 @@ proxies:
     type: vmess
     server: 202.74.239.121
     port: 443
-    uuid: b54a7c50-5ef9-4a5d-9e51-bac24270c070
+    uuid: d9026306-db45-4019-9dd7-4f76141ac0dc
     alterId: 0
     cipher: auto
     tls: true
