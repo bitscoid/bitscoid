@@ -143,7 +143,7 @@
         "headers": {
           "Host": "shopee.co.id"
         },
-        "max_early_data": 0,
+        "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
       "domain_strategy": "prefer_ipv6"
@@ -177,7 +177,7 @@
         "headers": {
           "Host": "shopee.co.id"
         },
-        "max_early_data": 0,
+        "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
       "domain_strategy": "prefer_ipv6"
@@ -208,7 +208,7 @@
         "headers": {
           "Host": "shopee.co.id"
         },
-        "max_early_data": 0,
+        "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
       "domain_strategy": "prefer_ipv6"
@@ -355,7 +355,7 @@
         "headers": {
           "Host": "shopee.co.id"
         },
-        "max_early_data": 0,
+        "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
       "domain_strategy": "prefer_ipv6"
@@ -389,7 +389,7 @@
         "headers": {
           "Host": "shopee.co.id"
         },
-        "max_early_data": 0,
+        "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
       "domain_strategy": "prefer_ipv6"
@@ -419,7 +419,7 @@
         "headers": {
           "Host": "shopee.co.id"
         },
-        "max_early_data": 0,
+        "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
       "domain_strategy": "prefer_ipv6"
@@ -453,7 +453,7 @@
         "headers": {
           "Host": "shopee.co.id"
         },
-        "max_early_data": 0,
+        "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
       "domain_strategy": "prefer_ipv6"
@@ -484,7 +484,7 @@
         "headers": {
           "Host": "shopee.co.id"
         },
-        "max_early_data": 0,
+        "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
       "domain_strategy": "prefer_ipv6"
@@ -512,7 +512,7 @@
         "headers": {
           "Host": "x1.bayarin.my.id"
         },
-        "max_early_data": 0,
+        "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
       "domain_strategy": "prefer_ipv6"
@@ -538,7 +538,7 @@
         "headers": {
           "Host": "x2.bayarin.my.id"
         },
-        "max_early_data": 0,
+        "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
       "domain_strategy": "prefer_ipv6"
@@ -564,7 +564,7 @@
         "headers": {
           "Host": "x3.bayarin.my.id"
         },
-        "max_early_data": 0,
+        "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
       "domain_strategy": "prefer_ipv6"
@@ -590,13 +590,559 @@
         "headers": {
           "Host": "x4.bayarin.my.id"
         },
-        "max_early_data": 0,
+        "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
       "domain_strategy": "prefer_ipv6"
     },
 
     //=== Cloudflare SG ===//
+    {
+      "tag": "🇸🇬 Akari",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x19.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x19.bayarin.my.id"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇸🇬 Alibaba",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x7.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x7.bayarin.my.id"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇸🇬 Amazon",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x6.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x6.bayarin.my.id"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇸🇬 Aofei",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x23.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x23.bayarin.my.id"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇸🇬 Belnet",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x24.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x24.bayarin.my.id"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇸🇬 CenterHop",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x21.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x21.bayarin.my.id"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇸🇬 Datacamp",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x22.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x22.bayarin.my.id"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇸🇬 DigitalOcean",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x8.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x8.bayarin.my.id"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇸🇬 G Core",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x9.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x9.bayarin.my.id"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇸🇬 Google Cloud Hiddify",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "ac8dc63b-2b57-45a6-aec4-956d9f2107fc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "hiddify.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vlessws",
+        "headers": {
+          "Host": "hiddify.bayarin.my.id"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇸🇬 Google Cloud",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x10.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x10.bayarin.my.id"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇸🇬 HostHatch",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x11.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x11.bayarin.my.id"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇸🇬 Hostinger",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x25.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x25.bayarin.my.id"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇸🇬 Linode",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x5.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x5.bayarin.my.id"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇸🇬 Microsoft Azure",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x12.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x12.bayarin.my.id"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇸🇬 Oracle Cloud",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x14.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x14.bayarin.my.id"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇸🇬 OVH",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x13.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x13.bayarin.my.id"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇸🇬 Tencent Cloud",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x15.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x15.bayarin.my.id"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇸🇬 UpCloud",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x16.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x16.bayarin.my.id"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇸🇬 Vultr",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x17.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x17.bayarin.my.id"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇸🇬 WebHorizon",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x20.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x20.bayarin.my.id"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
     {
       "tag": "🇸🇬 Zhejiang",
       "type": "vless",
@@ -618,7 +1164,7 @@
         "headers": {
           "Host": "x18.bayarin.my.id"
         },
-        "max_early_data": 0,
+        "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
       "domain_strategy": "prefer_ipv6"
@@ -639,27 +1185,27 @@
       "tag": "🇸🇬 Cloudflare",
       "type": "selector",
       "outbounds": [
-        // "🇸🇬 Akari",
-        // "🇸🇬 Alibaba",
-        // "🇸🇬 Amazon",
-        // "🇸🇬 Aofei",
-        // "🇸🇬 Belnet",
-        // "🇸🇬 CenterHop",
-        // "🇸🇬 DataCamp",
-        // "🇸🇬 DigitalOcean",
-        // "🇸🇬 G Core",
-        // "🇸🇬 Google Cloud Hiddify",
-        // "🇸🇬 Google Cloud",
-        // "🇸🇬 HostHatch",
-        // "🇸🇬 Hostinger",
-        // "🇸🇬 Linode",
-        // "🇸🇬 Microsoft Azure",
-        // "🇸🇬 Oracle Cloud",
-        // "🇸🇬 OVH",
-        // "🇸🇬 Tencent Cloud",
-        // "🇸🇬 UpCloud",
-        // "🇸🇬 Vultr",
-        // "🇸🇬 WebHorizon",
+        "🇸🇬 Akari",
+        "🇸🇬 Alibaba",
+        "🇸🇬 Amazon",
+        "🇸🇬 Aofei",
+        "🇸🇬 Belnet",
+        "🇸🇬 CenterHop",
+        "🇸🇬 DataCamp",
+        "🇸🇬 DigitalOcean",
+        "🇸🇬 G Core",
+        "🇸🇬 Google Cloud Hiddify",
+        "🇸🇬 Google Cloud",
+        "🇸🇬 HostHatch",
+        "🇸🇬 Hostinger",
+        "🇸🇬 Linode",
+        "🇸🇬 Microsoft Azure",
+        "🇸🇬 Oracle Cloud",
+        "🇸🇬 OVH",
+        "🇸🇬 Tencent Cloud",
+        "🇸🇬 UpCloud",
+        "🇸🇬 Vultr",
+        "🇸🇬 WebHorizon",
         "🇸🇬 Zhejiang"
       ]
     },
