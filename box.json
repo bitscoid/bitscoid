@@ -5,11 +5,15 @@
     "timestamp": true
   },
   "experimental": {
-    "cache_file": {
-      "enabled": true,
-      "path": "cache.db",
-      "cache_id": "bits",
-      "store_fakeip": true
+    "clash_api": {
+      "external_controller": "0.0.0.0:9090",
+      "external_ui": "yacd",
+      "external_ui_download_url": "https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
+      "external_ui_download_detour": "⛅ Internet",
+      "secret": "",
+      "default_mode": "rule",
+      "store_selected": true,
+      "cache_file": "clash.db"
     }
   },
   "dns": {
@@ -716,12 +720,12 @@
     "override_android_vpn": true,
     "final": "⛅ Internet",
     "geoip": {
-      "download_url": "http://192.168.1.1/proxy/geoip.db",
-      "download_detour": "✔️ Direct"
+      "download_url": "https://github.com/malikshi/sing-box-geo/releases/latest/download/geoip.db",
+      "download_detour": "⛅ Internet"
     },
     "geosite": {
-      "download_url": "http://192.168.1.1/proxy/geosite.db",
-      "download_detour": "✔️ Direct"
+      "download_url": "https://github.com/malikshi/v2ray-rules-dat/releases/latest/download/geosite.db",
+      "download_detour": "⛅ Internet"
     },
     "rules": [
       {
