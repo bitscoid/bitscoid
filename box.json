@@ -117,7 +117,6 @@
     }
   ],
   "outbounds": [
-    //=== IPTunnels ===//
     {
       "tag": "🇮🇩 1 Trojan WS",
       "type": "trojan",
@@ -490,7 +489,6 @@
       "domain_strategy": "prefer_ipv6"
     },
 
-    //=== Cloudflare ID ===//
     {
       "tag": "🇮🇩 Incapsula",
       "type": "vless",
@@ -596,7 +594,6 @@
       "domain_strategy": "prefer_ipv6"
     },
 
-    //=== Cloudflare SG ===//
     {
       "tag": "🇸🇬 Akari",
       "type": "vless",
@@ -1170,7 +1167,6 @@
       "domain_strategy": "prefer_ipv6"
     },
 
-    //=== Route Proxy ===//
     {
       "tag": "🇮🇩 Cloudflare",
       "type": "selector",
@@ -1254,7 +1250,6 @@
       "interval": "1m0s"
     },
 
-    //=== Route Traffic ===//
     {
       "tag": "⛅ Internet",
       "type": "selector",
