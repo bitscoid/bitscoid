@@ -751,7 +751,7 @@
       "domain_strategy": "prefer_ipv6"
     },
     {
-      "tag": "🇸🇬 Datacamp",
+      "tag": "🇸🇬 DataCamp",
       "type": "vless",
       "server": "sogood.linefriends.com",
       "server_port": 443,
