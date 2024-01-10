@@ -736,6 +736,14 @@ proxy-groups:
     proxies:
       - 🖥️ Latency
       - ⛅ Internet
+  - name: 🌏 Indonesia
+    type: select
+    disable-udp: false
+    proxies:
+      - 🇮🇩 Jala
+      - 🇮🇩 Biznet
+      - 🇮🇩 Cloudflare
+      - 🇸🇬 Cloudflare
   - name: ⛅ Internet
     type: select
     disable-udp: false
@@ -745,14 +753,6 @@ proxy-groups:
       - 🇮🇩 Cloudflare
       - 🇸🇬 Cloudflare
       - ✔️ Direct
-  - name: 🌏 Indonesia
-    type: select
-    disable-udp: false
-    proxies:
-      - 🇮🇩 Jala
-      - 🇮🇩 Biznet
-      - 🇮🇩 Cloudflare
-      - 🇸🇬 Cloudflare
   - name: 🎬 Streaming
     type: select
     disable-udp: false

@@ -1251,6 +1251,16 @@
     },
 
     {
+      "tag": "🌏 Indonesia",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Jala",
+        "🇮🇩 Biznet",
+        "🇮🇩 Cloudflare",
+        "✔️ Direct"
+      ]
+    },
+    {
       "tag": "⛅ Internet",
       "type": "selector",
       "outbounds": [
@@ -1258,16 +1268,6 @@
         "🇮🇩 Biznet",
         "🇮🇩 Cloudflare",
         "🇸🇬 Cloudflare",
-        "✔️ Direct"
-      ]
-    },
-    {
-      "tag": "🌏 Indonesia",
-      "type": "selector",
-      "outbounds": [
-        "🇮🇩 Jala",
-        "🇮🇩 Biznet",
-        "🇮🇩 Cloudflare",
         "✔️ Direct"
       ]
     },
