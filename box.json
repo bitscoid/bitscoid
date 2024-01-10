@@ -145,7 +145,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 2 Vmess WS",
@@ -179,7 +179,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 3 Vless WS",
@@ -210,7 +210,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 4 Trojan GRPC",
@@ -238,7 +238,7 @@
         "ping_timeout": "15s",
         "permit_without_stream": false
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 5 Vmess GRPC",
@@ -270,7 +270,7 @@
         "ping_timeout": "15s",
         "permit_without_stream": false
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 6 Vless GRPC",
@@ -299,7 +299,7 @@
         "ping_timeout": "15s",
         "permit_without_stream": false
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 7 Vless Reality",
@@ -327,7 +327,7 @@
           "short_id": "8d497ac2def4ba69"
         }
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 8 Trojan WS",
@@ -357,7 +357,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 9 Vmess WS",
@@ -391,7 +391,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 10 Trojan WS",
@@ -421,7 +421,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 11 Vmess WS",
@@ -455,7 +455,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 12 Vless WS",
@@ -486,7 +486,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
 
     {
@@ -513,7 +513,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 Linode",
@@ -539,7 +539,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 Zhejiang",
@@ -565,7 +565,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇮🇩 Google Cloud",
@@ -591,7 +591,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
 
     {
@@ -618,7 +618,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇸🇬 Alibaba",
@@ -644,7 +644,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇸🇬 Amazon",
@@ -670,7 +670,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇸🇬 Aofei",
@@ -696,7 +696,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇸🇬 Belnet",
@@ -722,7 +722,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇸🇬 CenterHop",
@@ -748,7 +748,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇸🇬 DataCamp",
@@ -774,7 +774,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇸🇬 DigitalOcean",
@@ -800,7 +800,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇸🇬 G Core",
@@ -826,7 +826,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇸🇬 Google Cloud Hiddify",
@@ -852,7 +852,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇸🇬 Google Cloud",
@@ -878,7 +878,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇸🇬 HostHatch",
@@ -904,7 +904,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇸🇬 Hostinger",
@@ -930,7 +930,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇸🇬 Linode",
@@ -956,7 +956,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇸🇬 Microsoft Azure",
@@ -982,7 +982,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇸🇬 Oracle Cloud",
@@ -1008,7 +1008,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇸🇬 OVH",
@@ -1034,7 +1034,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇸🇬 Tencent Cloud",
@@ -1060,7 +1060,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇸🇬 UpCloud",
@@ -1086,7 +1086,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇸🇬 Vultr",
@@ -1112,7 +1112,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇸🇬 WebHorizon",
@@ -1138,7 +1138,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
     {
       "tag": "🇸🇬 Zhejiang",
@@ -1164,7 +1164,7 @@
         "max_early_data": 4096,
         "early_data_header_name": "Sec-WebSocket-Protocol"
       },
-      "domain_strategy": "prefer_ipv6"
+      "detour": "✔️ Direct"
     },
 
     {
