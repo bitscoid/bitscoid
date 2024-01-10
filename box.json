@@ -211,7 +211,7 @@
       "type": "trojan",
       "server": "jala.iptunnels.com",
       "server_port": 443,
-      "password": "6789c0a33612e34e",
+      "password": "7998350b4f277154",
       "multiplex": {
         "enabled": false,
         "protocol": "smux",
@@ -416,7 +416,7 @@
       "type": "vmess",
       "server": "cpanel.iptunnels.com",
       "server_port": 443,
-      "uuid": "00a27eef-eb27-4161-b1f4-8a52554cf67b",
+      "uuid": "888882dd-8cb5-46cb-adc0-752e4c86fa0c",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
@@ -448,7 +448,7 @@
       "type": "vless",
       "server": "cpanel.iptunnels.com",
       "server_port": 443,
-      "uuid": "bb763b9f-5f4f-44ab-a439-91c502d7287e",
+      "uuid": "859040fb-73df-431c-b66b-37c4d439e2d3",
       "packet_encoding": "xudp",
       "multiplex": {
         "enabled": false,
