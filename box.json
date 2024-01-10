@@ -17,19 +17,27 @@
     "servers": [
       {
         "tag": "Cloudflare",
-        "address": "1.1.1.1"
+        "address": "1.1.1.1",
+        "strategy": "ipv4_only",
+        "detour": "✔️ Direct"
       },
       {
         "tag": "Quad",
-        "address": "9.9.9.9"
+        "address": "9.9.9.9",
+        "strategy": "ipv4_only",
+        "detour": "✔️ Direct"
       },
       {
         "tag": "Google",
-        "address": "8.8.8.8"
+        "address": "8.8.8.8",
+        "strategy": "ipv4_only",
+        "detour": "✔️ Direct"
       },
       {
         "tag": "Local",
-        "address": "local"
+        "address": "local",
+        "strategy": "ipv4_only",
+        "detour": "✔️ Direct"
       },
       {
         "tag": "Block",
