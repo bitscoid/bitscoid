@@ -334,7 +334,7 @@
       "type": "trojan",
       "server": "jala.iptunnels.com",
       "server_port": 443,
-      "password": "1223706262d1619a",
+      "password": "a818d78e79db37b4",
       "multiplex": {
         "enabled": true,
         "protocol": "smux",
@@ -398,7 +398,7 @@
       "type": "trojan",
       "server": "cpanel.iptunnels.com",
       "server_port": 443,
-      "password": "0ce7facc0d53c050",
+      "password": "55564188ebb5e3d8",
       "multiplex": {
         "enabled": true,
         "protocol": "smux",
