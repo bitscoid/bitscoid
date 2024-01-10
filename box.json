@@ -19,19 +19,19 @@
         "tag": "Cloudflare",
         "address": "1.1.1.1",
         "strategy": "ipv4_only",
-        "detour": "⛅ Internet"
+        "detour": "✔️ Direct"
       },
       {
         "tag": "Quad",
         "address": "9.9.9.9",
         "strategy": "ipv4_only",
-        "detour": "🎮 Game"
+        "detour": "✔️ Direct"
       },
       {
         "tag": "Google",
         "address": "8.8.8.8",
         "strategy": "ipv4_only",
-        "detour": "🌏 Indonesia"
+        "detour": "✔️ Direct"
       },
       {
         "tag": "Local",
@@ -141,9 +141,7 @@
         "path": "/buy-trojan-ws-pm-telegram-at-synricha",
         "headers": {
           "Host": "media.fcgk35-1.fna.whatsapp.net"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -175,9 +173,7 @@
         "path": "/buy-vmess-ws-pm-telegram-at-synricha",
         "headers": {
           "Host": "media.fcgk35-1.fna.whatsapp.net"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -206,9 +202,7 @@
         "path": "/buy-vless-ws-pm-telegram-at-synricha",
         "headers": {
           "Host": "media.fcgk35-1.fna.whatsapp.net"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -353,9 +347,7 @@
         "path": "/buy-trojan-ws-pm-telegram-at-synricha",
         "headers": {
           "Host": "media.fcgk35-1.fna.whatsapp.net"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -387,9 +379,7 @@
         "path": "/buy-vmess-ws-pm-telegram-at-synricha",
         "headers": {
           "Host": "media.fcgk35-1.fna.whatsapp.net"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -417,9 +407,7 @@
         "path": "/buy-trojan-ws-pm-telegram-at-synricha",
         "headers": {
           "Host": "media.fcgk35-1.fna.whatsapp.net"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -451,9 +439,7 @@
         "path": "/buy-vmess-ws-pm-telegram-at-synricha",
         "headers": {
           "Host": "media.fcgk35-1.fna.whatsapp.net"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -482,9 +468,7 @@
         "path": "/buy-vless-ws-pm-telegram-at-synricha",
         "headers": {
           "Host": "media.fcgk35-1.fna.whatsapp.net"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -509,9 +493,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x1.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -535,9 +517,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x2.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -561,9 +541,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x3.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -587,9 +565,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x4.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -614,9 +590,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x19.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -640,9 +614,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x7.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -666,9 +638,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x6.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -692,9 +662,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x23.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -718,9 +686,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x24.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -744,9 +710,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x21.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -770,9 +734,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x22.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -796,9 +758,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x8.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -822,9 +782,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x9.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -848,9 +806,7 @@
         "path": "/vlessws",
         "headers": {
           "Host": "hiddify.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -874,9 +830,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x10.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -900,9 +854,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x11.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -926,9 +878,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x25.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -952,9 +902,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x5.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -978,9 +926,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x12.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -1004,9 +950,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x14.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -1030,9 +974,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x13.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -1056,9 +998,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x15.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -1082,9 +1022,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x16.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -1108,9 +1046,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x17.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -1134,9 +1070,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x20.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
@@ -1160,9 +1094,7 @@
         "path": "/bits",
         "headers": {
           "Host": "x18.bayarin.my.id"
-        },
-        "max_early_data": 4096,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       },
       "detour": "✔️ Direct"
     },
