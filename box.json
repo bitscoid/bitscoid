@@ -132,7 +132,7 @@
         }
       },
       "multiplex": {
-        "enabled": true,
+        "enabled": false,
         "protocol": "smux",
         "max_streams": 32
       },
@@ -158,7 +158,7 @@
       "global_padding": false,
       "authenticated_length": true,
       "multiplex": {
-        "enabled": true,
+        "enabled": false,
         "protocol": "smux",
         "max_streams": 32
       },
@@ -189,7 +189,7 @@
       "uuid": "3e5933d7-ddc8-4f0d-9abf-b9b74a0f6368",
       "packet_encoding": "xudp",
       "multiplex": {
-        "enabled": true,
+        "enabled": false,
         "protocol": "smux",
         "max_streams": 32
       },
@@ -219,7 +219,7 @@
       "server_port": 443,
       "password": "6789c0a33612e34e",
       "multiplex": {
-        "enabled": true,
+        "enabled": false,
         "protocol": "smux",
         "max_streams": 32
       },
@@ -251,7 +251,7 @@
       "global_padding": false,
       "authenticated_length": true,
       "multiplex": {
-        "enabled": true,
+        "enabled": false,
         "protocol": "smux",
         "max_streams": 32
       },
@@ -280,7 +280,7 @@
       "uuid": "72d45f38-1ed7-4de0-b46d-ce09fbe8bc9d",
       "packet_encoding": "xudp",
       "multiplex": {
-        "enabled": true,
+        "enabled": false,
         "protocol": "smux",
         "max_streams": 32
       },
@@ -310,7 +310,7 @@
       "flow": "xtls-rprx-vision",
       "packet_encoding": "xudp",
       "multiplex": {
-        "enabled": true,
+        "enabled": false,
         "protocol": "smux",
         "max_streams": 32
       },
@@ -336,7 +336,7 @@
       "server_port": 443,
       "password": "a818d78e79db37b4",
       "multiplex": {
-        "enabled": true,
+        "enabled": false,
         "protocol": "smux",
         "max_streams": 32
       },
@@ -370,7 +370,7 @@
       "global_padding": false,
       "authenticated_length": true,
       "multiplex": {
-        "enabled": true,
+        "enabled": false,
         "protocol": "smux",
         "max_streams": 32
       },
@@ -400,7 +400,7 @@
       "server_port": 443,
       "password": "55564188ebb5e3d8",
       "multiplex": {
-        "enabled": true,
+        "enabled": false,
         "protocol": "smux",
         "max_streams": 32
       },
@@ -434,7 +434,7 @@
       "global_padding": false,
       "authenticated_length": true,
       "multiplex": {
-        "enabled": true,
+        "enabled": false,
         "protocol": "smux",
         "max_streams": 32
       },
@@ -465,7 +465,7 @@
       "uuid": "bb763b9f-5f4f-44ab-a439-91c502d7287e",
       "packet_encoding": "xudp",
       "multiplex": {
-        "enabled": true,
+        "enabled": false,
         "protocol": "smux",
         "max_streams": 32
       },
