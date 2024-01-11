@@ -150,7 +150,7 @@
       "type": "vmess",
       "server": "jala.iptunnels.com",
       "server_port": 443,
-      "uuid": "7f57a859-fc25-48d7-800d-3fa8d6323598",
+      "uuid": "fc2b7aea-5efe-45e8-8cf3-47ef6ef95312",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
