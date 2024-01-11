@@ -356,7 +356,7 @@
       "type": "vmess",
       "server": "jala.iptunnels.com",
       "server_port": 443,
-      "uuid": "d9026306-db45-4019-9dd7-4f76141ac0dc",
+      "uuid": "5a25ef6d-a53a-461a-8326-e9c9c8d3ffa0",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,

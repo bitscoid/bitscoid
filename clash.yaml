@@ -572,7 +572,7 @@ proxies:
     type: vmess
     server: 202.74.239.121
     port: 443
-    uuid: d9026306-db45-4019-9dd7-4f76141ac0dc
+    uuid: 5a25ef6d-a53a-461a-8326-e9c9c8d3ffa0
     alterId: 0
     cipher: auto
     tls: true
