@@ -388,7 +388,7 @@
       "type": "trojan",
       "server": "cpanel.iptunnels.com",
       "server_port": 443,
-      "password": "55564188ebb5e3d8",
+      "password": "f77ac3f1c5593073",
       "multiplex": {
         "enabled": false,
         "protocol": "smux",
