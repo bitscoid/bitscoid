@@ -448,7 +448,7 @@
       "type": "vless",
       "server": "cpanel.iptunnels.com",
       "server_port": 443,
-      "uuid": "859040fb-73df-431c-b66b-37c4d439e2d3",
+      "uuid": "0486b4dd-54d1-4447-82a0-a4b17020b7d8",
       "packet_encoding": "xudp",
       "multiplex": {
         "enabled": false,
