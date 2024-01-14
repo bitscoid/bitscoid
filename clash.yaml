@@ -620,7 +620,7 @@ proxies:
     type: vless
     server: 103.150.102.129
     port: 443
-    uuid: 0486b4dd-54d1-4447-82a0-a4b17020b7d8
+    uuid: 5fbf91f2-9d10-411c-8872-a87b84df0a6a
     alterId: 0
     cipher: auto
     tls: true
