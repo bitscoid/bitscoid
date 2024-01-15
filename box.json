@@ -416,7 +416,7 @@
       "type": "vmess",
       "server": "cpanel.iptunnels.com",
       "server_port": 443,
-      "uuid": "a303dc96-71cc-4f36-8d3b-0a9606833673",
+      "uuid": "e362f91b-6031-4c4e-8534-31d036e70130",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
