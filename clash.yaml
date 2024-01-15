@@ -522,7 +522,7 @@ proxies:
     type: vless
     server: 202.74.239.121
     port: 443
-    uuid: 72d45f38-1ed7-4de0-b46d-ce09fbe8bc9d
+    uuid: b713eb71-7dd7-474d-8779-665ba1801df2
     alterId: 0
     cipher: auto
     tls: true

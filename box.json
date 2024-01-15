@@ -271,7 +271,7 @@
       "type": "vless",
       "server": "jala.iptunnels.com",
       "server_port": 443,
-      "uuid": "72d45f38-1ed7-4de0-b46d-ce09fbe8bc9d",
+      "uuid": "b713eb71-7dd7-474d-8779-665ba1801df2",
       "packet_encoding": "xudp",
       "multiplex": {
         "enabled": false,
