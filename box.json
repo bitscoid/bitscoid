@@ -1,0 +1,1744 @@
+{
+  "log": {
+    "disabled": false,
+    "level": "warn",
+    "timestamp": true
+  },
+  "experimental": {
+    "clash_api": {
+      "external_controller": "0.0.0.0:9090",
+      "secret": "",
+      "default_mode": "rule",
+      "store_selected": true,
+      "cache_file": "clash.db"
+    }
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "Cloudflare",
+        "address": "1.1.1.1",
+        "strategy": "ipv4_only",
+        "detour": "✔️ Direct"
+      },
+      {
+        "tag": "Quad",
+        "address": "9.9.9.9",
+        "strategy": "ipv4_only",
+        "detour": "✔️ Direct"
+      },
+      {
+        "tag": "Google",
+        "address": "8.8.8.8",
+        "strategy": "ipv4_only",
+        "detour": "✔️ Direct"
+      },
+      {
+        "tag": "Local",
+        "address": "local",
+        "strategy": "ipv4_only",
+        "detour": "✔️ Direct"
+      },
+      {
+        "tag": "Block",
+        "address": "rcode://success"
+      }
+    ],
+    "rules": [
+      {
+        "domain_suffix": [
+          ".arpa.",
+          ".arpa"
+        ],
+        "server": "Block",
+        "rewrite_ttl": 20
+      },
+      {
+        "network": "udp",
+        "port": 443,
+        "server": "Block",
+        "rewrite_ttl": 20
+      },
+      {
+        "geosite": "rule-malicious",
+        "server": "Block",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "⛅ Internet",
+        "server": "Cloudflare",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "🌏 Indonesia",
+        "server": "Cloudflare",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "🎬 Streaming",
+        "server": "Google",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "💎 Social",
+        "server": "Cloudflare",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "🎮 Game",
+        "server": "Quad",
+        "rewrite_ttl": 20
+      }
+    ],
+    "reverse_mapping": true,
+    "strategy": "ipv4_only",
+    "independent_cache": true,
+    "disable_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "interface_name": "tun0",
+      "inet4_address": "172.19.0.1/30",
+      "mtu": 9000,
+      "auto_route": true,
+      "strict_route": true,
+      "stack": "system",
+      "endpoint_independent_nat": true,
+      "sniff": true
+    },
+    {
+      "listen": "0.0.0.0",
+      "listen_port": 2080,
+      "sniff": true,
+      "tag": "mixed-in",
+      "type": "mixed"
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "🇮🇩 1 Trojan WS",
+      "type": "trojan",
+      "server": "jala.iptunnels.com",
+      "server_port": 443,
+      "password": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/buy-trojan-ws-pm-telegram-at-synricha",
+        "headers": {
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇮🇩 2 Vmess WS",
+      "type": "vmess",
+      "server": "jala.iptunnels.com",
+      "server_port": 443,
+      "uuid": "",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/buy-vmess-ws-pm-telegram-at-synricha",
+        "headers": {
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇮🇩 3 Vless WS",
+      "type": "vless",
+      "server": "jala.iptunnels.com",
+      "server_port": 443,
+      "uuid": "",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/buy-vless-ws-pm-telegram-at-synricha",
+        "headers": {
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇮🇩 4 Trojan GRPC",
+      "type": "trojan",
+      "server": "jala.iptunnels.com",
+      "server_port": 443,
+      "password": "",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "buy-trojan-grpc-pm-telegram-at-synricha",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s",
+        "permit_without_stream": false
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇮🇩 5 Vmess GRPC",
+      "type": "vmess",
+      "server": "jala.iptunnels.com",
+      "server_port": 443,
+      "uuid": "",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "buy-vmess-grpc-pm-telegram-at-synricha",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s",
+        "permit_without_stream": false
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇮🇩 6 Vless GRPC",
+      "type": "vless",
+      "server": "jala.iptunnels.com",
+      "server_port": 443,
+      "uuid": "",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "buy-vless-grpc-pm-telegram-at-synricha",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s",
+        "permit_without_stream": false
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇮🇩 7 Vless Reality",
+      "type": "vless",
+      "server": "jala.iptunnels.com",
+      "server_port": 41763,
+      "uuid": "",
+      "flow": "xtls-rprx-vision",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "shopee.co.id",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LE6HN-3a_m1ECI2sPnMlTCWOWFDu5yFdjl31NTXrXW8",
+          "short_id": "8d497ac2def4ba69"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇮🇩 8 Trojan WS",
+      "type": "trojan",
+      "server": "jala.iptunnels.com",
+      "server_port": 443,
+      "password": "",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/buy-trojan-ws-pm-telegram-at-synricha",
+        "headers": {
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇮🇩 9 Vmess WS",
+      "type": "vmess",
+      "server": "jala.iptunnels.com",
+      "server_port": 443,
+      "uuid": "",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/buy-vmess-ws-pm-telegram-at-synricha",
+        "headers": {
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇮🇩 10 Trojan WS",
+      "type": "trojan",
+      "server": "cpanel.iptunnels.com",
+      "server_port": 443,
+      "password": "",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/buy-trojan-ws-pm-telegram-at-synricha",
+        "headers": {
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇮🇩 11 Vmess WS",
+      "type": "vmess",
+      "server": "cpanel.iptunnels.com",
+      "server_port": 443,
+      "uuid": "",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/buy-vmess-ws-pm-telegram-at-synricha",
+        "headers": {
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇮🇩 12 Vless WS",
+      "type": "vless",
+      "server": "cpanel.iptunnels.com",
+      "server_port": 443,
+      "uuid": "",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/buy-vless-ws-pm-telegram-at-synricha",
+        "headers": {
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇮🇩 Premium Trojan WS",
+      "type": "trojan",
+      "server": "biznet1.1server.co",
+      "server_port": 443,
+      "password": "5bbe2d90-ab02-11ee-ac4f-1577c1651679",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "media.fcgk35-1.fna.whatsapp.net",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/welcome",
+        "headers": {
+          "Host": "media.fcgk35-1.fna.whatsapp.net"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+
+    {
+      "tag": "🇮🇩 Incapsula",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x1.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x1.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇮🇩 Linode",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x2.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x2.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇮🇩 Zhejiang",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x3.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x3.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇮🇩 Google Cloud",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x4.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x4.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+
+    {
+      "tag": "🇸🇬 Akari",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x19.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x19.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇸🇬 Alibaba",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x7.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x7.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇸🇬 Amazon",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x6.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x6.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇸🇬 Aofei",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x23.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x23.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇸🇬 Belnet",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x24.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x24.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇸🇬 CenterHop",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x21.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x21.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇸🇬 DataCamp",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x22.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x22.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇸🇬 DigitalOcean",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x8.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x8.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇸🇬 G Core",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x9.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x9.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇸🇬 Google Cloud Hiddify",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "ac8dc63b-2b57-45a6-aec4-956d9f2107fc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "hiddify.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vlessws",
+        "headers": {
+          "Host": "hiddify.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇸🇬 Google Cloud",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x10.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x10.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇸🇬 HostHatch",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x11.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x11.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇸🇬 Hostinger",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x25.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x25.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇸🇬 Linode",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x5.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x5.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇸🇬 Microsoft Azure",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x12.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x12.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇸🇬 Oracle Cloud",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x14.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x14.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇸🇬 OVH",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x13.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x13.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇸🇬 Tencent Cloud",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x15.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x15.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇸🇬 UpCloud",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x16.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x16.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇸🇬 Vultr",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x17.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x17.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇸🇬 WebHorizon",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x20.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x20.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+    {
+      "tag": "🇸🇬 Zhejiang",
+      "type": "vless",
+      "server": "sogood.linefriends.com",
+      "server_port": 443,
+      "uuid": "fef47eb7-884d-4490-8181-74481de3b428",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x18.bayarin.my.id",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bits",
+        "headers": {
+          "Host": "x18.bayarin.my.id"
+        }
+      },
+      "detour": "✔️ Direct"
+    },
+
+    {
+      "tag": "🇮🇩 Cloudflare",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Incapsula",
+        "🇮🇩 Linode",
+        "🇮🇩 Zhejiang",
+        "🇮🇩 Google Cloud"
+      ]
+    },
+    {
+      "tag": "🇸🇬 Cloudflare",
+      "type": "selector",
+      "outbounds": [
+        "🇸🇬 Akari",
+        "🇸🇬 Alibaba",
+        "🇸🇬 Amazon",
+        "🇸🇬 Aofei",
+        "🇸🇬 Belnet",
+        "🇸🇬 CenterHop",
+        "🇸🇬 DataCamp",
+        "🇸🇬 DigitalOcean",
+        "🇸🇬 G Core",
+        "🇸🇬 Google Cloud",
+        "🇸🇬 HostHatch",
+        "🇸🇬 Hostinger",
+        "🇸🇬 Linode",
+        "🇸🇬 Microsoft Azure",
+        "🇸🇬 Oracle Cloud",
+        "🇸🇬 OVH",
+        "🇸🇬 Tencent Cloud",
+        "🇸🇬 UpCloud",
+        "🇸🇬 Vultr",
+        "🇸🇬 WebHorizon",
+        "🇸🇬 Zhejiang"
+      ]
+    },
+    {
+      "tag": "🇮🇩 Jala",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 1 Trojan WS",
+        "🇮🇩 2 Vmess WS",
+        "🇮🇩 3 Vless WS",
+        "🇮🇩 4 Trojan GRPC",
+        "🇮🇩 5 Vmess GRPC",
+        "🇮🇩 6 Vless GRPC",
+        "🇮🇩 7 Vless Reality",
+        "🇮🇩 8 Trojan WS",
+        "🇮🇩 9 Vmess WS"
+      ]
+    },
+    {
+      "tag": "🇮🇩 Biznet",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Premium Trojan WS",
+        "🇮🇩 10 Trojan WS",
+        "🇮🇩 11 Vmess WS",
+        "🇮🇩 12 Vless WS"
+      ]
+    },
+    {
+      "tag": "🇮🇩 Indonesia",
+      "type": "urltest",
+      "outbounds": [
+        "🇮🇩 Jala",
+        "🇮🇩 Biznet",
+        "🇮🇩 Cloudflare"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "1m0s"
+    },
+    {
+      "tag": "🇸🇬 Singapura",
+      "type": "urltest",
+      "outbounds": [
+        "🇸🇬 Cloudflare"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "1m0s"
+    },
+
+    {
+      "tag": "🌏 Indonesia",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Jala",
+        "🇮🇩 Biznet",
+        "🇮🇩 Cloudflare",
+        "✔️ Direct"
+      ]
+    },
+    {
+      "tag": "⛅ Internet",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Jala",
+        "🇮🇩 Biznet",
+        "🇮🇩 Cloudflare",
+        "🇸🇬 Cloudflare",
+        "✔️ Direct"
+      ]
+    },
+    {
+      "tag": "💎 Social",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Jala",
+        "🇮🇩 Biznet",
+        "🇮🇩 Cloudflare",
+        "🇸🇬 Cloudflare",
+        "✔️ Direct"
+      ]
+    },
+    {
+      "tag": "🎬 Streaming",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Jala",
+        "🇮🇩 Biznet",
+        "🇮🇩 Cloudflare",
+        "🇸🇬 Cloudflare",
+        "✔️ Direct"
+      ]
+    },
+    {
+      "tag": "🎮 Game",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Indonesia",
+        "🇸🇬 Singapura",
+        "✔️ Direct"
+      ]
+    },
+    {
+      "tag": "⛔ Ads",
+      "type": "selector",
+      "outbounds": [
+        "❌ Reject",
+        "⛅ Internet"
+      ]
+    },
+    {
+      "tag": "🔞 Adults",
+      "type": "selector",
+      "outbounds": [
+        "❌ Reject",
+        "⛅ Internet"
+      ]
+    },
+    {
+      "type": "direct",
+      "tag": "✔️ Direct"
+    },
+    {
+      "type": "block",
+      "tag": "❌ Reject"
+    },
+    {
+      "type": "dns",
+      "tag": "🖥️ DNS"
+    }
+  ],
+  "route": {
+    "auto_detect_interface": true,
+    "override_android_vpn": true,
+    "final": "⛅ Internet",
+    "geoip": {
+      "download_url": "https://github.com/malikshi/sing-box-geo/releases/latest/download/geoip.db",
+      "download_detour": "⛅ Internet"
+    },
+    "geosite": {
+      "download_url": "https://github.com/malikshi/v2ray-rules-dat/releases/latest/download/geosite.db",
+      "download_detour": "⛅ Internet"
+    },
+    "rules": [
+      {
+        "outbound": "🖥️ DNS",
+        "port": [
+          53
+        ]
+      },
+      {
+        "network": "udp",
+        "port": [
+          443
+        ],
+        "outbound": "❌ Reject"
+      },
+      {
+        "domain_suffix": [
+          "googlesyndication.com"
+        ],
+        "outbound": "⛔ Ads"
+      },
+      {
+        "geosite": [
+          "rule-ads",
+          "oisd-full"
+        ],
+        "outbound": "⛔ Ads"
+      },
+      {
+        "geosite": [
+          "oisd-nsfw",
+          "category-porn"
+        ],
+        "outbound": "🔞 Adults"
+      },
+      {
+        "geosite": "whatsapp",
+        "outbound": "💎 Social"
+      },
+      {
+        "geoip": "facebook",
+        "port": [
+          3478,
+          4244,
+          5222,
+          5223,
+          5242,
+          45395,
+          50318,
+          59234
+        ],
+        "outbound": "💎 Social"
+      },
+      {
+        "protocol": "stun",
+        "outbound": "⛅ Internet"
+      },
+      {
+        "geosite": [
+          "rule-indo"
+        ],
+        "outbound": "🌏 Indonesia"
+      },
+      {
+        "network": "udp",
+        "port": [
+          2702,
+          3702,
+          8443,
+          9120,
+          9992,
+          10003,
+          6006,
+          6008,
+          6674,
+          7889,
+          8008,
+          8130,
+          8443,
+          9008,
+          9120,
+          10100,
+          12008,
+          13008,
+          8011,
+          9030,
+          10491,
+          10612,
+          12235,
+          13004,
+          13748,
+          17000,
+          17500,
+          10039,
+          10096,
+          11455,
+          13894,
+          13972
+        ],
+        "port_range": [
+          "4001:4009",
+          "5000:5221",
+          "5224:5241",
+          "5243:5287",
+          "5289:5352",
+          "5354:5509",
+          "5517:5529",
+          "5551:5559",
+          "5601:5700",
+          "9000:9010",
+          "30000:30300",
+          "7006:7008",
+          "8001:8012",
+          "10000:10015",
+          "11000:11019",
+          "10101:10201",
+          "10080:10110",
+          "17000:18000"
+        ],
+        "outbound": "🎮 Game"
+      },
+      {
+        "network": "tcp",
+        "port": [
+          5517,
+          8443,
+          9443,
+          10003,
+          6006,
+          6008,
+          6674,
+          7889,
+          9006,
+          9137,
+          12006,
+          12008,
+          13006,
+          15006,
+          20561,
+          39003,
+          39006,
+          39698,
+          39779,
+          39800,
+          10012,
+          14000,
+          15692,
+          17000,
+          17500,
+          18081,
+          20371,
+          8013,
+          8085,
+          18082,
+          20000,
+          50000,
+          65010,
+          65050,
+          8013,
+          18082,
+          20166,
+          31003,
+          33445,
+          50000,
+          42472,
+          14422,
+          16999,
+          8013,
+          8888,
+          30031,
+          14009,
+          40005,
+          9339,
+          2099,
+          8088,
+          5692,
+          8085,
+          8500,
+          10000,
+          10082,
+          20000,
+          25000,
+          29134,
+          31003
+        ],
+        "port_range": [
+          "5000:5221",
+          "5224:5227",
+          "5229:5241",
+          "5243:5287",
+          "5289:5352",
+          "5354:5509",
+          "5520:5529",
+          "5551:5559",
+          "5601:5700",
+          "9000:9010",
+          "30000:30300",
+          "7006:7008",
+          "8001:8012",
+          "10000:10012",
+          "11000:11019",
+          "8085:8088",
+          "10000:10019",
+          "20000:20002",
+          "10000:10001",
+          "20000:20001",
+          "9330:9340",
+          "2080:2099",
+          "9100:9200",
+          "8230:8250",
+          "8110:8120",
+          "27000:28998",
+          "7770:7790",
+          "44590:44610",
+          "10500:10515",
+          "27015:27030",
+          "27036:27037",
+          "39190:39200",
+          "49001:49190",
+          "8393:8400"
+        ],
+        "outbound": "🎮 Game"
+      },
+      {
+        "network": "udp",
+        "port": [
+          2702,
+          3702,
+          8443,
+          9120,
+          9992,
+          10003,
+          6006,
+          6008,
+          6674,
+          7889,
+          8008,
+          8130,
+          8443,
+          9008,
+          9120,
+          10100,
+          12008,
+          13008,
+          8700,
+          10013,
+          10019,
+          10039,
+          10096,
+          10491,
+          10612,
+          11455,
+          12235,
+          13748,
+          13894,
+          13972,
+          17000,
+          17500,
+          8700,
+          9030,
+          8011,
+          9030,
+          10491,
+          10612,
+          12235,
+          13004,
+          13748,
+          17000,
+          17500,
+          10039,
+          10096,
+          11455,
+          13894,
+          13972,
+          42472,
+          5100,
+          39000,
+          4380,
+          27036,
+          14422,
+          16999,
+          8013,
+          8888,
+          8000,
+          30104,
+          14009,
+          40005,
+          8088,
+          5010,
+          6650,
+          8011,
+          8700,
+          20000,
+          25000,
+          29134,
+          30000
+        ],
+        "port_range": [
+          "4001:4009",
+          "5000:5221",
+          "5224:5241",
+          "5243:5287",
+          "5289:5352",
+          "5354:5509",
+          "5517:5529",
+          "5551:5559",
+          "5601:5700",
+          "9000:9010",
+          "30000:30300",
+          "7006:7008",
+          "8001:8012",
+          "10000:10015",
+          "11000:11019",
+          "7086:7995",
+          "8011:8013",
+          "9030:9031",
+          "20000:20002",
+          "12070:12460",
+          "41182:41192",
+          "7500:7995",
+          "10010:10019",
+          "20000:20001",
+          "10101:10201",
+          "10080:10110",
+          "17000:18000",
+          "5055:5058",
+          "22101:22102",
+          "9330:9340",
+          "27000:28998",
+          "16300:16350",
+          "40000:40010",
+          "60970:60980",
+          "27000:27031",
+          "40000:40010",
+          "7000:8000",
+          "8180:8181",
+          "27016:27024",
+          "54000:54012"
+        ],
+        "outbound": "🎮 Game"
+      },
+      {
+        "geoip": [
+          "id"
+        ],
+        "port": [
+          21,
+          22,
+          23,
+          80,
+          81,
+          123,
+          143,
+          182,
+          183,
+          194,
+          443,
+          465,
+          587,
+          853,
+          993,
+          995,
+          998,
+          2052,
+          2053,
+          2082,
+          2083,
+          2086,
+          2095,
+          2096,
+          5222,
+          5228,
+          5229,
+          5230,
+          8000,
+          8080,
+          8081,
+          8088,
+          8443,
+          8880,
+          8883,
+          8888,
+          8889,
+          42069
+        ],
+        "outbound": "🌏 Indonesia"
+      },
+      {
+        "port": [
+          21,
+          22,
+          23,
+          80,
+          81,
+          123,
+          143,
+          182,
+          183,
+          194,
+          443,
+          465,
+          587,
+          853,
+          993,
+          995,
+          998,
+          2052,
+          2053,
+          2082,
+          2083,
+          2086,
+          2095,
+          2096,
+          5222,
+          5228,
+          5229,
+          5230,
+          8000,
+          8080,
+          8081,
+          8088,
+          8443,
+          8880,
+          8883,
+          8888,
+          8889,
+          42069
+        ],
+        "outbound": "⛅ Internet"
+      },
+      {
+        "port_range": [
+          "1023:42068",
+          "42070:65535"
+        ],
+        "outbound": "🎮 Game"
+      }
+    ]
+  }
+}
