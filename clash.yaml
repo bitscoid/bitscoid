@@ -1,0 +1,782 @@
+proxies:
+# 🇮🇩 Jala
+  - name: 🇮🇩 Jala 1
+    type: trojan
+    server: 202.74.239.121
+    port: 443
+    password: fc723188650d0f8d
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: sb.scorecardresearch.com
+    network: ws
+    ws-opts:
+      path: /buy-trojan-ws-pm-telegram-at-synricha
+      headers:
+          Host: sb.scorecardresearch.com
+
+  - name: 🇮🇩 Jala 2
+    type: vmess
+    server: 202.74.239.121
+    port: 443
+    uuid: 7c3ed0a8-fe74-4427-8941-2314b66b4c97
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: sb.scorecardresearch.com
+    network: ws
+    ws-opts:
+      path: /buy-vmess-ws-pm-telegram-at-synricha
+      headers:
+        Host: sb.scorecardresearch.com
+
+  - name: 🇮🇩 Jala 3
+    type: vless
+    server: 202.74.239.121
+    port: 443
+    uuid: 03624e67-3522-4b29-a5e7-071dd4996e83
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: sb.scorecardresearch.com
+    network: ws
+    ws-opts:
+      path: /buy-vless-ws-pm-telegram-at-synricha
+      headers:
+        Host: sb.scorecardresearch.com
+
+  - name: 🇮🇩 Jala 4
+    type: trojan
+    server: 202.74.239.121
+    port: 443
+    password: e61288aa7322304f
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: sb.scorecardresearch.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: buy-trojan-grpc-pm-telegram-at-synricha
+
+  - name: 🇮🇩 Jala 5
+    type: vmess
+    server: 202.74.239.121
+    port: 443
+    uuid: 2d761264-71e4-4f9d-adbd-b05e2c2c8695
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: sb.scorecardresearch.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: buy-vmess-grpc-pm-telegram-at-synricha
+      
+  - name: 🇮🇩 Jala 6
+    type: vless
+    server: 202.74.239.121
+    port: 443
+    uuid: a64aea8b-d3ad-4b98-9cae-267fc12f15cf
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: sb.scorecardresearch.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: buy-vless-grpc-pm-telegram-at-synricha
+
+  - name: 🇮🇩 Jala 7
+    type: vless
+    server: 202.74.239.121
+    port: 41763
+    uuid: a966cd7d-357b-4cd8-8204-69ea550f8459
+    udp: true
+    xudp: true
+    skip-cert-verify: true
+    tls: true
+    client-fingerprint: chrome
+    servername: shopee.co.id
+    network: tcp
+    flow: xtls-rprx-vision
+    reality-opts:
+      public-key: LE6HN-3a_m1ECI2sPnMlTCWOWFDu5yFdjl31NTXrXW8
+      short-id: 8d497ac2def4ba69
+    ip-version: dual
+    tfo: true
+    smux:
+      enabled: false
+
+  - name: 🇮🇩 Jala 8
+    type: trojan
+    server: 202.74.239.121
+    port: 443
+    password: ff30e9ecd43ad4af
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: sb.scorecardresearch.com
+    network: ws
+    ws-opts:
+      path: /buy-trojan-ws-pm-telegram-at-synricha
+      headers:
+          Host: sb.scorecardresearch.com
+
+  - name: 🇮🇩 Jala 9
+    type: vmess
+    server: 202.74.239.121
+    port: 443
+    uuid: 4ab579cc-d8fb-4131-b8c0-b4c3c5787771
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: sb.scorecardresearch.com
+    network: ws
+    ws-opts:
+      path: /buy-vmess-ws-pm-telegram-at-synricha
+      headers:
+        Host: sb.scorecardresearch.com
+
+# 🇮🇩 Biznet
+  - name: 🇮🇩 Biznet
+    type: trojan
+    server: biznet1.1server.co
+    port: 443
+    password: 5bbe2d90-ab02-11ee-ac4f-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: sb.scorecardresearch.com
+    network: ws
+    ws-opts:
+      path: /welcome
+      headers:
+          Host: sb.scorecardresearch.com
+
+# 🇮🇩 Sanggoro
+  - name: 🇮🇩 Sanggoro
+    type: trojan
+    server: 103.18.78.118
+    port: 443
+    password: 28a19cc0-ab02-11ee-a3a2-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: sb.scorecardresearch.com
+    network: ws
+    ws-opts:
+      path: /welcome
+      headers:
+          Host: sb.scorecardresearch.com
+
+# 🇮🇩 Cybertechtonic
+  - name: 🇮🇩 Cybertechtonic Vmess
+    type: vmess
+    server: 103.30.245.154
+    port: 443
+    uuid: 311b0e20-bd07-11ee-8263-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: sb.scorecardresearch.com
+    network: ws
+    ws-opts:
+      path: /hello
+      headers:
+        Host: sb.scorecardresearch.com
+
+# 🇸🇬 Hurricane
+  - name: 🇸🇬 Hurricane Trojan
+    type: trojan
+    server: 103.253.24.92
+    port: 443
+    password: 83953b70-aafe-11ee-a82b-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: sb.scorecardresearch.com
+    network: ws
+    ws-opts:
+      path: /welcome
+      headers:
+          Host: sb.scorecardresearch.com
+
+  - name: 🇸🇬 Hurricane Vmess
+    type: vmess
+    server: 103.253.26.224
+    port: 443
+    uuid: 6dac7ef0-aa03-11ee-a73c-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: sb.scorecardresearch.com
+    network: ws
+    ws-opts:
+      path: /hello
+      headers:
+        Host: sb.scorecardresearch.com
+
+# 🇸🇬 Howdy Trojan Quota
+  - name: 🇸🇬 Hurricane 1
+    type: trojan
+    server: sg1-trojan.bonds.id
+    port: 443
+    password: 67bf4af0-d4f5-11ee-88a6-1239d0255272
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: sb.scorecardresearch.com
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+          Host: sb.scorecardresearch.com
+
+  - name: 🇸🇬 Hurricane 3
+    type: trojan
+    server: sg3-trojan.bonds.id
+    port: 443
+    password: 0dc52da0-d4f6-11ee-a69a-1239d0255272
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: sb.scorecardresearch.com
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+          Host: sb.scorecardresearch.com
+
+  - name: 🇸🇬 Melbi 4
+    type: trojan
+    server: sg-4.test3.net
+    port: 443
+    password: a3251930-d4f4-11ee-a8c9-1239d0255272
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: sb.scorecardresearch.com
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+          Host: sb.scorecardresearch.com
+
+# 🇸🇬 Melbi
+  - name: 🇸🇬 Melbi Vmess
+    type: vmess
+    server: 146.19.196.196
+    port: 443
+    uuid: da0f712d-b73c-4f68-8002-4a22cfe8d7c9
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: sb.scorecardresearch.com
+    network: ws
+    ws-opts:
+      path: /buy-vmess-ws-pm-telegram-at-synricha
+      headers:
+        Host: sb.scorecardresearch.com
+
+# 🇸🇬 Tempest
+  - name: 🇸🇬 Tempest Trojan
+    type: trojan
+    server: 205.178.183.170
+    port: 443
+    password: 27e16780-ac88-11ee-bf8e-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: sb.scorecardresearch.com
+    network: ws
+    ws-opts:
+      path: /welcome
+      headers:
+          Host: sb.scorecardresearch.com
+
+  - name: 🇸🇬 Tempest Vmess
+    type: vmess
+    server: 205.178.183.161
+    port: 443
+    uuid: 537d5b60-a395-11ee-9f93-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: sb.scorecardresearch.com
+    network: ws
+    ws-opts:
+      path: /hello
+      headers:
+        Host: sb.scorecardresearch.com
+
+# 🇸🇬 Singtel
+  - name: 🇸🇬 Singtel Vmess
+    type: vmess
+    server: 116.251.217.44
+    port: 443
+    uuid: 8eefd8c0-aa05-11ee-9bed-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: sb.scorecardresearch.com
+    network: ws
+    ws-opts:
+      path: /hello
+      headers:
+        Host: sb.scorecardresearch.com
+
+# 🇸🇬 Herza
+  - name: 🇸🇬 Herza Trojan
+    type: trojan
+    server: 202.70.133.32
+    port: 443
+    password: cf2c9090-ab02-11ee-81d5-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: sb.scorecardresearch.com
+    network: ws
+    ws-opts:
+      path: /welcome
+      headers:
+          Host: sb.scorecardresearch.com
+
+proxy-groups:
+  - name: 🇮🇩 Indonesia
+    type: select
+    disable-udp: false
+    proxies:
+    - 🇮🇩 Jala 1
+    - 🇮🇩 Jala 2
+    - 🇮🇩 Jala 3
+    - 🇮🇩 Jala 4
+    - 🇮🇩 Jala 5
+    - 🇮🇩 Jala 6
+    - 🇮🇩 Jala 7
+    - 🇮🇩 Jala 8
+    - 🇮🇩 Jala 9
+    - 🇮🇩 Biznet
+    - 🇮🇩 Sanggoro
+    - 🇮🇩 Cybertechtonic
+  - name: 🇸🇬 Singapura
+    type: select
+    disable-udp: false
+    proxies:
+    - 🇸🇬 Hurricane Trojan
+    - 🇸🇬 Hurricane Vmess
+    - 🇸🇬 Hurricane 1
+    - 🇸🇬 Hurricane 3
+    - 🇸🇬 Melbi 4
+    - 🇸🇬 Melbi Vmess
+    - 🇸🇬 Tempest Trojan
+    - 🇸🇬 Tempest Vmess
+    - 🇸🇬 Singtel Vmess
+    - 🇸🇬 Herza Trojan
+  - name: 🖥️ Latency
+    type: url-test
+    disable-udp: false
+    proxies:
+    - 🇮🇩 Jala 1
+    - 🇮🇩 Jala 2
+    - 🇮🇩 Jala 3
+    - 🇮🇩 Jala 4
+    - 🇮🇩 Jala 5
+    - 🇮🇩 Jala 6
+    - 🇮🇩 Jala 7
+    - 🇮🇩 Jala 8
+    - 🇮🇩 Jala 9
+    - 🇮🇩 Biznet
+    - 🇮🇩 Sanggoro
+    - 🇮🇩 Cybertechtonic
+    - 🇸🇬 Hurricane Trojan
+    - 🇸🇬 Hurricane Vmess
+    - 🇸🇬 Hurricane 1
+    - 🇸🇬 Hurricane 3
+    - 🇸🇬 Melbi 4
+    - 🇸🇬 Melbi Vmess
+    - 🇸🇬 Tempest Trojan
+    - 🇸🇬 Tempest Vmess
+    - 🇸🇬 Singtel Vmess
+    - 🇸🇬 Herza Trojan
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+  - name: ❌ Reject
+    type: select
+    disable-udp: false
+    proxies:
+      - REJECT
+  - name: ⛔ Ads
+    type: select
+    disable-udp: false
+    proxies:
+    - ❌ Reject
+    - ⛅ Internet
+  - name: 🔞 Adults
+    type: select
+    disable-udp: false
+    proxies:
+    - ❌ Reject
+    - ⛅ Internet
+  - name: 🎮 Game
+    type: select
+    disable-udp: false
+    proxies:
+    - 🖥️ Latency
+    - ⛅ Internet
+  - name: ⛅ Internet
+    type: select
+    disable-udp: false
+    proxies:
+    - 🇮🇩 Indonesia
+    - 🇸🇬 Singapura
+  - name: 🎬 Streaming
+    type: select
+    disable-udp: false
+    proxies:
+    - 🇮🇩 Indonesia
+    - 🇸🇬 Singapura
+  - name: 💎 Social
+    type: select
+    disable-udp: false
+    proxies:
+    - 🇮🇩 Indonesia
+    - 🇸🇬 Singapura
+rules:
+  - DST-PORT,7895,❌ Reject
+  - DST-PORT,7892,❌ Reject
+  - IP-CIDR,198.18.0.1/16,❌ Reject,no-resolve
+  - GEOIP,private,DIRECT,no-resolve
+  - GEOIP,id,🇮🇩 Indonesia
+  - GEOIP,netflix,🇮🇩 Indonesia
+  - GEOIP,facebook,💎 Social
+  - GEOIP,twitter,💎 Social
+  - GEOIP,telegram,💎 Social
+  - GEOSITE,google-ads,⛔ Ads
+  - GEOSITE,rule-malicious,❌ Reject
+  - GEOSITE,oisd-full,❌ Reject
+  - GEOSITE,d3ward,❌ Reject
+  - GEOSITE,rule-ads,❌ Reject
+  - GEOSITE,oisd-nsfw,🔞 Adults
+  - GEOSITE,category-porn,🔞 Adults
+  - GEOSITE,bank-id,🇮🇩 Indonesia
+  - GEOSITE,rule-indo,🇮🇩 Indonesia
+  - GEOSITE,rule-sosmed,💎 Social
+  - GEOSITE,youtube,🎬 Streaming
+  - GEOSITE,rule-streaming,🎬 Streaming
+  - GEOSITE,videoconference,🎬 Streaming
+  - GEOSITE,rule-gaming,🎮 Game
+  - GEOSITE,rule-umum,⛅ Internet
+  - DST-PORT,3478-3497/8801-8810/16384-16387/1853/8200/5004/9000/5090-5091/5349/10000/19302-19309/5938/5060-5061/500/4500,🎬 Streaming
+  - DST-PORT,5000-5221/5224-5227/5229-5241/5243-5287/5289-5352/5354-5509/5517/5520-5529/5551-5559/5601-5700/8443/9000-9010/9443/10003/30000-30300,🎮 Game,tcp
+  - DST-PORT,5517-5529/5551-5559/5601-5700/8001/8130/8443/9000-9010/9120/9992/10003/30000-30300,🎮 Game,udp
+  - DST-PORT,6006/6008/6674/7006-7008/7889/8001-8012/9006/9137/10000-10012/11000-11019/12006/12008/13006/15006/20561/39003/39006/39698/39779/39800,🎮 Game,tcp
+  - DST-PORT,6006/6008/6674/7006-7008/7889/8008/8001-8012/8130/8443/9008/9120/10000-10015/10100/11000-11019/12008/13008,🎮 Game,udp
+  - DST-PORT,7889/10012/13004/14000/17000/17500/18081/20000-20002/20371,🎮 Game,tcp
+  - DST-PORT,8011/9030/10491/10612/12235/13004/13748/17000/17500/20000-20002/7086-7995/10039/10096/11455/12070-12460/13894/13972/41182-41192,🎮 Game,udp
+  - DST-PORT,3013/10000-10019/18082/50000/65010/65050,🎮 Game,tcp
+  - DST-PORT,7085-7995/8700/9030/10010-10019/17000-20100,🎮 Game,udp
+  - DST-PORT,10001-10094,🎮 Game,tcp
+  - DST-PORT,10101-10201/10080-10110/17000-18000,🎮 Game,udp
+  - DST-PORT,5055-5058,🎮 Game,udp
+  - DST-PORT,42472,🎮 Game,tcp
+  - DST-PORT,42472/22101-22102,🎮 Game,udp
+  - DST-PORT,9330-9340,🎮 Game,tcp
+  - DST-PORT,9330-9340,🎮 Game,udp
+  - DST-PORT,2080-2099,🎮 Game,tcp
+  - DST-PORT,5100,🎮 Game,udp
+  - DST-PORT,9100-9200/8230-8250/8110-8120/27000-28998,🎮 Game,tcp
+  - DST-PORT,27000-28998/39000,🎮 Game,udp
+  - DST-PORT,7770-7790,🎮 Game,tcp
+  - DST-PORT,16300-16350,🎮 Game,udp
+  - DST-PORT,44590-44610,🎮 Game,tcp
+  - DST-PORT,40000-40010,🎮 Game,udp
+  - DST-PORT,10500-10515,🎮 Game,tcp
+  - DST-PORT,60970-60980,🎮 Game,udp
+  - DST-PORT,27015-27030/27036-27037,🎮 Game,tcp
+  - DST-PORT,4380/27000-27031/27036,🎮 Game,udp
+  - DST-PORT,14422,🎮 Game
+  - DST-PORT,16999,🎮 Game
+  - DST-PORT,8013/8888,🎮 Game
+  - DST-PORT,39190-39200/49001-49190,🎮 Game,tcp
+  - DST-PORT,40000-40010,🎮 Game,udp
+  - DST-PORT,14009/40005,🎮 Game
+  - NOT,((GEOSITE,rule-umum)),🎮 Game
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+geodata-mode: true
+geodata-loader: memconservative
+tcp-concurrent: true
+find-process-mode: 'off'
+allow-lan: true
+bind-address: "*"
+mode: rule
+log-level: silent
+ipv6: true
+unified-delay: true
+global-client-fingerprint: chrome
+keep-alive-interval: 15
+external-controller: 0.0.0.0:9090
+external-ui: "./ui"
+secret: '123456'
+profile:
+  store-selected: true
+  store-fakeip: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  parse-pure-ip: true
+  force-domain:
+  - "+.netflix.com"
+  - "+.nflxvideo.net"
+  - "+.amazonaws.com"
+  - "+.media.dssott.com"
+  skip-domain:
+  - "+.apple.com"
+  - Mijia Cloud
+  - dlg.io.mi.com
+  sniff:
+    TLS:
+      ports:
+      - 443
+      - 2053
+      - 2083
+      - 2087
+      - 2096
+      - 8443
+    HTTP:
+      ports:
+      - 80
+      - 8080
+      - 8880
+      - 2052
+      - 2082
+      - 2086
+      - 2095
+      override-destination: true
+experimental:
+  ignore-resolve-fail: true
+dns:
+  enable: true
+  ipv6: true
+  prefer-h3: false
+  enhanced-mode: fake-ip
+  listen: 0.0.0.0:7874
+  default-nameserver:
+  - 1.1.1.1
+  nameserver:
+  - https://1dot1dot1dot1.cloudflare-dns.com
+  fallback:
+  - tls://1dot1dot1dot1.cloudflare-dns.com
+  nameserver-policy:
+    GEOSITE:oisd-full,d3ward,rule-doh,rule-malicious: rcode://success
+    GEOSITE:google-ads: 208.67.222.222#⛔ Ads
+    GEOSITE:oisd-nsfw,category-porn: 208.67.220.220#🔞 Adults
+    GEOSITE:rule-speedtest: 8.8.4.4#⛅ Internet
+    GEOSITE:rule-umum: 9.9.9.9#⛅ Internet
+    GEOSITE:rule-indo,bank-id: 149.112.112.112#🇮🇩 Indonesia
+    GEOSITE:youtube: 8.8.8.8#🎬 Streaming
+    GEOSITE:rule-streaming,videoconference: 1.1.1.1#🎬 Streaming
+    GEOSITE:rule-sosmed: 1.0.0.1#💎 Social
+    GEOSITE:rule-gaming: 8.8.8.8#🎮 Game
+    GEOSITE:rule-umum: 9.9.9.9#⛅ Internet
+  proxy-server-nameserver:
+  - 208.67.222.222#DIRECT
+  - 208.67.220.220#DIRECT
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+  - "*.lan"
+  - "*.localdomain"
+  - "*.example"
+  - "*.invalid"
+  - "*.localhost"
+  - "*.test"
+  - "*.local"
+  - "*.home.arpa"
+  - time.*.com
+  - time.*.gov
+  - time.*.edu.cn
+  - time.*.apple.com
+  - time-ios.apple.com
+  - time1.*.com
+  - time2.*.com
+  - time3.*.com
+  - time4.*.com
+  - time5.*.com
+  - time6.*.com
+  - time7.*.com
+  - ntp.*.com
+  - ntp1.*.com
+  - ntp2.*.com
+  - ntp3.*.com
+  - ntp4.*.com
+  - ntp5.*.com
+  - ntp6.*.com
+  - ntp7.*.com
+  - "*.time.edu.cn"
+  - "*.ntp.org.cn"
+  - "+.pool.ntp.org"
+  - time1.cloud.tencent.com
+  - music.163.com
+  - "*.music.163.com"
+  - "*.126.net"
+  - musicapi.taihe.com
+  - music.taihe.com
+  - songsearch.kugou.com
+  - trackercdn.kugou.com
+  - "*.kuwo.cn"
+  - api-jooxtt.sanook.com
+  - api.joox.com
+  - joox.com
+  - y.qq.com
+  - "*.y.qq.com"
+  - streamoc.music.tc.qq.com
+  - mobileoc.music.tc.qq.com
+  - isure.stream.qqmusic.qq.com
+  - dl.stream.qqmusic.qq.com
+  - aqqmusic.tc.qq.com
+  - amobile.music.tc.qq.com
+  - "*.xiami.com"
+  - "*.music.migu.cn"
+  - music.migu.cn
+  - "+.msftconnecttest.com"
+  - "+.msftncsi.com"
+  - msftconnecttest.com
+  - msftncsi.com
+  - localhost.ptlogin2.qq.com
+  - localhost.sec.qq.com
+  - "+.srv.nintendo.net"
+  - "*.n.n.srv.nintendo.net"
+  - "+.stun.playstation.net"
+  - xbox.*.*.microsoft.com
+  - "*.*.xboxlive.com"
+  - xbox.*.microsoft.com
+  - xnotify.xboxlive.com
+  - "+.battlenet.com.cn"
+  - "+.wotgame.cn"
+  - "+.wggames.cn"
+  - "+.wowsgame.cn"
+  - "+.wargaming.net"
+  - proxy.golang.org
+  - stun.*.*
+  - stun.*.*.*
+  - "+.stun.*.*"
+  - "+.stun.*.*.*"
+  - "+.stun.*.*.*.*"
+  - "+.stun.*.*.*.*.*"
+  - heartbeat.belkin.com
+  - "*.linksys.com"
+  - "*.linksyssmartwifi.com"
+  - "*.router.asus.com"
+  - mesu.apple.com
+  - swscan.apple.com
+  - swquery.apple.com
+  - swdownload.apple.com
+  - swcdn.apple.com
+  - swdist.apple.com
+  - lens.l.google.com
+  - stun.l.google.com
+  - "+.nflxvideo.net"
+  - "*.square-enix.com"
+  - "*.finalfantasyxiv.com"
+  - "*.ffxiv.com"
+  - "*.ff14.sdo.com"
+  - ff.dorado.sdo.com
+  - "*.mcdn.bilivideo.cn"
+  - "+.media.dssott.com"
+  - shark007.net
+  - "+.qq.com"
+  - "+.tencent.com"
+  - na.b.g-tun.com
+  - Mijia Cloud
+  - "+.cmbchina.com"
+  - "+.cmbimg.com"
+  - local.adguard.org
+  - "+.sandai.net"
+  - "+.n0808.com"
+  fallback-filter:
+    geoip: true
+    geoip-code: ID
+    ipcidr:
+    - 0.0.0.0/8
+    - 10.0.0.0/8
+    - 100.64.0.0/10
+    - 127.0.0.0/8
+    - 169.254.0.0/16
+    - 172.16.0.0/12
+    - 192.0.0.0/24
+    - 192.0.2.0/24
+    - 192.88.99.0/24
+    - 192.168.0.0/16
+    - 198.18.0.0/15
+    - 198.51.100.0/24
+    - 203.0.113.0/24
+    - 224.0.0.0/4
+    - 240.0.0.0/4
+    - 255.255.255.255/32
+    domain:
+    - "+.google.com"
+    - "+.facebook.com"
+    - "+.youtube.com"
+    - "+.githubusercontent.com"
+    - "+.googlevideo.com"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - msftconnecttest.com
+    - msftncsi.com
+    - "+.*"
+  use-hosts: true
+hosts:
+  iptunnels.com: 103.159.65.146
+  www.iptunnels.com: 103.159.65.146
+  cdn.iptunnels.com: 103.159.65.146
+tun:
+  enable: true
+  stack: system
+  device: utun
+  auto-route: false
+  auto-detect-interface: false
+  dns-hijack:
+  - tcp://any:53
