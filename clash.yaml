@@ -188,7 +188,7 @@ proxies:
           Host: sb.scorecardresearch.com
 
 # 🇮🇩 Cybertechtonic
-  - name: 🇮🇩 Cybertechtonic Vmess
+  - name: 🇮🇩 Cybertechtonic
     type: vmess
     server: 103.30.245.154
     port: 443
