@@ -38,7 +38,7 @@ proxies:
     type: vless
     server: 202.74.239.121
     port: 443
-    uuid: 03624e67-3522-4b29-a5e7-071dd4996e83
+    uuid: db9093a4-9a5b-4047-a8bd-83bdcf9ee545
     alterId: 0
     cipher: auto
     tls: true
@@ -55,7 +55,7 @@ proxies:
     type: trojan
     server: 202.74.239.121
     port: 443
-    password: e61288aa7322304f
+    password: d926c20a6883a221
     alterId: 0
     cipher: auto
     tls: true
@@ -70,7 +70,7 @@ proxies:
     type: vmess
     server: 202.74.239.121
     port: 443
-    uuid: 2d761264-71e4-4f9d-adbd-b05e2c2c8695
+    uuid: 33fb607c-2c82-4bf4-a424-8bd844ca78ff
     alterId: 0
     cipher: auto
     tls: true
@@ -85,7 +85,7 @@ proxies:
     type: vless
     server: 202.74.239.121
     port: 443
-    uuid: a64aea8b-d3ad-4b98-9cae-267fc12f15cf
+    uuid: f53fedd9-2d42-4d27-8755-0f4325c08c90
     alterId: 0
     cipher: auto
     tls: true
