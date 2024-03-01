@@ -4,7 +4,7 @@ proxies:
     type: trojan
     server: 202.74.239.121
     port: 443
-    password: fc723188650d0f8d
+    password: 342d29270d2e96b4
     alterId: 0
     cipher: auto
     tls: true
@@ -121,7 +121,7 @@ proxies:
     type: trojan
     server: 202.74.239.121
     port: 443
-    password: ff30e9ecd43ad4af
+    password: d32be56586c3a4d8
     alterId: 0
     cipher: auto
     tls: true
