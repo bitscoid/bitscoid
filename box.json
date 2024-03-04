@@ -1,0 +1,1533 @@
+{
+  "log": {
+    "disabled": false,
+    "level": "warn",
+    "timestamp": true
+  },
+  "experimental": {
+    "clash_api": {
+      "external_controller": "0.0.0.0:9090",
+      "secret": "",
+      "default_mode": "rule",
+      "store_selected": true,
+      "cache_file": "clash.db"
+    }
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "Cloudflare",
+        "address": "1.1.1.1",
+        "strategy": "ipv4_only",
+        "detour": "⛅ Internet"
+      },
+      {
+        "tag": "Quad",
+        "address": "9.9.9.9",
+        "strategy": "ipv4_only",
+        "detour": "🎮 Game"
+      },
+      {
+        "tag": "Google",
+        "address": "8.8.8.8",
+        "strategy": "ipv4_only",
+        "detour": "🌏 Indonesia"
+      },
+      {
+        "tag": "Local",
+        "address": "local",
+        "strategy": "ipv4_only",
+        "detour": "✔️ Direct"
+      },
+      {
+        "tag": "Block",
+        "address": "rcode://success"
+      }
+    ],
+    "rules": [
+      {
+        "domain_suffix": [
+          ".arpa.",
+          ".arpa"
+        ],
+        "server": "Block",
+        "rewrite_ttl": 20
+      },
+      {
+        "network": "udp",
+        "port": 443,
+        "server": "Block",
+        "rewrite_ttl": 20
+      },
+      {
+        "geosite": "rule-malicious",
+        "server": "Block",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "⛅ Internet",
+        "server": "Cloudflare",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "🌏 Indonesia",
+        "server": "Cloudflare",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "🎬 Streaming",
+        "server": "Google",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "💎 Social",
+        "server": "Cloudflare",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "🎮 Game",
+        "server": "Quad",
+        "rewrite_ttl": 20
+      }
+    ],
+    "reverse_mapping": true,
+    "strategy": "ipv4_only",
+    "independent_cache": true,
+    "disable_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "interface_name": "tun0",
+      "inet4_address": "172.19.0.1/30",
+      "mtu": 9000,
+      "auto_route": true,
+      "strict_route": true,
+      "stack": "system",
+      "endpoint_independent_nat": true,
+      "sniff": true
+    },
+    {
+      "listen": "0.0.0.0",
+      "listen_port": 2080,
+      "sniff": true,
+      "tag": "mixed-in",
+      "type": "mixed"
+    }
+  ],
+  "outbounds": [
+    /** 🇮🇩 Jala **/
+    {
+      "tag": "🇮🇩 Jala 1",
+      "type": "trojan",
+      "server": "jala.iptunnels.com",
+      "server_port": 443,
+      "password": "342d29270d2e96b4",
+      "tls": {
+        "enabled": true,
+        "server_name": "sb.scorecardresearch.com",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/buy-trojan-ws-pm-telegram-at-synricha",
+        "headers": {
+          "Host": "sb.scorecardresearch.com"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇮🇩 Jala 2",
+      "type": "vmess",
+      "server": "jala.iptunnels.com",
+      "server_port": 443,
+      "uuid": "313a0ee5-2d0b-4a6c-8908-ee33ced987d8",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "sb.scorecardresearch.com",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/buy-vmess-ws-pm-telegram-at-synricha",
+        "headers": {
+          "Host": "sb.scorecardresearch.com"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇮🇩 Jala 3",
+      "type": "vless",
+      "server": "jala.iptunnels.com",
+      "server_port": 443,
+      "uuid": "db9093a4-9a5b-4047-a8bd-83bdcf9ee545",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "sb.scorecardresearch.com",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/buy-vless-ws-pm-telegram-at-synricha",
+        "headers": {
+          "Host": "sb.scorecardresearch.com"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇮🇩 Jala 4",
+      "type": "trojan",
+      "server": "jala.iptunnels.com",
+      "server_port": 443,
+      "password": "d926c20a6883a221",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "sb.scorecardresearch.com",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "buy-trojan-grpc-pm-telegram-at-synricha",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s",
+        "permit_without_stream": false
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇮🇩 Jala 5",
+      "type": "vmess",
+      "server": "jala.iptunnels.com",
+      "server_port": 443,
+      "uuid": "33fb607c-2c82-4bf4-a424-8bd844ca78ff",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "sb.scorecardresearch.com",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "buy-vmess-grpc-pm-telegram-at-synricha",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s",
+        "permit_without_stream": false
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇮🇩 Jala 6",
+      "type": "vless",
+      "server": "jala.iptunnels.com",
+      "server_port": 443,
+      "uuid": "f53fedd9-2d42-4d27-8755-0f4325c08c90",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "sb.scorecardresearch.com",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "buy-vless-grpc-pm-telegram-at-synricha",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s",
+        "permit_without_stream": false
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇮🇩 Jala 7",
+      "type": "vless",
+      "server": "jala.iptunnels.com",
+      "server_port": 41763,
+      "uuid": "a966cd7d-357b-4cd8-8204-69ea550f8459",
+      "flow": "xtls-rprx-vision",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "shopee.co.id",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LE6HN-3a_m1ECI2sPnMlTCWOWFDu5yFdjl31NTXrXW8",
+          "short_id": "8d497ac2def4ba69"
+        }
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇮🇩 Jala 8",
+      "type": "trojan",
+      "server": "jala.iptunnels.com",
+      "server_port": 443,
+      "password": "882e240b1fddaf83",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "sb.scorecardresearch.com",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/buy-trojan-ws-pm-telegram-at-synricha",
+        "headers": {
+          "Host": "sb.scorecardresearch.com"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇮🇩 Jala 9",
+      "type": "vmess",
+      "server": "jala.iptunnels.com",
+      "server_port": 443,
+      "uuid": "2613fe24-80b3-4c37-8093-54857c1ac178",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "sb.scorecardresearch.com",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/buy-vmess-ws-pm-telegram-at-synricha",
+        "headers": {
+          "Host": "sb.scorecardresearch.com"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+
+    /** 🇮🇩 Biznet **/
+    {
+      "tag": "🇮🇩 Biznet 10",
+      "type": "trojan",
+      "server": "cpanel.iptunnels.com",
+      "server_port": 443,
+      "password": "bgn10",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "sb.scorecardresearch.com",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/buy-trojan-ws-pm-telegram-at-synricha",
+        "headers": {
+          "Host": "sb.scorecardresearch.com"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇮🇩 Biznet 11",
+      "type": "vmess",
+      "server": "cpanel.iptunnels.com",
+      "server_port": 443,
+      "uuid": "bgn11",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "sb.scorecardresearch.com",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/buy-vmess-ws-pm-telegram-at-synricha",
+        "headers": {
+          "Host": "sb.scorecardresearch.com"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇮🇩 Biznet 12",
+      "type": "vless",
+      "server": "cpanel.iptunnels.com",
+      "server_port": 443,
+      "uuid": "bgn12",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "sb.scorecardresearch.com",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/buy-vless-ws-pm-telegram-at-synricha",
+        "headers": {
+          "Host": "sb.scorecardresearch.com"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇮🇩 Biznet Premium",
+      "type": "trojan",
+      "server": "biznet1.1server.co",
+      "server_port": 443,
+      "password": "5bbe2d90-ab02-11ee-ac4f-1577c1651679",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "sb.scorecardresearch.com",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/welcome",
+        "headers": {
+          "Host": "sb.scorecardresearch.com"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+
+    /** 🇮🇩 Sanggoro **/
+    {
+      "tag": "🇮🇩 Sanggoro",
+      "type": "trojan",
+      "server": "103.18.78.118",
+      "server_port": 443,
+      "password": "28a19cc0-ab02-11ee-a3a2-1577c1651679",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "sb.scorecardresearch.com",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/welcome",
+        "headers": {
+          "Host": "sb.scorecardresearch.com"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+
+    /** 🇮🇩 Cybertechtonic **/
+    {
+      "tag": "🇮🇩 Cybertechtonic",
+      "type": "vmess",
+      "server": "103.30.245.154",
+      "server_port": 443,
+      "uuid": "311b0e20-bd07-11ee-8263-1577c1651679",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "sb.scorecardresearch.com",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/hello",
+        "headers": {
+          "Host": "sb.scorecardresearch.com"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+
+    /** 🇸🇬 Tempest Premium **/
+    {
+      "tag": "🇸🇬 Tempest Trojan",
+      "type": "trojan",
+      "server": "205.178.183.170",
+      "server_port": 443,
+      "password": "27e16780-ac88-11ee-bf8e-1577c1651679",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "sb.scorecardresearch.com",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/welcome",
+        "headers": {
+          "Host": "sb.scorecardresearch.com"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇸🇬 Tempest Vmess",
+      "type": "vmess",
+      "server": "205.178.183.161",
+      "server_port": 443,
+      "uuid": "537d5b60-a395-11ee-9f93-1577c1651679",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "sb.scorecardresearch.com",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/hello",
+        "headers": {
+          "Host": "sb.scorecardresearch.com"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+
+    /** 🇸🇬 Hurricane Premium **/
+    {
+      "tag": "🇸🇬 Hurricane Trojan",
+      "type": "trojan",
+      "server": "103.253.24.92",
+      "server_port": 443,
+      "password": "83953b70-aafe-11ee-a82b-1577c1651679",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "sb.scorecardresearch.com",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/welcome",
+        "headers": {
+          "Host": "sb.scorecardresearch.com"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇸🇬 Hurricane Vmess",
+      "type": "vmess",
+      "server": "103.253.26.224",
+      "server_port": 443,
+      "uuid": "6dac7ef0-aa03-11ee-a73c-1577c1651679",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "sb.scorecardresearch.com",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/hello",
+        "headers": {
+          "Host": "sb.scorecardresearch.com"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+
+    /** 🇸🇬 Hurricane Howdy **/
+    {
+      "tag": "🇸🇬 Hurricane H1",
+      "type": "trojan",
+      "server": "sg1-trojan.bonds.id",
+      "server_port": 443,
+      "password": "67bf4af0-d4f5-11ee-88a6-1239d0255272",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "sb.scorecardresearch.com",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/howdy",
+        "headers": {
+          "Host": "sb.scorecardresearch.com"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+    {
+      "tag": "🇸🇬 Hurricane H3",
+      "type": "trojan",
+      "server": "sg3-trojan.bonds.id",
+      "server_port": 443,
+      "password": "0dc52da0-d4f6-11ee-a69a-1239d0255272",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "sb.scorecardresearch.com",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/howdy",
+        "headers": {
+          "Host": "sb.scorecardresearch.com"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+
+    /** 🇸🇬 Melbi Howdy **/
+    {
+      "tag": "🇸🇬 Melbi H4",
+      "type": "trojan",
+      "server": "sg-4.test3.net",
+      "server_port": 443,
+      "password": "a3251930-d4f4-11ee-a8c9-1239d0255272",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "sb.scorecardresearch.com",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/howdy",
+        "headers": {
+          "Host": "sb.scorecardresearch.com"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+
+    /** 🇸🇬 Melbi Premium **/
+    {
+      "tag": "🇸🇬 Melbi",
+      "type": "vmess",
+      "server": "146.19.196.196",
+      "server_port": 443,
+      "uuid": "da0f712d-b73c-4f68-8002-4a22cfe8d7c9",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "sb.scorecardresearch.com",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/buy-vmess-ws-pm-telegram-at-synricha",
+        "headers": {
+          "Host": "sb.scorecardresearch.com"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+
+    /** 🇸🇬 Singtel Premium **/
+    {
+      "tag": "🇸🇬 Singtel",
+      "type": "vmess",
+      "server": "116.251.217.44",
+      "server_port": 443,
+      "uuid": "8eefd8c0-aa05-11ee-9bed-1577c1651679",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "sb.scorecardresearch.com",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/hello",
+        "headers": {
+          "Host": "sb.scorecardresearch.com"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+
+    /** 🇸🇬 Herza Premium **/
+    {
+      "tag": "🇸🇬 Herza",
+      "type": "trojan",
+      "server": "202.70.133.32",
+      "server_port": 443,
+      "password": "cf2c9090-ab02-11ee-81d5-1577c1651679",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "sb.scorecardresearch.com",
+        "insecure": true,
+        "utls": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/welcome",
+        "headers": {
+          "Host": "sb.scorecardresearch.com"
+        },
+        "max_early_data": 4096,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "prefer_ipv6"
+    },
+
+    /** 🇮🇩 Indonesia **/
+    {
+      "tag": "🇮🇩 Jala",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Jala 1",
+        "🇮🇩 Jala 2",
+        "🇮🇩 Jala 3",
+        "🇮🇩 Jala 4",
+        "🇮🇩 Jala 5",
+        "🇮🇩 Jala 6",
+        "🇮🇩 Jala 7",
+        "🇮🇩 Jala 8",
+        "🇮🇩 Jala 9"
+      ]
+    },
+    {
+      "tag": "🇮🇩 Biznet",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Biznet 10",
+        "🇮🇩 Biznet 11",
+        "🇮🇩 Biznet 12"
+      ]
+    },
+    {
+      "tag": "🇮🇩 Premium",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Sanggoro",
+        "🇮🇩 Cybertechtonic",
+        "🇮🇩 Biznet Premium"
+      ]
+    },
+
+    /** 🇸🇬 Singapura **/
+    {
+      "tag": "🇸🇬 Howdy",
+      "type": "selector",
+      "outbounds": [
+        "🇸🇬 Hurricane H1",
+        "🇸🇬 Hurricane H3",
+        "🇸🇬 Melbi H4"
+      ]
+    },
+    {
+      "tag": "🇸🇬 Premium",
+      "type": "selector",
+      "outbounds": [
+        "🇸🇬 Tempest Trojan",
+        "🇸🇬 Tempest Vmess",
+        "🇸🇬 Hurricane Trojan",
+        "🇸🇬 Hurricane Vmess",
+        "🇸🇬 Melbi",
+        "🇸🇬 Singtel",
+        "🇸🇬 Herza"
+      ]
+    },
+
+    {
+      "tag": "🇮🇩 Indonesia",
+      "type": "urltest",
+      "outbounds": [
+        "🇮🇩 Jala",
+        "🇮🇩 Biznet",
+        "🇮🇩 Premium"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "1m0s"
+    },
+    {
+      "tag": "🇸🇬 Singapura",
+      "type": "urltest",
+      "outbounds": [
+        "🇸🇬 Howdy",
+        "🇸🇬 Premium"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "1m0s"
+    },
+
+    {
+      "tag": "🌏 Indonesia",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Jala",
+        "🇮🇩 Biznet",
+        "🇮🇩 Premium"
+      ]
+    },
+    {
+      "tag": "⛅ Internet",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Jala",
+        "🇮🇩 Biznet",
+        "🇮🇩 Premium",
+        "🇸🇬 Howdy",
+        "🇸🇬 Premium"
+      ]
+    },
+    {
+      "tag": "💎 Social",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Jala",
+        "🇮🇩 Biznet",
+        "🇮🇩 Premium",
+        "🇸🇬 Howdy",
+        "🇸🇬 Premium"
+      ]
+    },
+    {
+      "tag": "🎬 Streaming",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Jala",
+        "🇮🇩 Biznet",
+        "🇮🇩 Premium",
+        "🇸🇬 Howdy",
+        "🇸🇬 Premium"
+      ]
+    },
+    {
+      "tag": "🎮 Game",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Indonesia",
+        "🇸🇬 Singapura"
+      ]
+    },
+    {
+      "tag": "⛔ Ads",
+      "type": "selector",
+      "outbounds": [
+        "❌ Reject",
+        "⛅ Internet"
+      ]
+    },
+    {
+      "tag": "🔞 Adults",
+      "type": "selector",
+      "outbounds": [
+        "❌ Reject",
+        "⛅ Internet"
+      ]
+    },
+    {
+      "type": "direct",
+      "tag": "✔️ Direct"
+    },
+    {
+      "type": "block",
+      "tag": "❌ Reject"
+    },
+    {
+      "type": "dns",
+      "tag": "🖥️ DNS"
+    }
+  ],
+  "route": {
+    "auto_detect_interface": true,
+    "override_android_vpn": true,
+    "final": "⛅ Internet",
+    "geoip": {
+      "download_url": "https://github.com/malikshi/sing-box-geo/releases/latest/download/geoip.db",
+      "download_detour": "⛅ Internet"
+    },
+    "geosite": {
+      "download_url": "https://github.com/malikshi/v2ray-rules-dat/releases/latest/download/geosite.db",
+      "download_detour": "⛅ Internet"
+    },
+    "rules": [
+      {
+        "outbound": "🖥️ DNS",
+        "port": [
+          53
+        ]
+      },
+      {
+        "network": "udp",
+        "port": [
+          443
+        ],
+        "outbound": "❌ Reject"
+      },
+      {
+        "domain_suffix": [
+          "googlesyndication.com"
+        ],
+        "outbound": "⛔ Ads"
+      },
+      {
+        "geosite": [
+          "rule-ads",
+          "oisd-full"
+        ],
+        "outbound": "⛔ Ads"
+      },
+      {
+        "geosite": [
+          "oisd-nsfw",
+          "category-porn"
+        ],
+        "outbound": "🔞 Adults"
+      },
+      {
+        "geosite": "whatsapp",
+        "outbound": "💎 Social"
+      },
+      {
+        "geoip": "facebook",
+        "port": [
+          3478,
+          4244,
+          5222,
+          5223,
+          5242,
+          45395,
+          50318,
+          59234
+        ],
+        "outbound": "💎 Social"
+      },
+      {
+        "protocol": "stun",
+        "outbound": "⛅ Internet"
+      },
+      {
+        "geosite": [
+          "rule-indo"
+        ],
+        "outbound": "🌏 Indonesia"
+      },
+      {
+        "network": "udp",
+        "port": [
+          2702,
+          3702,
+          8443,
+          9120,
+          9992,
+          10003,
+          6006,
+          6008,
+          6674,
+          7889,
+          8008,
+          8130,
+          8443,
+          9008,
+          9120,
+          10100,
+          12008,
+          13008,
+          8011,
+          9030,
+          10491,
+          10612,
+          12235,
+          13004,
+          13748,
+          17000,
+          17500,
+          10039,
+          10096,
+          11455,
+          13894,
+          13972
+        ],
+        "port_range": [
+          "4001:4009",
+          "5000:5221",
+          "5224:5241",
+          "5243:5287",
+          "5289:5352",
+          "5354:5509",
+          "5517:5529",
+          "5551:5559",
+          "5601:5700",
+          "9000:9010",
+          "30000:30300",
+          "7006:7008",
+          "8001:8012",
+          "10000:10015",
+          "11000:11019",
+          "10101:10201",
+          "10080:10110",
+          "17000:18000"
+        ],
+        "outbound": "🎮 Game"
+      },
+      {
+        "network": "tcp",
+        "port": [
+          5517,
+          8443,
+          9443,
+          10003,
+          6006,
+          6008,
+          6674,
+          7889,
+          9006,
+          9137,
+          12006,
+          12008,
+          13006,
+          15006,
+          20561,
+          39003,
+          39006,
+          39698,
+          39779,
+          39800,
+          10012,
+          14000,
+          15692,
+          17000,
+          17500,
+          18081,
+          20371,
+          8013,
+          8085,
+          18082,
+          20000,
+          50000,
+          65010,
+          65050,
+          8013,
+          18082,
+          20166,
+          31003,
+          33445,
+          50000,
+          42472,
+          14422,
+          16999,
+          8013,
+          8888,
+          30031,
+          14009,
+          40005,
+          9339,
+          2099,
+          8088,
+          5692,
+          8085,
+          8500,
+          10000,
+          10082,
+          20000,
+          25000,
+          29134,
+          31003
+        ],
+        "port_range": [
+          "5000:5221",
+          "5224:5227",
+          "5229:5241",
+          "5243:5287",
+          "5289:5352",
+          "5354:5509",
+          "5520:5529",
+          "5551:5559",
+          "5601:5700",
+          "9000:9010",
+          "30000:30300",
+          "7006:7008",
+          "8001:8012",
+          "10000:10012",
+          "11000:11019",
+          "8085:8088",
+          "10000:10019",
+          "20000:20002",
+          "10000:10001",
+          "20000:20001",
+          "9330:9340",
+          "2080:2099",
+          "9100:9200",
+          "8230:8250",
+          "8110:8120",
+          "27000:28998",
+          "7770:7790",
+          "44590:44610",
+          "10500:10515",
+          "27015:27030",
+          "27036:27037",
+          "39190:39200",
+          "49001:49190",
+          "8393:8400"
+        ],
+        "outbound": "🎮 Game"
+      },
+      {
+        "network": "udp",
+        "port": [
+          2702,
+          3702,
+          8443,
+          9120,
+          9992,
+          10003,
+          6006,
+          6008,
+          6674,
+          7889,
+          8008,
+          8130,
+          8443,
+          9008,
+          9120,
+          10100,
+          12008,
+          13008,
+          8700,
+          10013,
+          10019,
+          10039,
+          10096,
+          10491,
+          10612,
+          11455,
+          12235,
+          13748,
+          13894,
+          13972,
+          17000,
+          17500,
+          8700,
+          9030,
+          8011,
+          9030,
+          10491,
+          10612,
+          12235,
+          13004,
+          13748,
+          17000,
+          17500,
+          10039,
+          10096,
+          11455,
+          13894,
+          13972,
+          42472,
+          5100,
+          39000,
+          4380,
+          27036,
+          14422,
+          16999,
+          8013,
+          8888,
+          8000,
+          30104,
+          14009,
+          40005,
+          8088,
+          5010,
+          6650,
+          8011,
+          8700,
+          20000,
+          25000,
+          29134,
+          30000
+        ],
+        "port_range": [
+          "4001:4009",
+          "5000:5221",
+          "5224:5241",
+          "5243:5287",
+          "5289:5352",
+          "5354:5509",
+          "5517:5529",
+          "5551:5559",
+          "5601:5700",
+          "9000:9010",
+          "30000:30300",
+          "7006:7008",
+          "8001:8012",
+          "10000:10015",
+          "11000:11019",
+          "7086:7995",
+          "8011:8013",
+          "9030:9031",
+          "20000:20002",
+          "12070:12460",
+          "41182:41192",
+          "7500:7995",
+          "10010:10019",
+          "20000:20001",
+          "10101:10201",
+          "10080:10110",
+          "17000:18000",
+          "5055:5058",
+          "22101:22102",
+          "9330:9340",
+          "27000:28998",
+          "16300:16350",
+          "40000:40010",
+          "60970:60980",
+          "27000:27031",
+          "40000:40010",
+          "7000:8000",
+          "8180:8181",
+          "27016:27024",
+          "54000:54012"
+        ],
+        "outbound": "🎮 Game"
+      },
+      {
+        "geoip": [
+          "id"
+        ],
+        "port": [
+          21,
+          22,
+          23,
+          80,
+          81,
+          123,
+          143,
+          182,
+          183,
+          194,
+          443,
+          465,
+          587,
+          853,
+          993,
+          995,
+          998,
+          2052,
+          2053,
+          2082,
+          2083,
+          2086,
+          2095,
+          2096,
+          5222,
+          5228,
+          5229,
+          5230,
+          8000,
+          8080,
+          8081,
+          8088,
+          8443,
+          8880,
+          8883,
+          8888,
+          8889,
+          42069
+        ],
+        "outbound": "🌏 Indonesia"
+      },
+      {
+        "port": [
+          21,
+          22,
+          23,
+          80,
+          81,
+          123,
+          143,
+          182,
+          183,
+          194,
+          443,
+          465,
+          587,
+          853,
+          993,
+          995,
+          998,
+          2052,
+          2053,
+          2082,
+          2083,
+          2086,
+          2095,
+          2096,
+          5222,
+          5228,
+          5229,
+          5230,
+          8000,
+          8080,
+          8081,
+          8088,
+          8443,
+          8880,
+          8883,
+          8888,
+          8889,
+          42069
+        ],
+        "outbound": "⛅ Internet"
+      },
+      {
+        "port_range": [
+          "1023:42068",
+          "42070:65535"
+        ],
+        "outbound": "🎮 Game"
+      }
+    ]
+  }
+}
