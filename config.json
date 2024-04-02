@@ -1,0 +1,687 @@
+{
+  "log": {
+    "disabled": false,
+    "level": "error",
+    "timestamp": false
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "Cloudflare",
+        "address": "1.1.1.1",
+        "strategy": "ipv4_only",
+        "detour": "⛅ Internet"
+      },
+      {
+        "tag": "Google",
+        "address": "8.8.8.8",
+        "strategy": "ipv4_only",
+        "detour": "🎮 Latency"
+      },
+      {
+        "tag": "Quad",
+        "address": "9.9.9.9",
+        "strategy": "ipv4_only",
+        "detour": "✔️ Direct"
+      },
+      {
+        "tag": "Blocked",
+        "address": "rcode://success"
+      }
+    ],
+    "rules": [
+      {
+        "domain_suffix": [
+          ".arpa.",
+          ".arpa"
+        ],
+        "server": "Blocked",
+        "rewrite_ttl": 20
+      },
+      {
+        "network": "udp",
+        "port": 443,
+        "server": "Blocked",
+        "rewrite_ttl": 20
+      },
+      {
+        "geosite": "rule-malicious",
+        "server": "Blocked",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "⛅ Internet",
+        "server": "Cloudflare",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "🇮🇩 Indonesia",
+        "server": "Google",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "🎮 Game",
+        "server": "Quad",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "✔️ Direct",
+        "server": "Quad",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "any",
+        "server": "Cloudflare",
+        "rewrite_ttl": 20
+      }
+    ],
+    "strategy": "ipv4_only",
+    "reverse_mapping": true,
+    "independent_cache": true,
+    "disable_cache": false,
+    "disable_expire": false
+  },
+  "inbounds": [
+    {
+      "tag": "tproxy-in",
+      "type": "tproxy",
+      "listen": "::",
+      "listen_port": 9898,
+      "sniff": true,
+      "sniff_override_destination": true,
+      "domain_strategy": "ipv4_only"
+    }
+  ],
+  "outbound_providers": [
+    {
+      "tag": "ID",
+      "type": "http",
+      "path": "../vpn/id.yaml",
+      "download_url": "https://raw.githubusercontent.com/bitscoid/bitscoid/android/id.yaml",
+      "download_detour": "⛅ Internet"
+    },
+    {
+      "tag": "SG",
+      "type": "http",
+      "path": "../vpn/sg.yaml",
+      "download_url": "https://raw.githubusercontent.com/bitscoid/bitscoid/android/sg.yaml",
+      "download_detour": "⛅ Internet"
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "🇮🇩 Premium",
+      "type": "selector",
+      "providers": [
+        "ID"
+      ]
+    },
+    {
+      "tag": "🇸🇬 Premium",
+      "type": "selector",
+      "providers": [
+        "SG"
+      ]
+    },
+
+    {
+      "tag": "🖥️ Manual",
+      "type": "selector",
+      "providers": [
+        "ID",
+        "SG"
+      ]
+    },
+    {
+      "tag": "🎮 Latency",
+      "type": "urltest",
+      "providers": [
+        "ID",
+        "SG"
+      ]
+    },
+    {
+      "tag": "🎮 Game",
+      "type": "selector",
+      "outbounds": [
+        "🎮 Latency",
+        "⛅ Internet"
+      ]
+    },
+
+    {
+      "tag": "🇮🇩 Indonesia",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Premium",
+        "🇸🇬 Premium",
+        "🖥️ Manual"
+      ]
+    },
+    {
+      "tag": "⛅ Internet",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Premium",
+        "🇸🇬 Premium",
+        "🖥️ Manual"
+      ]
+    },
+    {
+      "tag": "🎬 Streaming",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Premium",
+        "🇸🇬 Premium",
+        "🖥️ Manual"
+      ]
+    },
+    {
+      "tag": "💎 Social",
+      "type": "selector",
+      "outbounds": [
+        "🇮🇩 Premium",
+        "🇸🇬 Premium",
+        "🖥️ Manual"
+      ]
+    },
+
+    {
+      "tag": "⛔ Ads",
+      "type": "selector",
+      "outbounds": [
+        "❌ Reject",
+        "⛅ Internet"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🔞 Adults",
+      "outbounds": [
+        "❌ Reject",
+        "⛅ Internet"
+      ]
+    },
+
+    {
+      "tag": "✔️ Direct",
+      "type": "direct"
+    },
+    {
+      "tag": "❌ Reject",
+      "type": "block"
+    },
+    {
+      "tag": "DNS",
+      "type": "dns"
+    }
+  ],
+  "route": {
+    "geoip": {
+      "download_url": "https://github.com/malikshi/sing-box-geo/releases/latest/download/geoip.db",
+      "download_detour": "⛅ Internet"
+    },
+    "geosite": {
+      "download_url": "https://github.com/malikshi/v2ray-rules-dat/releases/latest/download/geosite.db",
+      "download_detour": "⛅ Internet"
+    },
+    "rules": [
+      {
+        "port": 53,
+        "outbound": "DNS"
+      },
+      {
+        "network": "udp",
+        "port": 443,
+        "outbound": "❌ Reject"
+      },
+      {
+        "protocol": [
+          "quic"
+        ],
+        "port": [
+          443
+        ],
+        "network": "udp",
+        "geosite": "youtube",
+        "outbound": "❌ Reject"
+      },
+      {
+        "geosite": [
+          "rule-malicious",
+          "d3ward",
+          "rule-ads",
+          "category-ads-all",
+          "oisd-full"
+        ],
+        "outbound": "❌ Reject"
+      },
+      {
+        "geosite": [
+          "google-ads"
+        ],
+        "outbound": "⛔ Ads"
+      },
+      {
+        "geosite": [
+          "oisd-nsfw",
+          "category-porn"
+        ],
+        "outbound": "🔞 Adults"
+      },
+      {
+        "geosite": [
+          "bank-id",
+          "rule-indo"
+        ],
+        "outbound": "🇮🇩 Indonesia"
+      },
+      {
+        "geoip": [
+          "id",
+          "netflix"
+        ],
+        "port": [
+          21,
+          22,
+          23,
+          80,
+          81,
+          123,
+          143,
+          182,
+          183,
+          194,
+          443,
+          465,
+          587,
+          853,
+          993,
+          995,
+          998,
+          2052,
+          2053,
+          2082,
+          2083,
+          2086,
+          2095,
+          2096,
+          5222,
+          5228,
+          5229,
+          5230,
+          8000,
+          8080,
+          8081,
+          8088,
+          8443,
+          8880,
+          8883,
+          8888,
+          8889,
+          42069
+        ],
+        "outbound": "🇮🇩 Indonesia"
+      },
+      {
+        "geoip": [
+          "facebook",
+          "twitter",
+          "telegram"
+        ],
+        "outbound": "💎 Social"
+      },
+      {
+        "geosite": "rule-sosmed",
+        "outbound": "💎 Social"
+      },
+      {
+        "geosite": [
+          "youtube",
+          "videoconference",
+          "rule-streaming"
+        ],
+        "outbound": "🎬 Streaming"
+      },
+      {
+        "geosite": "rule-gaming",
+        "outbound": "🎮 Game"
+      },
+      {
+        "geosite": "rule-umum",
+        "outbound": "⛅ Internet"
+      },
+      {
+        "protocol": "stun",
+        "outbound": "⛅ Internet"
+      },
+      {
+        "network": "udp",
+        "port": [
+          10003,
+          10039,
+          10096,
+          10100,
+          10491,
+          10612,
+          11455,
+          12008,
+          12235,
+          13004,
+          13008,
+          13748,
+          13894,
+          13972,
+          17000,
+          17500,
+          2702,
+          3702,
+          6006,
+          6008,
+          6674,
+          7889,
+          8008,
+          8011,
+          8130,
+          8443,
+          9008,
+          9030,
+          9120,
+          9992
+        ],
+        "outbound": "🎮 Game"
+      },
+      {
+        "network": "udp",
+        "port_range": [
+          "4001:4009",
+          "5000:5221",
+          "5224:5241",
+          "5243:5287",
+          "5289:5352",
+          "5354:5509",
+          "5517:5529",
+          "5551:5559",
+          "5601:5700",
+          "9000:9010",
+          "30000:30300",
+          "7006:7008",
+          "8001:8012",
+          "10000:10015",
+          "11000:11019",
+          "10101:10201",
+          "10080:10110",
+          "17000:18000"
+        ],
+        "outbound": "🎮 Game"
+      },
+      {
+        "network": "tcp",
+        "port": [
+          10000,
+          10003,
+          10012,
+          10082,
+          12006,
+          12008,
+          13006,
+          14000,
+          14009,
+          14422,
+          15006,
+          15692,
+          16999,
+          17000,
+          17500,
+          18081,
+          18082,
+          20000,
+          20166,
+          20371,
+          20561,
+          2099,
+          25000,
+          29134,
+          30031,
+          31003,
+          31003,
+          33445,
+          39003,
+          39006,
+          39698,
+          39779,
+          39800,
+          40005,
+          42472,
+          50000,
+          5517,
+          5692,
+          6006,
+          6008,
+          65010,
+          65050,
+          6674,
+          7889,
+          8013,
+          8085,
+          8088,
+          8443,
+          8500,
+          8888,
+          9006,
+          9137,
+          9339,
+          9443
+        ],
+        "outbound": "🎮 Game"
+      },
+      {
+        "network": "tcp",
+        "port_range": [
+          "5000:5221",
+          "5224:5227",
+          "5229:5241",
+          "5243:5287",
+          "5289:5352",
+          "5354:5509",
+          "5520:5529",
+          "5551:5559",
+          "5601:5700",
+          "9000:9010",
+          "30000:30300",
+          "7006:7008",
+          "8001:8012",
+          "10000:10012",
+          "11000:11019",
+          "8085:8088",
+          "10000:10019",
+          "20000:20002",
+          "10000:10001",
+          "20000:20001",
+          "9330:9340",
+          "2080:2099",
+          "9100:9200",
+          "8230:8250",
+          "8110:8120",
+          "27000:28998",
+          "7770:7790",
+          "44590:44610",
+          "10500:10515",
+          "27015:27030",
+          "27036:27037",
+          "39190:39200",
+          "49001:49190",
+          "8393:8400"
+        ],
+        "outbound": "🎮 Game"
+      },
+      {
+        "network": "udp",
+        "port": [
+          10003,
+          10013,
+          10019,
+          10039,
+          10096,
+          10100,
+          10491,
+          10612,
+          11455,
+          12008,
+          12235,
+          13004,
+          13008,
+          13748,
+          13894,
+          13972,
+          14009,
+          14422,
+          16999,
+          17000,
+          17500,
+          20000,
+          25000,
+          2702,
+          27036,
+          29134,
+          30000,
+          30104,
+          3702,
+          39000,
+          40005,
+          42472,
+          4380,
+          5010,
+          5100,
+          6006,
+          6008,
+          6650,
+          6674,
+          7889,
+          8000,
+          8008,
+          8011,
+          8013,
+          8088,
+          8130,
+          8443,
+          8700,
+          8888,
+          9008,
+          9030,
+          9120,
+          9992
+        ],
+        "outbound": "🎮 Game"
+      },
+      {
+        "network": "udp",
+        "port_range": [
+          "4001:4009",
+          "5000:5221",
+          "5224:5241",
+          "5243:5287",
+          "5289:5352",
+          "5354:5509",
+          "5517:5529",
+          "5551:5559",
+          "5601:5700",
+          "9000:9010",
+          "30000:30300",
+          "7006:7008",
+          "8001:8012",
+          "10000:10015",
+          "11000:11019",
+          "7086:7995",
+          "8011:8013",
+          "9030:9031",
+          "20000:20002",
+          "12070:12460",
+          "41182:41192",
+          "7500:7995",
+          "10010:10019",
+          "20000:20001",
+          "10101:10201",
+          "10080:10110",
+          "17000:18000",
+          "5055:5058",
+          "22101:22102",
+          "9330:9340",
+          "27000:28998",
+          "16300:16350",
+          "40000:40010",
+          "60970:60980",
+          "27000:27031",
+          "40000:40010",
+          "7000:8000",
+          "8180:8181",
+          "27016:27024",
+          "54000:54012"
+        ],
+        "outbound": "🎮 Game"
+      },
+      {
+        "port": [
+          21,
+          22,
+          23,
+          80,
+          81,
+          123,
+          143,
+          182,
+          183,
+          194,
+          443,
+          465,
+          587,
+          853,
+          993,
+          995,
+          998,
+          2052,
+          2053,
+          2082,
+          2083,
+          2086,
+          2095,
+          2096,
+          5222,
+          5228,
+          5229,
+          5230,
+          8000,
+          8080,
+          8081,
+          8088,
+          8443,
+          8880,
+          8883,
+          8888,
+          8889,
+          42069
+        ],
+        "outbound": "⛅ Internet"
+      },
+      {
+        "port_range": [
+          "1023:42068",
+          "42070:65535"
+        ],
+        "outbound": "🎮 Game"
+      }
+    ],
+    "final": "⛅ Internet",
+    "find_process": true,
+    "auto_detect_interface": false,
+    "override_android_vpn": true
+  },
+  "experimental": {
+    "clash_api": {
+      "external_controller": "0.0.0.0:9090",
+      "external_ui": "../ui",
+      "secret": "",
+      "store_selected": true
+    }
+  }
+}

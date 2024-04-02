@@ -1,0 +1,287 @@
+proxies:
+# 🥇 🇮🇩 Era
+  # Grup Viper
+  - name: 🥇 🇮🇩 Era
+    type: vmess
+    server: 103.176.45.162
+    port: 443
+    uuid: 222b3c9a-cbb7-4a44-9ded-037880e64b51
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: shopeemobile.com
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: shopeemobile.com
+    
+# https://github.com/ehwiwjqkaozg9291/heowwinev/tree/main
+# 🥇 🇮🇩 Biznet
+  - name: 🥇 🇮🇩 Biznet
+    type: trojan
+    server: biznet1.1server.co
+    port: 443
+    password: ecaff390-e7c9-11ee-8bfd-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: shopeemobile.com
+    network: ws
+    ws-opts:
+      path: /welcome
+      headers:
+          Host: shopeemobile.com
+# 🥇 🇮🇩 Sanggoro
+  - name: 🥇 🇮🇩 Sanggoro
+    type: trojan
+    server: 4.lowh.net
+    port: 443
+    password: fba6af10-e7c9-11ee-86df-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: shopeemobile.com
+    network: ws
+    ws-opts:
+      path: /welcome
+      headers:
+          Host: shopeemobile.com
+  - name: 🥇 🇮🇩 Sanggoro VM
+    type: vmess
+    server: 5.lowh.net
+    port: 443
+    uuid: 32a30de0-e7d1-11ee-ab63-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: shopeemobile.com
+    network: ws
+    ws-opts:
+      path: /hello
+      headers:
+        Host: shopeemobile.com
+# 🥇 🇮🇩 Herza
+  - name: 🥇 🇮🇩 Herza
+    type: trojan
+    server: 002.htmlcdn.net
+    port: 443
+    password: 19374e60-e7ca-11ee-92e4-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: shopeemobile.com
+    network: ws
+    ws-opts:
+      path: /welcome
+      headers:
+          Host: shopeemobile.com
+  - name: 🥇 🇮🇩 Herza VM
+    type: vmess
+    server: 001.htmlcdn.net
+    port: 443
+    uuid: 4052f2c0-e7d1-11ee-aa7c-1577c1651679
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: shopeemobile.com
+    network: ws
+    ws-opts:
+      path: /hello
+      headers:
+        Host: shopeemobile.com
+    
+# https://github.com/ehwiwjqkaozg9291/djeowjabxi/tree/main
+# 🥇 🇮🇩 Jala
+  - name: 🥇 🇮🇩 Jala
+    type: vmess
+    server: 103.16.198.40
+    port: 443
+    uuid: 66414281-2a23-4a64-9a73-b16f391b8334
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: shopeemobile.com
+    network: ws
+    ws-opts:
+      path: /buy-vmess-ws-pm-telegram-at-synricha
+      headers:
+        Host: shopeemobile.com
+
+# https://github.com/ehwiwjqkaozg9291/djeowjabxi/tree/main
+# 🥇 🇮🇩 GlobalSSH
+  - name: 🥇 🇮🇩 IKD
+    type: vmess
+    server: vmess-ikd-id01.globalssh.xyz
+    port: 443
+    uuid: 38d807fe-6761-428c-95fa-f17d3c1a6fdb
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: shopeemobile.com
+    network: ws
+    ws-opts:
+      path: /vmess-ws
+      headers:
+        Host: shopeemobile.com
+  - name: 🥇 🇮🇩 Warna
+    type: vmess
+    server: vmess-wh-id01.globalssh.xyz
+    port: 443
+    uuid: 3b66f411-b173-4075-b954-387407f3d8d5
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: shopeemobile.com
+    network: ws
+    ws-opts:
+      path: /vmess-ws
+      headers:
+        Host: shopeemobile.com
+  - name: 🥇 🇮🇩 Atha
+    type: vmess
+    server: vmess-sg01.globalssh.xyz
+    port: 443
+    uuid: 8615127c-3cbf-4356-8cb2-c42ef5897ea7
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: shopeemobile.com
+    network: ws
+    ws-opts:
+      path: /vmess-ws
+      headers:
+        Host: shopeemobile.com
+
+# 🥇 🇮🇩 ServerSSH.Net
+  - name: 🥇 🇮🇩 Biznet VM
+    type: vmess
+    server: idgrpc.serverip.my.id
+    port: 443
+    uuid: 5f9e4000-7cb5-4cf2-81bf-0dfa53397dc8
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: shopeemobile.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+  - name: 🥇 🇮🇩 Biznet WS
+    type: vmess
+    server: idray.serverip.my.id
+    port: 443
+    uuid: 4e5ad03b-3bc2-44af-b401-b8284c55e566
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: shopeemobile.com
+    network: ws
+    ws-opts:
+      path: /worryfree/vmess
+      headers:
+        Host: shopeemobile.com
+# 🥇 🇮🇩 JagoanSSH SlowDNS
+  - name: 🥇 🇮🇩 Nusa Medan
+    type: vmess
+    server: id1-ray.ipservers.xyz
+    port: 443
+    uuid: 17c16fc1-c9b6-44a4-a7bf-01d4b5e2d969
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: shopeemobile.com
+    network: ws
+    ws-opts:
+      path: /JAGOANSSH/
+      headers:
+        Host: shopeemobile.com
+  - name: 🥇 🇮🇩 Nusa Jawa
+    type: vmess
+    server: id2-ray.ipservers.xyz
+    port: 443
+    uuid: 50d8e233-7ccc-4483-b59b-5a8920d60231
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: shopeemobile.com
+    network: ws
+    ws-opts:
+      path: /JAGOANSSH/
+      headers:
+        Host: shopeemobile.com
+  - name: 🥇 🇮🇩 Nusa WS
+    type: vmess
+    server: id2-ray.ipservers.xyz
+    port: 443
+    uuid: a7223ac3-5f74-4bb6-85a9-094c497dd911
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: shopeemobile.com
+    network: ws
+    ws-opts:
+      path: /JAGOANSSH/
+      headers:
+        Host: shopeemobile.com
+  - name: 🥇 🇮🇩 Nusa VL1
+    type: vless
+    server: id1vless.ipservers.xyz
+    port: 443
+    uuid: f53a31b3-1c3f-41d3-b1cb-9a327a8702f8
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: shopeemobile.com
+    network: ws
+    ws-opts:
+      path: /jagoanssh
+      headers:
+        Host: shopeemobile.com
+  - name: 🥇 🇮🇩 Nusa VL2
+    type: vless
+    server: id2vless.ipservers.xyz
+    port: 443
+    uuid: edb7b1fd-fcc7-49b9-b57d-08ea5737ca38
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: shopeemobile.com
+    network: ws
+    ws-opts:
+      path: /jagoanssh
+      headers:
+        Host: shopeemobile.com
