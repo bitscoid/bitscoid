@@ -96,14 +96,14 @@
     {
       "tag": "ID",
       "type": "http",
-      "path": "../vpn/id.yaml",
+      "path": "../clash/vpn/id.yaml",
       "download_url": "https://raw.githubusercontent.com/bitscoid/bitscoid/android/id.yaml",
       "download_detour": "⛅ Internet"
     },
     {
       "tag": "SG",
       "type": "http",
-      "path": "../vpn/sg.yaml",
+      "path": "../clash/vpn/sg.yaml",
       "download_url": "https://raw.githubusercontent.com/bitscoid/bitscoid/android/sg.yaml",
       "download_detour": "⛅ Internet"
     }
@@ -680,8 +680,7 @@
     "clash_api": {
       "external_controller": "0.0.0.0:9090",
       "external_ui": "../ui",
-      "secret": "",
-      "store_selected": true
+      "secret": ""
     }
   }
 }

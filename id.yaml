@@ -83,22 +83,3 @@ proxies:
       path: /hello
       headers:
         Host: shopeemobile.com
-    
-# https://github.com/ehwiwjqkaozg9291/djeowjabxi/tree/main
-# 🥇 🇮🇩 Jala
-  - name: 🥇 🇮🇩 Jala
-    type: vmess
-    server: 103.16.198.40
-    port: 443
-    uuid: 66414281-2a23-4a64-9a73-b16f391b8334
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    servername: shopeemobile.com
-    network: ws
-    ws-opts:
-      path: /buy-vmess-ws-pm-telegram-at-synricha
-      headers:
-        Host: shopeemobile.com
