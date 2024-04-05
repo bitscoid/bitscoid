@@ -348,10 +348,6 @@
         "outbound": "🎮 Game"
       },
       {
-        "geosite": "rule-umum",
-        "outbound": "⛅ Internet"
-      },
-      {
         "protocol": "stun",
         "outbound": "⛅ Internet"
       },
