@@ -1,9 +1,9 @@
 proxies:
 # https://github.com/ehwiwjqkaozg9291/heowwinev/tree/main
-# 🥇 🇸🇬 Tempest
+# 🥇 🇸🇬 Tempest sg.xmbb.net
   - name: 🥇 🇸🇬 Tempest
     type: trojan
-    server: sg.xmbb.net
+    server: 205.178.183.170
     port: 443
     password: e59c0960-e7c8-11ee-b6d0-1577c1651679
     alterId: 0
@@ -17,10 +17,10 @@ proxies:
       path: /welcome
       headers:
           Host: shopeemobile.com
-# 🥇 🇸🇬 Herza
+# 🥇 🇸🇬 Herza 11.lowh.net
   - name: 🥇 🇸🇬 Herza
     type: trojan
-    server: 11.lowh.net
+    server: 202.70.133.32
     port: 443
     password: 0fb89b30-e7c9-11ee-a990-1577c1651679
     alterId: 0
@@ -34,10 +34,10 @@ proxies:
       path: /welcome
       headers:
           Host: shopeemobile.com
-# 🥇 🇸🇬 Hurricane
+# 🥇 🇸🇬 Hurricane sg-trojan.1server.co 10.lowh.net
   - name: 🥇 🇸🇬 HE
     type: trojan
-    server: sg-trojan.1server.co
+    server: 103.253.24.92
     port: 443
     password: 6655abf0-e7c9-11ee-8244-1577c1651679
     alterId: 0
@@ -53,7 +53,7 @@ proxies:
           Host: shopeemobile.com
   - name: 🥇 🇸🇬 HE VM
     type: vmess
-    server: 10.lowh.net
+    server: 103.253.26.224
     port: 443
     uuid: 6a66a760-e7ce-11ee-a1e6-1577c1651679
     alterId: 0
@@ -67,10 +67,10 @@ proxies:
       path: /hello
       headers:
         Host: shopeemobile.com
-# 🥇 🇸🇬 SG.GS
+# 🥇 🇸🇬 SG.GS 2.htmlcdn.net
   - name: 🥇 🇸🇬 SG.GS
     type: vmess
-    server: 2.htmlcdn.net
+    server: 116.251.217.44
     port: 443
     uuid: 4ee58ba0-e7ce-11ee-8db5-1577c1651679
     alterId: 0
@@ -85,10 +85,10 @@ proxies:
       headers:
         Host: shopeemobile.com
     
-# 🥇 🇸🇬 https://github.com/ehwiwjqkaozg9291/djeowjabxi/blob/main/free3.yaml
+# 🥇 🇸🇬 https://github.com/ehwiwjqkaozg9291/djeowjabxi/blob/main/free3.yaml sg2-trojan.bonds.id
   - name: 🥇 🇸🇬 Howdy HE
     type: trojan
-    server: sg2-trojan.bonds.id
+    server: 103.253.24.248
     port: 443
     password: 9dff0fe0-e7cf-11ee-9d23-1239d0255272
     alterId: 0
@@ -104,7 +104,7 @@ proxies:
           Host: shopeemobile.com
   - name: 🥇 🇸🇬 Vultr
     type: trojan
-    server: sgt-1.optnl.com
+    server: 149.28.131.42
     port: 443
     password: opentunnel.net-fweqfg
     alterId: 0
