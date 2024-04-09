@@ -16,7 +16,7 @@ proxies:
     ws-opts:
       path: /welcome
       headers:
-          Host: shopeemobile.com
+          host: shopeemobile.com
 # 🥇 🇮🇩 Sanggoro 4.lowh.net / 5.lowh.net
   - name: 🥇 🇮🇩 Sanggoro
     type: trojan
@@ -33,7 +33,7 @@ proxies:
     ws-opts:
       path: /welcome
       headers:
-          Host: shopeemobile.com
+          host: shopeemobile.com
   - name: 🥇 🇮🇩 Sanggoro VM
     type: vmess
     server: 103.18.78.117
@@ -49,7 +49,7 @@ proxies:
     ws-opts:
       path: /hello
       headers:
-        Host: shopeemobile.com
+        host: shopeemobile.com
 # 🥇 🇮🇩 Herza 002.htmlcdn.net / 001.htmlcdn.net
   - name: 🥇 🇮🇩 Herza
     type: trojan
@@ -66,7 +66,7 @@ proxies:
     ws-opts:
       path: /welcome
       headers:
-          Host: shopeemobile.com
+          host: shopeemobile.com
   - name: 🥇 🇮🇩 Herza VM
     type: vmess
     server: 103.173.75.62
@@ -82,7 +82,7 @@ proxies:
     ws-opts:
       path: /hello
       headers:
-        Host: shopeemobile.com
+        host: shopeemobile.com
     
 # https://github.com/ehwiwjqkaozg9291/djeowjabxi/tree/main
 # 🥇 🇮🇩 Jala
@@ -101,4 +101,4 @@ proxies:
     ws-opts:
       path: /buy-vmess-ws-pm-telegram-at-synricha
       headers:
-        Host: shopeemobile.com
+        host: shopeemobile.com
