@@ -1,4 +1,4 @@
-trojan://ecaff390-e7c9-11ee-8bfd-1577c1651679@space.byu.id:443?type=ws&sni=103.150.121.220&allowInsecure=1&path=/welcome#%F0%9F%A5%87%20%F0%9F%87%AE%F0%9F%87%A9%20Biznet
+trojan://ecaff390-e7c9-11ee-8bfd-1577c1651679@space.byu.id:443?type=ws&sni=103.150.121.220&allowInsecure=1&host=103.150.121.220&path=/welcome#%F0%9F%A5%87%20%F0%9F%87%AE%F0%9F%87%A9%20Biznet
 trojan://fba6af10-e7c9-11ee-86df-1577c1651679@space.byu.id:443?type=ws&sni=103.18.78.118&allowInsecure=1&path=/welcome#%F0%9F%A5%87%20%F0%9F%87%AE%F0%9F%87%A9%20Sanggoro
 vmess://eyJ2IjoiMiIsInBzIjoi8J+lhyDwn4eu8J+HqSBTYW5nZ29ybyBWTSIsImFkZCI6InNwYWNlLmJ5dS5pZCIsInBvcnQiOjQ0MywiaWQiOiIzMmEzMGRlMC1lN2QxLTExZWUtYWI2My0xNTc3YzE2NTE2NzkiLCJhaWQiOjAsInNjeSI6ImF1dG8iLCJuZXQiOiJ3cyIsInBhdGgiOiIvaGVsbG8iLCJ0bHMiOiJ0bHMifQ==
 trojan://19374e60-e7ca-11ee-92e4-1577c1651679@space.byu.id:443?type=ws&sni=103.173.75.61&allowInsecure=1&path=/welcome#%F0%9F%A5%87%20%F0%9F%87%AE%F0%9F%87%A9%20Herza
