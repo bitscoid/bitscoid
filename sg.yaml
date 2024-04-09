@@ -16,7 +16,7 @@ proxies:
     ws-opts:
       path: /welcome
       headers:
-          Host: shopeemobile.com
+          host: shopeemobile.com
 # 🥇 🇸🇬 Herza 11.lowh.net
   - name: 🥇 🇸🇬 Herza
     type: trojan
@@ -33,7 +33,7 @@ proxies:
     ws-opts:
       path: /welcome
       headers:
-          Host: shopeemobile.com
+          host: shopeemobile.com
 # 🥇 🇸🇬 Hurricane sg-trojan.1server.co 10.lowh.net
   - name: 🥇 🇸🇬 HE
     type: trojan
@@ -50,7 +50,7 @@ proxies:
     ws-opts:
       path: /welcome
       headers:
-          Host: shopeemobile.com
+          host: shopeemobile.com
   - name: 🥇 🇸🇬 HE VM
     type: vmess
     server: 103.253.26.224
@@ -66,7 +66,7 @@ proxies:
     ws-opts:
       path: /hello
       headers:
-        Host: shopeemobile.com
+        host: shopeemobile.com
 # 🥇 🇸🇬 SG.GS 2.htmlcdn.net
   - name: 🥇 🇸🇬 SG.GS
     type: vmess
@@ -83,7 +83,7 @@ proxies:
     ws-opts:
       path: /hello
       headers:
-        Host: shopeemobile.com
+        host: shopeemobile.com
     
 # 🥇 🇸🇬 https://github.com/ehwiwjqkaozg9291/djeowjabxi/blob/main/free3.yaml sg2-trojan.bonds.id
   - name: 🥇 🇸🇬 Howdy HE
@@ -101,7 +101,7 @@ proxies:
     ws-opts:
       path: /howdy
       headers:
-          Host: shopeemobile.com
+          host: shopeemobile.com
   - name: 🥇 🇸🇬 Vultr
     type: trojan
     server: 149.28.131.42
