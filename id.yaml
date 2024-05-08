@@ -1,11 +1,10 @@
 proxies:
-# https://github.com/ehwiwjqkaozg9291/heowwinev/tree/main
-# 🥇 🇮🇩 Biznet biznet1.1server.co
-  - name: 🥇 🇮🇩 Biznet
+# JagoanSSH - 57customer@gmail.com - sgtr.jagoan.vip - 11-05-2024
+  - name: 🥇 🇮🇩 Melbi 1
     type: trojan
-    server: 103.150.121.220
+    server: 103.172.116.88
     port: 443
-    password: ecaff390-e7c9-11ee-8bfd-1577c1651679
+    password: vvip-majuju57
     alterId: 0
     cipher: auto
     tls: true
@@ -14,9 +13,165 @@ proxies:
     sni: shopeemobile.com
     network: ws
     ws-opts:
-      path: /welcome
+      path: /trojan
       headers:
           host: shopeemobile.com
+# JagoanSSH - 57customer@gmail.com - id7tr.jagoan.vip - 15-05-2024
+  - name: 🥇 🇮🇩 Nata 1
+    type: trojan
+    server: 103.115.164.158
+    port: 443
+    password: vvip-bisnet57
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: shopeemobile.com
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+          host: shopeemobile.com
+# JagoanSSH - byzsx123@gmail.com - id4ray.jagoan.vip - 05-07-2024
+  - name: 🥇 🇮🇩 Cogent 1
+    type: vmess
+    server: 38.9.136.216
+    port: 443
+    uuid: 566d1978-14d6-4017-978b-4370d8cf1d41
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: shopeemobile.com
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        host: shopeemobile.com
+# JagoanSSH - ipuy93@gmail.com - idtr.jagoan.vip - 09-06-2024
+  - name: 🥇 🇮🇩 IKD 1
+    type: trojan
+    server: 103.167.34.20
+    port: 443
+    password: vvip-kodokkepo93
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: shopeemobile.com
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+          host: shopeemobile.com
+# JagoanSSH - luthfi.theupstairs@gmail.com - sgtr.jagoan.vip - 06-06-2024
+  - name: 🥇 🇮🇩 Melbi 2
+    type: trojan
+    server: 103.172.116.88
+    port: 443
+    password: vvip-vviptrjsg123
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: shopeemobile.com
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+          host: shopeemobile.com
+# JagoanSSH - luthfi.theupstairs@gmail.com - id5ray.jagoan.vip - 08-06-2024
+  - name: 🥇 🇮🇩 Biznet 1
+    type: vmess
+    server: 103.150.93.46
+    port: 443
+    uuid: df72ea37-77a2-49e1-a6f2-4bbcb880c66b
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: shopeemobile.com
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        host: shopeemobile.com
+# JagoanSSH - luthfi.theupstairs@gmail.com - sg3ray.jagoan.vip - 08-08-2024
+  - name: 🥇 🇮🇩 GoDaddy 1
+    type: vmess
+    server: 97.74.85.252
+    port: 443
+    uuid: ee134106-1cd2-4d85-9a9c-3574c779ed4b
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: shopeemobile.com
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        host: shopeemobile.com
+# JagoanSSH - tahulhuda.21@gmail.com - id2ray.jagoan.vip - 10-05-2024
+  - name: 🥇 🇮🇩 Nusa 1
+    type: vmess
+    server: 43.229.254.83
+    port: 443
+    uuid: f4dd2dfb-e647-4988-8da4-b6904cf00e2b
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: shopeemobile.com
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        host: shopeemobile.com
+# JagoanSSH - tahulhuda.21@gmail.com - idray.jagoan.vip - 12-07-2024
+  - name: 🥇 🇮🇩 Cogent 2
+    type: vmess
+    server: 38.9.140.156
+    port: 443
+    uuid: 61561062-09d8-4801-9613-6f7bc52bca8e
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: shopeemobile.com
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        host: shopeemobile.com
+
+
+# https://github.com/ehwiwjqkaozg9291/heowwinev/tree/main
+# 🥇 🇮🇩 Biznet biznet1.1server.co
+  # - name: 🥇 🇮🇩 Biznet
+  #   type: trojan
+  #   server: 103.150.121.220
+  #   port: 443
+  #   password: ecaff390-e7c9-11ee-8bfd-1577c1651679
+  #   alterId: 0
+  #   cipher: auto
+  #   tls: true
+  #   udp: true
+  #   skip-cert-verify: true
+  #   sni: shopeemobile.com
+  #   network: ws
+  #   ws-opts:
+  #     path: /welcome
+  #     headers:
+  #         host: shopeemobile.com
 # 🥇 🇮🇩 Sanggoro 4.lowh.net / 5.lowh.net
   - name: 🥇 🇮🇩 Sanggoro
     type: trojan
@@ -86,19 +241,19 @@ proxies:
     
 # https://github.com/ehwiwjqkaozg9291/djeowjabxi/tree/main
 # 🥇 🇮🇩 Jala
-  - name: 🥇 🇮🇩 Jala
-    type: vmess
-    server: 103.16.198.40
-    port: 443
-    uuid: 66414281-2a23-4a64-9a73-b16f391b8334
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    servername: shopeemobile.com
-    network: ws
-    ws-opts:
-      path: /buy-vmess-ws-pm-telegram-at-synricha
-      headers:
-        host: shopeemobile.com
+  # - name: 🥇 🇮🇩 Jala
+  #   type: vmess
+  #   server: 103.16.198.40
+  #   port: 443
+  #   uuid: 66414281-2a23-4a64-9a73-b16f391b8334
+  #   alterId: 0
+  #   cipher: auto
+  #   tls: true
+  #   udp: true
+  #   skip-cert-verify: true
+  #   servername: shopeemobile.com
+  #   network: ws
+  #   ws-opts:
+  #     path: /buy-vmess-ws-pm-telegram-at-synricha
+  #     headers:
+  #       host: shopeemobile.com
