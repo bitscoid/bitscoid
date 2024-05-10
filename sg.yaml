@@ -111,6 +111,7 @@ proxies:
     network: ws
     ws-opts:
       path: /buy-trojan-upgrade-pm-telegram-at-synricha
+      v2ray-http-upgrade: true
       headers:
           host: shopeemobile.com
 # VM-HU-8 - UK Hostaris - runcloud-hts.apasih.id
@@ -128,6 +129,7 @@ proxies:
     network: ws
     ws-opts:
       path: /buy-vmess-upgrade-pm-telegram-at-synricha
+      v2ray-http-upgrade: true
       headers:
         host: shopeemobile.com
 # VL-HU-9 - UK Hostaris - runcloud-hts.apasih.id
@@ -145,6 +147,7 @@ proxies:
     network: ws
     ws-opts:
       path: /buy-vless-upgrade-pm-telegram-at-synricha
+      v2ray-http-upgrade: true
       headers:
         host: shopeemobile.com
 # TR-WS-10 - SG Contabo - nginxui-ctb.iptunnels.com
