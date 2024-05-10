@@ -152,7 +152,7 @@ proxies:
     type: trojan
     server: 46.250.232.228
     port: 443
-    password: 2b772599ad35c174
+    password: 0bbbb0600efc6559
     alterId: 0
     cipher: auto
     tls: true
