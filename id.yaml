@@ -1,21 +1,4 @@
 proxies:
-# JagoanSSH - 57customer@gmail.com - sgtr.jagoan.vip - 11-05-2024
-  - name: 🥇 🇮🇩 Melbi 1
-    type: trojan
-    server: 103.172.116.88
-    port: 443
-    password: vvip-majuju57
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    sni: shopeemobile.com
-    network: ws
-    ws-opts:
-      path: /trojan
-      headers:
-          host: shopeemobile.com
 # JagoanSSH - 57customer@gmail.com - id7tr.jagoan.vip - 15-05-2024
   - name: 🥇 🇮🇩 Nata 1
     type: trojan
