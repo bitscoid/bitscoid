@@ -205,22 +205,22 @@ proxies:
 
 # https://github.com/ehwiwjqkaozg9291/heowwinev/tree/main
 # 🇸🇬 Tempest sg.xmbb.net
-  - name: 🇸🇬 Tempest
-    type: trojan
-    server: 205.178.183.170
-    port: 443
-    password: e59c0960-e7c8-11ee-b6d0-1577c1651679
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    sni: shopeemobile.com
-    network: ws
-    ws-opts:
-      path: /welcome
-      headers:
-          host: shopeemobile.com
+  # - name: 🇸🇬 Tempest
+  #   type: trojan
+  #   server: 205.178.183.170
+  #   port: 443
+  #   password: e59c0960-e7c8-11ee-b6d0-1577c1651679
+  #   alterId: 0
+  #   cipher: auto
+  #   tls: true
+  #   udp: true
+  #   skip-cert-verify: true
+  #   sni: shopeemobile.com
+  #   network: ws
+  #   ws-opts:
+  #     path: /welcome
+  #     headers:
+  #         host: shopeemobile.com
 # 🇸🇬 Herza 11.lowh.net
   - name: 🇸🇬 Herza
     type: trojan
@@ -288,3 +288,4 @@ proxies:
       path: /hello
       headers:
         host: shopeemobile.com
+    
