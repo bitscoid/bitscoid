@@ -102,22 +102,22 @@ proxies:
 #       headers:
 #         host: shopeemobile.com
 # JagoanSSH - tahulhuda.21@gmail.com - id2ray.jagoan.vip - 10-05-2024
-  - name: 🇮🇩 Nusa
-    type: vmess
-    server: 43.229.254.83
-    port: 443
-    uuid: f4dd2dfb-e647-4988-8da4-b6904cf00e2b
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    servername: shopeemobile.com
-    network: ws
-    ws-opts:
-      path: /vvip
-      headers:
-        host: shopeemobile.com
+  # - name: 🇮🇩 Nusa
+  #   type: vmess
+  #   server: 43.229.254.83
+  #   port: 443
+  #   uuid: f4dd2dfb-e647-4988-8da4-b6904cf00e2b
+  #   alterId: 0
+  #   cipher: auto
+  #   tls: true
+  #   udp: true
+  #   skip-cert-verify: true
+  #   servername: shopeemobile.com
+  #   network: ws
+  #   ws-opts:
+  #     path: /vvip
+  #     headers:
+  #       host: shopeemobile.com
 # JagoanSSH - tahulhuda.21@gmail.com - idray.jagoan.vip - 12-07-2024
   - name: 🇮🇩 Cogent
     type: vmess
