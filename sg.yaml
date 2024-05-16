@@ -288,4 +288,3 @@ proxies:
       path: /hello
       headers:
         host: shopeemobile.com
-    
