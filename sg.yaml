@@ -1,7 +1,7 @@
 proxies:
 # https://www.iptunnels.com
 # TR-WS-1 - UK Hostaris - runcloud-hts.apasih.id
-  - name: 🥇 IPT-1
+  - name: 🇬🇧 IPT-1
     type: trojan
     server: 23.162.136.228
     port: 443
@@ -18,7 +18,7 @@ proxies:
       headers:
           host: shopeemobile.com
 # VM-WS-2 - UK Hostaris - runcloud-hts.apasih.id
-  - name: 🥇 IPT-2
+  - name: 🇬🇧 IPT-2
     type: vmess
     server: 23.162.136.228
     port: 443
@@ -35,7 +35,7 @@ proxies:
       headers:
         host: shopeemobile.com
 # VL-WS-3 - UK Hostaris - runcloud-hts.apasih.id
-  - name: 🥇 IPT-3
+  - name: 🇬🇧 IPT-3
     type: vless
     server: 23.162.136.228
     port: 443
@@ -52,7 +52,7 @@ proxies:
       headers:
         host: shopeemobile.com
 # TR-GRPC-4 - UK Hostaris - runcloud-hts.apasih.id
-  - name: 🥇 IPT-4
+  - name: 🇬🇧 IPT-4
     type: trojan
     server: 23.162.136.228
     port: 443
@@ -67,7 +67,7 @@ proxies:
     grpc-opts:
       grpc-service-name: buy-trojan-grpc-pm-telegram-at-synricha
 # VM-GRPC-5 - UK Hostaris - runcloud-hts.apasih.id
-  - name: 🥇 IPT-5
+  - name: 🇬🇧 IPT-5
     type: vmess
     server: 23.162.136.228
     port: 443
@@ -82,7 +82,7 @@ proxies:
     grpc-opts:
       grpc-service-name: buy-vmess-grpc-pm-telegram-at-synricha
 # VL-GRPC-6 - UK Hostaris - runcloud-hts.apasih.id
-  - name: 🥇 IPT-6
+  - name: 🇬🇧 IPT-6
     type: vless
     server: 23.162.136.228
     port: 443
@@ -97,7 +97,7 @@ proxies:
     grpc-opts:
       grpc-service-name: buy-vless-grpc-pm-telegram-at-synricha
 # TR-HU-7 - UK Hostaris - runcloud-hts.apasih.id
-  - name: 🥇 IPT-7
+  - name: 🇬🇧 IPT-7
     type: trojan
     server: 23.162.136.228
     port: 443
@@ -115,7 +115,7 @@ proxies:
       headers:
           host: shopeemobile.com
 # VM-HU-8 - UK Hostaris - runcloud-hts.apasih.id
-  - name: 🥇 IPT-8
+  - name: 🇬🇧 IPT-8
     type: vmess
     server: 23.162.136.228
     port: 443
@@ -133,7 +133,7 @@ proxies:
       headers:
         host: shopeemobile.com
 # VL-HU-9 - UK Hostaris - runcloud-hts.apasih.id
-  - name: 🥇 IPT-9
+  - name: 🇬🇧 IPT-9
     type: vless
     server: 23.162.136.228
     port: 443
@@ -151,7 +151,7 @@ proxies:
       headers:
         host: shopeemobile.com
 # TR-WS-10 - SG Contabo - nginxui-ctb.iptunnels.com
-  - name: 🥇 IPT-10
+  - name: 🇸🇬 IPT-10
     type: trojan
     server: 46.250.232.228
     port: 443
@@ -168,7 +168,7 @@ proxies:
       headers:
           host: shopeemobile.com
 # VM-WS-11 - SG Contabo - nginxui-ctb.iptunnels.com
-  - name: 🥇 IPT-11
+  - name: 🇸🇬 IPT-11
     type: vmess
     server: 46.250.232.228
     port: 443
@@ -185,7 +185,7 @@ proxies:
       headers:
         host: shopeemobile.com
 # VL-WS-12 - SG Contabo - nginxui-ctb.iptunnels.com
-  - name: 🥇 IPT-12
+  - name: 🇸🇬 IPT-12
     type: vless
     server: 46.250.232.228
     port: 443
@@ -204,8 +204,8 @@ proxies:
 
 
 # https://github.com/ehwiwjqkaozg9291/heowwinev/tree/main
-# 🥇 🇸🇬 Tempest sg.xmbb.net
-  - name: 🥇 🇸🇬 Tempest
+# 🇸🇬 Tempest sg.xmbb.net
+  - name: 🇸🇬 Tempest
     type: trojan
     server: 205.178.183.170
     port: 443
@@ -221,8 +221,8 @@ proxies:
       path: /welcome
       headers:
           host: shopeemobile.com
-# 🥇 🇸🇬 Herza 11.lowh.net
-  - name: 🥇 🇸🇬 Herza
+# 🇸🇬 Herza 11.lowh.net
+  - name: 🇸🇬 Herza
     type: trojan
     server: 202.70.133.32
     port: 443
@@ -238,8 +238,8 @@ proxies:
       path: /welcome
       headers:
           host: shopeemobile.com
-# 🥇 🇸🇬 Hurricane sg-trojan.1server.co 10.lowh.net
-  - name: 🥇 🇸🇬 HE
+# 🇸🇬 Hurricane sg-trojan.1server.co 10.lowh.net
+  - name: 🇸🇬 Hurricane
     type: trojan
     server: 103.253.24.92
     port: 443
@@ -255,7 +255,7 @@ proxies:
       path: /welcome
       headers:
           host: shopeemobile.com
-  - name: 🥇 🇸🇬 HE VM
+  - name: 🇸🇬 Hurricane VM
     type: vmess
     server: 103.253.26.224
     port: 443
@@ -271,8 +271,8 @@ proxies:
       path: /hello
       headers:
         host: shopeemobile.com
-# 🥇 🇸🇬 SG.GS 2.htmlcdn.net
-  - name: 🥇 🇸🇬 SG.GS
+# 🇸🇬 SG.GS 2.htmlcdn.net
+  - name: 🇸🇬 SG.GS
     type: vmess
     server: 116.251.217.44
     port: 443
