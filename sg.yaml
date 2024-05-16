@@ -189,7 +189,7 @@ proxies:
     type: vless
     server: 46.250.232.228
     port: 443
-    uuid: 1bfa653d-6ccb-428f-bcbe-32464d8024f0
+    uuid: f8e799a7-ad9c-4c4d-a428-ccf27cc8462d
     alterId: 0
     cipher: auto
     tls: true
@@ -289,31 +289,3 @@ proxies:
       headers:
         host: shopeemobile.com
     
-# 🥇 🇸🇬 https://github.com/ehwiwjqkaozg9291/djeowjabxi/blob/main/free3.yaml sg2-trojan.bonds.id
-  - name: 🥇 🇸🇬 Howdy HE
-    type: trojan
-    server: 103.253.24.248
-    port: 443
-    password: 9dff0fe0-e7cf-11ee-9d23-1239d0255272
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    sni: shopeemobile.com
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-          host: shopeemobile.com
-  - name: 🥇 🇸🇬 Vultr
-    type: trojan
-    server: 149.28.131.42
-    port: 443
-    password: opentunnel.net-fweqfg
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    sni: shopeemobile.com
