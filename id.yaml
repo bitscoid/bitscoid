@@ -17,9 +17,9 @@ proxies:
   #     headers:
   #         host: shopeemobile.com
 # JagoanSSH - byzsx123@gmail.com - id4ray.jagoan.vip - 05-07-2024
-  - name: 🇸🇬 Godaddy
+  - name: 🇸🇬 Melbi
     type: vmess
-    server: 97.74.85.252
+    server: 91.192.81.145
     port: 443
     uuid: 566d1978-14d6-4017-978b-4370d8cf1d41
     alterId: 0
