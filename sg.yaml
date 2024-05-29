@@ -224,67 +224,67 @@ proxies:
 # 🇸🇬 Herza 11.lowh.net
   - name: 🇸🇬 Herza
     type: trojan
-    server: 202.70.133.32
-    port: 443
+    server: onelink.seabank.co.id
+    port: 80
     password: 0fb89b30-e7c9-11ee-a990-1577c1651679
     alterId: 0
     cipher: auto
-    tls: true
+    tls: false
     udp: true
-    skip-cert-verify: true
-    sni: apm.seabank.co.id
+    skip-cert-verify: false
+    sni: 202.70.133.32
     network: ws
     ws-opts:
       path: /welcome
       headers:
-          host: apm.seabank.co.id
+          host: 202.70.133.32
 # 🇸🇬 Hurricane sg-trojan.1server.co 10.lowh.net
   - name: 🇸🇬 Hurricane
     type: trojan
-    server: 103.253.24.92
-    port: 443
+    server: onelink.seabank.co.id
+    port: 80
     password: 6655abf0-e7c9-11ee-8244-1577c1651679
     alterId: 0
     cipher: auto
-    tls: true
+    tls: false
     udp: true
-    skip-cert-verify: true
-    sni: apm.seabank.co.id
+    skip-cert-verify: false
+    sni: 103.253.24.92
     network: ws
     ws-opts:
       path: /welcome
       headers:
-          host: apm.seabank.co.id
+          host: 103.253.24.92
   - name: 🇸🇬 Hurricane VM
     type: vmess
-    server: 103.253.26.224
-    port: 443
+    server: onelink.seabank.co.id
+    port: 80
     uuid: 6a66a760-e7ce-11ee-a1e6-1577c1651679
     alterId: 0
     cipher: auto
-    tls: true
+    tls: false
     udp: true
-    skip-cert-verify: true
-    servername: apm.seabank.co.id
+    skip-cert-verify: false
+    servername: 103.253.26.224
     network: ws
     ws-opts:
       path: /hello
       headers:
-        host: apm.seabank.co.id
+        host: 103.253.26.224
 # 🇸🇬 SG.GS 2.htmlcdn.net
   - name: 🇸🇬 SG.GS
     type: vmess
-    server: 116.251.217.44
-    port: 443
+    server: onelink.seabank.co.id
+    port: 80
     uuid: 4ee58ba0-e7ce-11ee-8db5-1577c1651679
     alterId: 0
     cipher: auto
-    tls: true
+    tls: false
     udp: true
-    skip-cert-verify: true
-    servername: apm.seabank.co.id
+    skip-cert-verify: false
+    servername: 116.251.217.44
     network: ws
     ws-opts:
       path: /hello
       headers:
-        host: apm.seabank.co.id
+        host: 116.251.217.44
