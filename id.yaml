@@ -10,12 +10,12 @@ proxies:
   #   tls: true
   #   udp: true
   #   skip-cert-verify: true
-  #   sni: apm.seabank.co.id
+  #   sni: static-web.prod.vidiocdn.com
   #   network: ws
   #   ws-opts:
   #     path: /trojan
   #     headers:
-  #         host: apm.seabank.co.id
+  #         host: static-web.prod.vidiocdn.com
 # JagoanSSH - byzsx123@gmail.com - id4ray.jagoan.vip - 05-07-2024
   - name: 🇸🇬 Melbi
     type: vmess
@@ -27,12 +27,12 @@ proxies:
     tls: true
     udp: true
     skip-cert-verify: true
-    servername: apm.seabank.co.id
+    servername: static-web.prod.vidiocdn.com
     network: ws
     ws-opts:
       path: /vvip
       headers:
-        host: apm.seabank.co.id
+        host: static-web.prod.vidiocdn.com
 # JagoanSSH - ipuy93@gmail.com - idtr.jagoan.vip - 09-06-2024
   - name: 🇮🇩 IKD
     type: trojan
@@ -44,12 +44,12 @@ proxies:
     tls: true
     udp: true
     skip-cert-verify: true
-    sni: apm.seabank.co.id
+    sni: static-web.prod.vidiocdn.com
     network: ws
     ws-opts:
       path: /trojan
       headers:
-          host: apm.seabank.co.id
+          host: static-web.prod.vidiocdn.com
 # # JagoanSSH - luthfi.theupstairs@gmail.com - sgtr.jagoan.vip - 06-06-2024
 #   - name: 🇮🇩 Melbi 2
 #     type: trojan
@@ -61,12 +61,12 @@ proxies:
 #     tls: true
 #     udp: true
 #     skip-cert-verify: true
-#     sni: apm.seabank.co.id
+#     sni: static-web.prod.vidiocdn.com
 #     network: ws
 #     ws-opts:
 #       path: /trojan
 #       headers:
-#           host: apm.seabank.co.id
+#           host: static-web.prod.vidiocdn.com
 # # JagoanSSH - luthfi.theupstairs@gmail.com - id5ray.jagoan.vip - 08-06-2024
 #   - name: 🇮🇩 Biznet 1
 #     type: vmess
@@ -78,12 +78,12 @@ proxies:
 #     tls: true
 #     udp: true
 #     skip-cert-verify: true
-#     servername: apm.seabank.co.id
+#     servername: static-web.prod.vidiocdn.com
 #     network: ws
 #     ws-opts:
 #       path: /vvip
 #       headers:
-#         host: apm.seabank.co.id
+#         host: static-web.prod.vidiocdn.com
 # # JagoanSSH - luthfi.theupstairs@gmail.com - sg3ray.jagoan.vip - 08-08-2024
 #   - name: 🇮🇩 GoDaddy 1
 #     type: vmess
@@ -95,12 +95,12 @@ proxies:
 #     tls: true
 #     udp: true
 #     skip-cert-verify: true
-#     servername: apm.seabank.co.id
+#     servername: static-web.prod.vidiocdn.com
 #     network: ws
 #     ws-opts:
 #       path: /vvip
 #       headers:
-#         host: apm.seabank.co.id
+#         host: static-web.prod.vidiocdn.com
 # JagoanSSH - tahulhuda.21@gmail.com - id2ray.jagoan.vip - 10-05-2024
   # - name: 🇮🇩 Nusa
   #   type: vmess
@@ -112,12 +112,12 @@ proxies:
   #   tls: true
   #   udp: true
   #   skip-cert-verify: true
-  #   servername: apm.seabank.co.id
+  #   servername: static-web.prod.vidiocdn.com
   #   network: ws
   #   ws-opts:
   #     path: /vvip
   #     headers:
-  #       host: apm.seabank.co.id
+  #       host: static-web.prod.vidiocdn.com
 # JagoanSSH - tahulhuda.21@gmail.com - idray.jagoan.vip - 12-07-2024
   - name: 🇮🇩 Cogent
     type: vmess
@@ -129,12 +129,12 @@ proxies:
     tls: true
     udp: true
     skip-cert-verify: true
-    servername: apm.seabank.co.id
+    servername: static-web.prod.vidiocdn.com
     network: ws
     ws-opts:
       path: /vvip
       headers:
-        host: apm.seabank.co.id
+        host: static-web.prod.vidiocdn.com
 
 
 # https://github.com/ehwiwjqkaozg9291/heowwinev/tree/main
@@ -149,12 +149,12 @@ proxies:
   #   tls: true
   #   udp: true
   #   skip-cert-verify: true
-  #   sni: apm.seabank.co.id
+  #   sni: static-web.prod.vidiocdn.com
   #   network: ws
   #   ws-opts:
   #     path: /welcome
   #     headers:
-  #         host: apm.seabank.co.id
+  #         host: static-web.prod.vidiocdn.com
 # 🇮🇩 Sanggoro 4.lowh.net / 5.lowh.net
   - name: 🇮🇩 Sanggoro
     type: trojan
@@ -166,12 +166,12 @@ proxies:
     tls: true
     udp: true
     skip-cert-verify: true
-    sni: apm.seabank.co.id
+    sni: static-web.prod.vidiocdn.com
     network: ws
     ws-opts:
       path: /welcome
       headers:
-          host: apm.seabank.co.id
+          host: static-web.prod.vidiocdn.com
   - name: 🇮🇩 Sanggoro VM
     type: vmess
     server: 103.18.78.117
@@ -182,12 +182,12 @@ proxies:
     tls: true
     udp: true
     skip-cert-verify: true
-    servername: apm.seabank.co.id
+    servername: static-web.prod.vidiocdn.com
     network: ws
     ws-opts:
       path: /hello
       headers:
-        host: apm.seabank.co.id
+        host: static-web.prod.vidiocdn.com
 # 🇮🇩 Herza 002.htmlcdn.net / 001.htmlcdn.net
   - name: 🇮🇩 Herza
     type: trojan
@@ -199,12 +199,12 @@ proxies:
     tls: true
     udp: true
     skip-cert-verify: true
-    sni: apm.seabank.co.id
+    sni: static-web.prod.vidiocdn.com
     network: ws
     ws-opts:
       path: /welcome
       headers:
-          host: apm.seabank.co.id
+          host: static-web.prod.vidiocdn.com
   - name: 🇮🇩 Herza VM
     type: vmess
     server: 103.173.75.62
@@ -215,12 +215,12 @@ proxies:
     tls: true
     udp: true
     skip-cert-verify: true
-    servername: apm.seabank.co.id
+    servername: static-web.prod.vidiocdn.com
     network: ws
     ws-opts:
       path: /hello
       headers:
-        host: apm.seabank.co.id
+        host: static-web.prod.vidiocdn.com
     
 # https://github.com/ehwiwjqkaozg9291/djeowjabxi/tree/main
 # 🇮🇩 Jala
@@ -234,9 +234,9 @@ proxies:
   #   tls: true
   #   udp: true
   #   skip-cert-verify: true
-  #   servername: apm.seabank.co.id
+  #   servername: static-web.prod.vidiocdn.com
   #   network: ws
   #   ws-opts:
   #     path: /buy-vmess-ws-pm-telegram-at-synricha
   #     headers:
-  #       host: apm.seabank.co.id
+  #       host: static-web.prod.vidiocdn.com
