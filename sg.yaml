@@ -224,67 +224,67 @@ proxies:
 # 🇸🇬 Herza 11.lowh.net
   - name: 🇸🇬 Herza
     type: trojan
-    server: quiz.vidio.com
-    port: 80
+    server: 202.70.133.32
+    port: 443
     password: 0fb89b30-e7c9-11ee-a990-1577c1651679
     alterId: 0
     cipher: auto
-    tls: false
+    tls: true
     udp: true
     skip-cert-verify: false
-    sni: 202.70.133.32
+    sni: static-web.prod.vidiocdn.com
     network: ws
     ws-opts:
       path: /welcome
       headers:
-          host: 202.70.133.32
+          host: static-web.prod.vidiocdn.com
 # 🇸🇬 Hurricane sg-trojan.1server.co 10.lowh.net
   - name: 🇸🇬 Hurricane
     type: trojan
-    server: quiz.vidio.com
-    port: 80
+    server: 103.253.24.92
+    port: 443
     password: 6655abf0-e7c9-11ee-8244-1577c1651679
     alterId: 0
     cipher: auto
-    tls: false
+    tls: true
     udp: true
     skip-cert-verify: false
-    sni: 103.253.24.92
+    sni: static-web.prod.vidiocdn.com
     network: ws
     ws-opts:
       path: /welcome
       headers:
-          host: 103.253.24.92
+          host: static-web.prod.vidiocdn.com
   - name: 🇸🇬 Hurricane VM
     type: vmess
-    server: quiz.vidio.com
-    port: 80
+    server: 103.253.26.224
+    port: 443
     uuid: 6a66a760-e7ce-11ee-a1e6-1577c1651679
     alterId: 0
     cipher: auto
-    tls: false
+    tls: true
     udp: true
     skip-cert-verify: false
-    servername: 103.253.26.224
+    servername: static-web.prod.vidiocdn.com
     network: ws
     ws-opts:
       path: /hello
       headers:
-        host: 103.253.26.224
+        host: static-web.prod.vidiocdn.com
 # 🇸🇬 SG.GS 2.htmlcdn.net
   - name: 🇸🇬 SG.GS
     type: vmess
-    server: quiz.vidio.com
-    port: 80
+    server: 116.251.217.44
+    port: 443
     uuid: 4ee58ba0-e7ce-11ee-8db5-1577c1651679
     alterId: 0
     cipher: auto
-    tls: false
+    tls: true
     udp: true
     skip-cert-verify: false
-    servername: 116.251.217.44
+    servername: static-web.prod.vidiocdn.com
     network: ws
     ws-opts:
       path: /hello
       headers:
-        host: 116.251.217.44
+        host: static-web.prod.vidiocdn.com
