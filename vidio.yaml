@@ -16,23 +16,6 @@ proxies:
       path: /vvip
       headers:
         host: static-web.prod.vidiocdn.com
-# JagoanSSH - ipuy93@gmail.com - idtr.jagoan.vip - 09-06-2024
-  - name: 🇮🇩 IKD
-    type: trojan
-    server: 103.167.34.20
-    port: 443
-    password: vvip-kodokkepo93
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    sni: static-web.prod.vidiocdn.com
-    network: ws
-    ws-opts:
-      path: /trojan
-      headers:
-          host: static-web.prod.vidiocdn.com
 # JagoanSSH - tahulhuda.21@gmail.com - idray.jagoan.vip - 12-07-2024
   - name: 🇮🇩 Cogent
     type: vmess
@@ -51,22 +34,6 @@ proxies:
       headers:
         host: static-web.prod.vidiocdn.com
 # 🇮🇩 Sanggoro 4.lowh.net / 5.lowh.net
-  - name: 🇮🇩 Sanggoro
-    type: trojan
-    server: 103.18.78.118
-    port: 443
-    password: fba6af10-e7c9-11ee-86df-1577c1651679
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    sni: static-web.prod.vidiocdn.com
-    network: ws
-    ws-opts:
-      path: /welcome
-      headers:
-          host: static-web.prod.vidiocdn.com
   - name: 🇮🇩 Sanggoro VM
     type: vmess
     server: 103.18.78.117
@@ -84,22 +51,6 @@ proxies:
       headers:
         host: static-web.prod.vidiocdn.com
 # 🇮🇩 Herza 002.htmlcdn.net / 001.htmlcdn.net
-  - name: 🇮🇩 Herza
-    type: trojan
-    server: 103.173.75.61
-    port: 443
-    password: 19374e60-e7ca-11ee-92e4-1577c1651679
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    sni: static-web.prod.vidiocdn.com
-    network: ws
-    ws-opts:
-      path: /welcome
-      headers:
-          host: static-web.prod.vidiocdn.com
   - name: 🇮🇩 Herza VM
     type: vmess
     server: 103.173.75.62
@@ -117,163 +68,12 @@ proxies:
       headers:
         host: static-web.prod.vidiocdn.com
 
-
-# TR-WS-1 - UK Hostaris - runcloud-hts.apasih.id
-  - name: 🇬🇧 IPT-1
-    type: trojan
-    server: 23.162.136.228
-    port: 443
-    password: 0da117011fdb0b91
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    sni: static-web.prod.vidiocdn.com
-    network: ws
-    ws-opts:
-      path: /buy-trojan-ws-pm-telegram-at-synricha
-      headers:
-          host: static-web.prod.vidiocdn.com
-# VM-WS-2 - UK Hostaris - runcloud-hts.apasih.id
-  - name: 🇬🇧 IPT-2
-    type: vmess
-    server: 23.162.136.228
-    port: 443
-    uuid: 5eebbe2a-62a1-4f94-b3ae-9de2dacecab7
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    servername: static-web.prod.vidiocdn.com
-    network: ws
-    ws-opts:
-      path: /buy-vmess-ws-pm-telegram-at-synricha
-      headers:
-        host: static-web.prod.vidiocdn.com
-# VL-WS-3 - UK Hostaris - runcloud-hts.apasih.id
-  - name: 🇬🇧 IPT-3
-    type: vless
-    server: 23.162.136.228
-    port: 443
-    uuid: 7d179cd1-011d-419d-87d3-3d9cec62f110
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    servername: static-web.prod.vidiocdn.com
-    network: ws
-    ws-opts:
-      path: /buy-vless-ws-pm-telegram-at-synricha
-      headers:
-        host: static-web.prod.vidiocdn.com
-# TR-GRPC-4 - UK Hostaris - runcloud-hts.apasih.id
-  - name: 🇬🇧 IPT-4
-    type: trojan
-    server: 23.162.136.228
-    port: 443
-    password: f7a0a26a900a4a59
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    sni: static-web.prod.vidiocdn.com
-    network: grpc
-    grpc-opts:
-      grpc-service-name: buy-trojan-grpc-pm-telegram-at-synricha
-# VM-GRPC-5 - UK Hostaris - runcloud-hts.apasih.id
-  - name: 🇬🇧 IPT-5
-    type: vmess
-    server: 23.162.136.228
-    port: 443
-    uuid: 56ee6676-59d0-4cf5-9f9f-351552108343
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    servername: static-web.prod.vidiocdn.com
-    network: grpc
-    grpc-opts:
-      grpc-service-name: buy-vmess-grpc-pm-telegram-at-synricha
-# VL-GRPC-6 - UK Hostaris - runcloud-hts.apasih.id
-  - name: 🇬🇧 IPT-6
-    type: vless
-    server: 23.162.136.228
-    port: 443
-    uuid: 9c8fdc08-957f-494a-ab62-0f12a248902b
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    servername: static-web.prod.vidiocdn.com
-    network: grpc
-    grpc-opts:
-      grpc-service-name: buy-vless-grpc-pm-telegram-at-synricha
-# TR-HU-7 - UK Hostaris - runcloud-hts.apasih.id
-  - name: 🇬🇧 IPT-7
-    type: trojan
-    server: 23.162.136.228
-    port: 443
-    password: c5a82b704276c6e8
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    sni: static-web.prod.vidiocdn.com
-    network: ws
-    ws-opts:
-      path: /buy-trojan-upgrade-pm-telegram-at-synricha
-      v2ray-http-upgrade: true
-      headers:
-          host: static-web.prod.vidiocdn.com
-# VM-HU-8 - UK Hostaris - runcloud-hts.apasih.id
-  - name: 🇬🇧 IPT-8
-    type: vmess
-    server: 23.162.136.228
-    port: 443
-    uuid: 2e9b2b92-5aaa-48c2-8726-01bdd5b20606
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    servername: static-web.prod.vidiocdn.com
-    network: ws
-    ws-opts:
-      path: /buy-vmess-upgrade-pm-telegram-at-synricha
-      v2ray-http-upgrade: true
-      headers:
-        host: static-web.prod.vidiocdn.com
-# VL-HU-9 - UK Hostaris - runcloud-hts.apasih.id
-  - name: 🇬🇧 IPT-9
-    type: vless
-    server: 23.162.136.228
-    port: 443
-    uuid: 11731a39-63bf-45e6-9325-da187f7ddfd5
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    servername: static-web.prod.vidiocdn.com
-    network: ws
-    ws-opts:
-      path: /buy-vless-upgrade-pm-telegram-at-synricha
-      v2ray-http-upgrade: true
-      headers:
-        host: static-web.prod.vidiocdn.com
 # TR-WS-10 - SG Contabo - nginxui-ctb.iptunnels.com
   - name: 🇸🇬 IPT-10
     type: trojan
     server: 46.250.232.228
     port: 443
-    password: 3307ed65402613e5
+    password: 5fda76d0ddd72f28
     alterId: 0
     cipher: auto
     tls: true
@@ -290,7 +90,7 @@ proxies:
     type: vmess
     server: 46.250.232.228
     port: 443
-    uuid: 8dead3bf-4957-4349-afec-0b4b8b6bccec
+    uuid: 97cc3480-52b5-47be-b0c2-8fe5c85b8155
     alterId: 0
     cipher: auto
     tls: true
@@ -307,7 +107,7 @@ proxies:
     type: vless
     server: 46.250.232.228
     port: 443
-    uuid: ffd98f33-3347-43d4-8de0-c1e90ec2bbdb
+    uuid: 5dc80b9e-0ad7-4e25-9c4f-f01879852fbc
     alterId: 0
     cipher: auto
     tls: true
