@@ -1,4 +1,21 @@
 proxies:
+# JagoanSSH - 57customer@gmail.com - id7tr.jagoan.vip - 26-06-2024
+  - name: 🇮🇩 Biznet Trojan
+    type: trojan
+    server: 103.150.92.61
+    port: 443
+    password: vvip-bisnetek57
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: static-web.prod.vidiocdn.com
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+          host: static-web.prod.vidiocdn.com
 # JagoanSSH - byzsx123@gmail.com - id4ray.jagoan.vip - 05-07-2024
   - name: 🇸🇬 Melbi
     type: vmess
@@ -65,22 +82,5 @@ proxies:
     network: ws
     ws-opts:
       path: /vvip
-      headers:
-        host: static-web.prod.vidiocdn.com
-# 🇮🇩 Sanggoro 4.lowh.net / 5.lowh.net
-  - name: 🇮🇩 Sanggoro VM
-    type: vmess
-    server: 103.18.78.117
-    port: 443
-    uuid: 32a30de0-e7d1-11ee-ab63-1577c1651679
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    servername: static-web.prod.vidiocdn.com
-    network: ws
-    ws-opts:
-      path: /hello
       headers:
         host: static-web.prod.vidiocdn.com
