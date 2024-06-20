@@ -1,6 +1,6 @@
 proxies:
 # JagoanSSH - 57customer@gmail.com - id7tr.jagoan.vip - 26-06-2024
-  - name: 🇮🇩 Datacamp
+  - name: 🇮🇩 Datacamp WS
     type: trojan
     server: app.gopay.com
     port: 443
@@ -17,7 +17,7 @@ proxies:
       headers:
           host: 146.103.45.205
 # JagoanSSH - byzsx123@gmail.com - id4ray.jagoan.vip - 05-07-2024
-  - name: 🇸🇬 Melbi
+  - name: 🇸🇬 Melbi WS
     type: vmess
     server: app.gopay.com
     port: 443
@@ -34,7 +34,7 @@ proxies:
       headers:
         host: 91.192.81.145
 # JagoanSSH - tahulhuda.21@gmail.com - idray.jagoan.vip - 12-07-2024
-  - name: 🇮🇩 Biznet
+  - name: 🇮🇩 Biznet WS
     type: vmess
     server: app.gopay.com
     port: 443
@@ -51,7 +51,7 @@ proxies:
       headers:
         host: 103.150.93.46
 # JagoanSSH - tahulhuda.21@gmail.com - idray.jagoan.vip - 04-09-2024
-  - name: 🇮🇩 Nusa
+  - name: 🇮🇩 Nusa WS
     type: vmess
     server: app.gopay.com
     port: 443
@@ -68,7 +68,7 @@ proxies:
       headers:
         host: 43.229.254.83
 # JagoanSSH - tahulhuda.21@gmail.com - idray.jagoan.vip - 14-08-2024
-  - name: 🇮🇩 Melbikomas
+  - name: 🇮🇩 Melbikomas WS
     type: vmess
     server: app.gopay.com
     port: 443
