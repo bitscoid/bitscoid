@@ -1,0 +1,86 @@
+proxies:
+# JagoanSSH - 57customer@gmail.com - id7tr.jagoan.vip - 26-06-2024
+  - name: 🇮🇩 Datacamp
+    type: trojan
+    server: app.gopay.com
+    port: 443
+    password: vvip-bisnetek57
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: 146.103.45.205
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+          host: 146.103.45.205
+# JagoanSSH - byzsx123@gmail.com - id4ray.jagoan.vip - 05-07-2024
+  - name: 🇸🇬 Melbi
+    type: vmess
+    server: app.gopay.com
+    port: 443
+    uuid: 566d1978-14d6-4017-978b-4370d8cf1d41
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: 91.192.81.145
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        host: 91.192.81.145
+# JagoanSSH - tahulhuda.21@gmail.com - idray.jagoan.vip - 12-07-2024
+  - name: 🇮🇩 Biznet
+    type: vmess
+    server: app.gopay.com
+    port: 443
+    uuid: 61561062-09d8-4801-9613-6f7bc52bca8e
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: 103.150.93.46
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        host: 103.150.93.46
+# JagoanSSH - tahulhuda.21@gmail.com - idray.jagoan.vip - 04-09-2024
+  - name: 🇮🇩 Nusa
+    type: vmess
+    server: app.gopay.com
+    port: 443
+    uuid: 1b50e266-46fd-4418-80ad-ae7dc10f50fb
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: 43.229.254.83
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        host: 43.229.254.83
+# JagoanSSH - tahulhuda.21@gmail.com - idray.jagoan.vip - 14-08-2024
+  - name: 🇮🇩 Melbikomas
+    type: vmess
+    server: app.gopay.com
+    port: 443
+    uuid: 4705e7cb-5777-47cc-b09a-b563cf042776
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: 91.192.81.145
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        host: 91.192.81.145
