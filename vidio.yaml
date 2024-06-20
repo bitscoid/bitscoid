@@ -1,8 +1,8 @@
 proxies:
 # JagoanSSH - 57customer@gmail.com - id7tr.jagoan.vip - 26-06-2024
-  - name: 🇮🇩 Biznet Trojan
+  - name: 🇮🇩 Datacamp
     type: trojan
-    server: 103.150.92.61
+    server: 146.103.45.205
     port: 443
     password: vvip-bisnetek57
     alterId: 0
