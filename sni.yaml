@@ -1,0 +1,146 @@
+proxies:
+# JagoanSSH - 57customer@gmail.com - id7tr.jagoan.vip - 26-06-2024
+  - name: 🇮🇩 SNI Vidio
+    type: trojan
+    server: 146.103.45.205
+    port: 443
+    password: vvip-bisnetek57
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: static-web.prod.vidiocdn.com
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+          host: static-web.prod.vidiocdn.com
+# JagoanSSH - byzsx123@gmail.com - id4ray.jagoan.vip - 05-07-2024
+# trunkstable.instagram.com graph.instagram.com z-p15.www.instagram.com instagram.com
+  - name: 🇮🇩 SNI Instagram
+    type: vmess
+    server: 91.192.81.145
+    port: 443
+    uuid: 566d1978-14d6-4017-978b-4370d8cf1d41
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: graph.instagram.com
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        host: graph.instagram.com
+# JagoanSSH - tahulhuda.21@gmail.com - idray.jagoan.vip - 12-07-2024
+# media.fcgk35-1.fna.whatsapp.net w5.web.whatsapp.com v.whatsapp.net tellafriendreceiver.whatsapp.net
+  - name: 🇮🇩 SNI WhatsApp
+    type: vmess
+    server: 103.150.93.46
+    port: 443
+    uuid: 61561062-09d8-4801-9613-6f7bc52bca8e
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: media.fcgk35-1.fna.whatsapp.net
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        host: media.fcgk35-1.fna.whatsapp.net
+# JagoanSSH - tahulhuda.21@gmail.com - idray.jagoan.vip - 04-09-2024
+# graph.facebook.com investor.fb.com
+  - name: 🇮🇩 SNI Facebook
+    type: vmess
+    server: 43.229.254.83
+    port: 443
+    uuid: 1b50e266-46fd-4418-80ad-ae7dc10f50fb
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: graph.facebook.com
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        host: graph.facebook.com
+# JagoanSSH - tahulhuda.21@gmail.com - idray.jagoan.vip - 14-08-2024
+# vplay.iflix.com hwvip.iflix.com live.iflix.com upload.iflix.com pbaccess.iflix.com access.iflix.com
+  - name: 🇮🇩 SNI iFlix
+    type: vmess
+    server: 91.192.81.145
+    port: 443
+    uuid: 4705e7cb-5777-47cc-b09a-b563cf042776
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: vplay.iflix.com
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        host: vplay.iflix.com
+
+
+# JagoanSSH - 57customer@gmail.com - id7tr.jagoan.vip - 26-06-2024
+# driver.gojek.link asphalt.gojek.com 
+  - name: 🇮🇩 SNI Gojek
+    type: trojan
+    server: 146.103.45.205
+    port: 443
+    password: vvip-bisnetek57
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: asphalt.gojek.com
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+          host: asphalt.gojek.com
+# JagoanSSH - byzsx123@gmail.com - id4ray.jagoan.vip - 05-07-2024
+# trunkstable.instagram.com graph.instagram.com z-p15.www.instagram.com instagram.com
+  - name: 🇮🇩 SNI ML
+    type: vmess
+    server: 91.192.81.145
+    port: 443
+    uuid: 566d1978-14d6-4017-978b-4370d8cf1d41
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: play.mobilelegends.com
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        host: play.mobilelegends.com
+# JagoanSSH - tahulhuda.21@gmail.com - idray.jagoan.vip - 12-07-2024
+# media.fcgk35-1.fna.whatsapp.net w5.web.whatsapp.com v.whatsapp.net tellafriendreceiver.whatsapp.net
+  - name: 🇮🇩 SNI Spotify
+    type: vmess
+    server: 103.150.93.46
+    port: 443
+    uuid: 61561062-09d8-4801-9613-6f7bc52bca8e
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: open.spotify.com
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        host: open.spotify.com
