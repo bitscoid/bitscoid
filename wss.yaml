@@ -1,0 +1,207 @@
+proxies:
+# JagoanSSH - 57customer@gmail.com - id7tr.jagoan.vip - 26-06-2024
+# app.gopay.com app-stg.gopay.co.id
+  - name: 🇮🇩 WSS TSEL
+    type: trojan
+    server: app.gopay.com
+    port: 443
+    password: vvip-bisnetek57
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: 146.103.45.205
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+          host: 146.103.45.205
+# JagoanSSH - byzsx123@gmail.com - id4ray.jagoan.vip - 05-07-2024
+  - name: 🇮🇩 WSS Vidio
+    type: vmess
+    server: quiz.int.vidio.com
+    port: 443
+    uuid: 566d1978-14d6-4017-978b-4370d8cf1d41
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: 91.192.81.145
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        host: 91.192.81.145
+# JagoanSSH - tahulhuda.21@gmail.com - idray.jagoan.vip - 12-07-2024
+# sogood.linefriends.com static.line-scdn.net ava.game.naver.com df.game.naver.com account.pmang.game.naver.com care.pmang.game.naver.com blog.clova.line.me  cs-ocr.clova.line.me  lb.clova.line.me  cs-cb.clova.line.me 
+  - name: 🇮🇩 WSS Line
+    type: vmess
+    server: sogood.linefriends.com
+    port: 443
+    uuid: 61561062-09d8-4801-9613-6f7bc52bca8e
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: 103.150.93.46
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        host: 103.150.93.46
+# JagoanSSH - tahulhuda.21@gmail.com - idray.jagoan.vip - 04-09-2024
+# zendesk1.grab.com zendesk1.shopee.tw zendesk1.shopee.ph zendesk1.appsflyer.com  zendesk1.grabtaxi.com  zendesk4.grabtaxi.com  www.wasa.com support-whatsapp.zendesk.com  account-gopay.midtrans.com
+  - name: 🇮🇩 WSS Grab
+    type: vmess
+    server: zendesk1.grab.com
+    port: 443
+    uuid: 1b50e266-46fd-4418-80ad-ae7dc10f50fb
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: 43.229.254.83
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        host: 43.229.254.83
+# JagoanSSH - tahulhuda.21@gmail.com - idray.jagoan.vip - 14-08-2024
+  - name: 🇮🇩 WSS Byu
+    type: vmess
+    server: space.byu.id
+    port: 443
+    uuid: 4705e7cb-5777-47cc-b09a-b563cf042776
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: 91.192.81.145
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        host: 91.192.81.145
+# JagoanSSH - 57customer@gmail.com - id7tr.jagoan.vip - 26-06-2024
+# investor.fb.com
+  - name: 🇮🇩 WSS Facebook
+    type: trojan
+    server: investor.fb.com
+    port: 443
+    password: vvip-bisnetek57
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: 146.103.45.205
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+          host: 146.103.45.205
+# JagoanSSH - byzsx123@gmail.com - id4ray.jagoan.vip - 05-07-2024
+  - name: 🇮🇩 WSS Viu
+    type: vmess
+    server: zaintest.vuclip.com
+    port: 443
+    uuid: 566d1978-14d6-4017-978b-4370d8cf1d41
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: 91.192.81.145
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        host: 91.192.81.145
+
+  - name: 🇮🇩 WSS XCL 1
+    type: trojan
+    server: ava.game.naver.com
+    port: 443
+    password: bitzblack
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: ava.game.naver.com.trsg1.v-less.biz.id
+    network: ws
+    ws-opts:
+      path: /trojan-ws
+      headers:
+          host: ava.game.naver.com.trsg1.v-less.biz.id
+  - name: 🇮🇩 WSS XCL 2
+    type: trojan
+    server: ava.game.naver.com
+    port: 443
+    password: bitzblack
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    sni: ava.game.naver.com.trsg2.v-less.biz.id
+    network: ws
+    ws-opts:
+      path: /trojan-ws
+      headers:
+          host: ava.game.naver.com.trsg2.v-less.biz.id
+  - name: 🇮🇩 WSS XCL SG1
+    type: vless
+    server: ava.game.naver.com
+    port: 443
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: ava.game.naver.com.sg1.v-less.biz.id
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        host: ava.game.naver.com.sg1.v-less.biz.id
+  - name: 🇮🇩 WSS XCL SG2
+    type: vless
+    server: ava.game.naver.com
+    port: 443
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: ava.game.naver.com.sg2.v-less.biz.id
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        host: ava.game.naver.com.sg2.v-less.biz.id
+  - name: 🇮🇩 WSS XCL SG3
+    type: vless
+    server: ava.game.naver.com
+    port: 443
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: ava.game.naver.com.sg3.v-less.biz.id
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        host: ava.game.naver.com.sg3.v-less.biz.id
+
+
