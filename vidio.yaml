@@ -1,22 +1,5 @@
 proxies:
-# JagoanSSH - 57customer@gmail.com - id7tr.jagoan.vip - 26-06-2024
-  - name: 🇮🇩 Datacamp
-    type: trojan
-    server: 146.103.45.205
-    port: 443
-    password: vvip-bisnetek57
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    sni: static-web.prod.vidiocdn.com
-    network: ws
-    ws-opts:
-      path: /trojan
-      headers:
-          host: static-web.prod.vidiocdn.com
-# JagoanSSH - byzsx123@gmail.com - id4ray.jagoan.vip - 05-07-2024
+# JagoanSSH - byzsx123@gmail.com - sg2ray.jagoan.vip - 05-07-2024
   - name: 🇸🇬 Melbi
     type: vmess
     server: 91.192.81.145
@@ -68,9 +51,9 @@ proxies:
       headers:
         host: static-web.prod.vidiocdn.com
 # JagoanSSH - tahulhuda.21@gmail.com - idray.jagoan.vip - 14-08-2024
-  - name: 🇮🇩 Melbikomas
+  - name: 🇮🇩 GoDaddy
     type: vmess
-    server: 91.192.81.145
+    server: 97.74.85.252
     port: 443
     uuid: 4705e7cb-5777-47cc-b09a-b563cf042776
     alterId: 0
