@@ -16,23 +16,23 @@ proxies:
   #     path: /trojan
   #     headers:
   #         host: static-web.prod.vidiocdn.com
-# JagoanSSH - byzsx123@gmail.com - id4ray.jagoan.vip - 05-07-2024
+# JagoanSSH - byzsx123@gmail.com - id5ray.jagoan.vip - 15-10-2024
   - name: 🇸🇬 Melbi
     type: vmess
-    server: 91.192.81.145
+    server: 103.150.93.46
     port: 443
-    uuid: 566d1978-14d6-4017-978b-4370d8cf1d41
+    uuid: 5bc25fa0-459d-4eee-aabf-35067973b6e9
     alterId: 0
     cipher: auto
     tls: true
     udp: true
     skip-cert-verify: true
-    servername: static-web.prod.vidiocdn.com
+    servername: media.fcgk35-1.fna.whatsapp.net
     network: ws
     ws-opts:
       path: /vvip
       headers:
-        host: static-web.prod.vidiocdn.com
+        host: media.fcgk35-1.fna.whatsapp.net
 # JagoanSSH - ipuy93@gmail.com - idtr.jagoan.vip - 09-06-2024
   - name: 🇮🇩 IKD
     type: trojan
