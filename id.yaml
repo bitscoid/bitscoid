@@ -1,21 +1,21 @@
 proxies:
-# JagoanSSH - 57customer@gmail.com - id7tr.jagoan.vip - 15-05-2024
-  # - name: 🇮🇩 Nata 1
-  #   type: trojan
-  #   server: 103.115.164.158
-  #   port: 443
-  #   password: vvip-bisnet57
-  #   alterId: 0
-  #   cipher: auto
-  #   tls: true
-  #   udp: true
-  #   skip-cert-verify: true
-  #   sni: static-web.prod.vidiocdn.com
-  #   network: ws
-  #   ws-opts:
-  #     path: /trojan
-  #     headers:
-  #         host: static-web.prod.vidiocdn.com
+# JagoanSSH - 57customer@gmail.com - rmray.jagoan.vip - 01-11-2024
+  - name: 🇸🇬 Fast
+    type: vmess
+    server: 41.216.177.57
+    port: 443
+    uuid: b1162c27-a7e6-4e9f-abef-9b5f35de521d
+    alterId: 0
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: media.fcgk35-1.fna.whatsapp.net
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        host: media.fcgk35-1.fna.whatsapp.net
 # JagoanSSH - byzsx123@gmail.com - id5ray.jagoan.vip - 15-10-2024
   - name: 🇸🇬 Melbi
     type: vmess
@@ -34,22 +34,22 @@ proxies:
       headers:
         host: media.fcgk35-1.fna.whatsapp.net
 # JagoanSSH - ipuy93@gmail.com - idtr.jagoan.vip - 09-06-2024
-  - name: 🇮🇩 IKD
-    type: trojan
-    server: 103.167.34.20
-    port: 443
-    password: vvip-kodokkepo93
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    sni: static-web.prod.vidiocdn.com
-    network: ws
-    ws-opts:
-      path: /trojan
-      headers:
-          host: static-web.prod.vidiocdn.com
+  # - name: 🇮🇩 IKD
+  #   type: trojan
+  #   server: 103.167.34.20
+  #   port: 443
+  #   password: vvip-kodokkepo93
+  #   alterId: 0
+  #   cipher: auto
+  #   tls: true
+  #   udp: true
+  #   skip-cert-verify: true
+  #   sni: static-web.prod.vidiocdn.com
+  #   network: ws
+  #   ws-opts:
+  #     path: /trojan
+  #     headers:
+  #         host: static-web.prod.vidiocdn.com
 # # JagoanSSH - luthfi.theupstairs@gmail.com - sgtr.jagoan.vip - 06-06-2024
 #   - name: 🇮🇩 Melbi 2
 #     type: trojan
@@ -119,22 +119,22 @@ proxies:
   #     headers:
   #       host: static-web.prod.vidiocdn.com
 # JagoanSSH - tahulhuda.21@gmail.com - idray.jagoan.vip - 12-07-2024
-  - name: 🇮🇩 Cogent
-    type: vmess
-    server: 38.9.140.156
-    port: 443
-    uuid: 61561062-09d8-4801-9613-6f7bc52bca8e
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    servername: static-web.prod.vidiocdn.com
-    network: ws
-    ws-opts:
-      path: /vvip
-      headers:
-        host: static-web.prod.vidiocdn.com
+  # - name: 🇮🇩 Cogent
+  #   type: vmess
+  #   server: 38.9.140.156
+  #   port: 443
+  #   uuid: 61561062-09d8-4801-9613-6f7bc52bca8e
+  #   alterId: 0
+  #   cipher: auto
+  #   tls: true
+  #   udp: true
+  #   skip-cert-verify: true
+  #   servername: static-web.prod.vidiocdn.com
+  #   network: ws
+  #   ws-opts:
+  #     path: /vvip
+  #     headers:
+  #       host: static-web.prod.vidiocdn.com
 
 
 # https://github.com/ehwiwjqkaozg9291/heowwinev/tree/main
@@ -156,71 +156,71 @@ proxies:
   #     headers:
   #         host: static-web.prod.vidiocdn.com
 # 🇮🇩 Sanggoro 4.lowh.net / 5.lowh.net
-  - name: 🇮🇩 Sanggoro
-    type: trojan
-    server: 103.18.78.118
-    port: 443
-    password: fba6af10-e7c9-11ee-86df-1577c1651679
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    sni: static-web.prod.vidiocdn.com
-    network: ws
-    ws-opts:
-      path: /welcome
-      headers:
-          host: static-web.prod.vidiocdn.com
-  - name: 🇮🇩 Sanggoro VM
-    type: vmess
-    server: 103.18.78.117
-    port: 443
-    uuid: 32a30de0-e7d1-11ee-ab63-1577c1651679
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    servername: static-web.prod.vidiocdn.com
-    network: ws
-    ws-opts:
-      path: /hello
-      headers:
-        host: static-web.prod.vidiocdn.com
+  # - name: 🇮🇩 Sanggoro
+  #   type: trojan
+  #   server: 103.18.78.118
+  #   port: 443
+  #   password: fba6af10-e7c9-11ee-86df-1577c1651679
+  #   alterId: 0
+  #   cipher: auto
+  #   tls: true
+  #   udp: true
+  #   skip-cert-verify: true
+  #   sni: static-web.prod.vidiocdn.com
+  #   network: ws
+  #   ws-opts:
+  #     path: /welcome
+  #     headers:
+  #         host: static-web.prod.vidiocdn.com
+  # - name: 🇮🇩 Sanggoro VM
+  #   type: vmess
+  #   server: 103.18.78.117
+  #   port: 443
+  #   uuid: 32a30de0-e7d1-11ee-ab63-1577c1651679
+  #   alterId: 0
+  #   cipher: auto
+  #   tls: true
+  #   udp: true
+  #   skip-cert-verify: true
+  #   servername: static-web.prod.vidiocdn.com
+  #   network: ws
+  #   ws-opts:
+  #     path: /hello
+  #     headers:
+  #       host: static-web.prod.vidiocdn.com
 # 🇮🇩 Herza 002.htmlcdn.net / 001.htmlcdn.net
-  - name: 🇮🇩 Herza
-    type: trojan
-    server: 103.173.75.61
-    port: 443
-    password: 19374e60-e7ca-11ee-92e4-1577c1651679
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    sni: static-web.prod.vidiocdn.com
-    network: ws
-    ws-opts:
-      path: /welcome
-      headers:
-          host: static-web.prod.vidiocdn.com
-  - name: 🇮🇩 Herza VM
-    type: vmess
-    server: 103.173.75.62
-    port: 443
-    uuid: 4052f2c0-e7d1-11ee-aa7c-1577c1651679
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    servername: static-web.prod.vidiocdn.com
-    network: ws
-    ws-opts:
-      path: /hello
-      headers:
-        host: static-web.prod.vidiocdn.com
+  # - name: 🇮🇩 Herza
+  #   type: trojan
+  #   server: 103.173.75.61
+  #   port: 443
+  #   password: 19374e60-e7ca-11ee-92e4-1577c1651679
+  #   alterId: 0
+  #   cipher: auto
+  #   tls: true
+  #   udp: true
+  #   skip-cert-verify: true
+  #   sni: static-web.prod.vidiocdn.com
+  #   network: ws
+  #   ws-opts:
+  #     path: /welcome
+  #     headers:
+  #         host: static-web.prod.vidiocdn.com
+  # - name: 🇮🇩 Herza VM
+  #   type: vmess
+  #   server: 103.173.75.62
+  #   port: 443
+  #   uuid: 4052f2c0-e7d1-11ee-aa7c-1577c1651679
+  #   alterId: 0
+  #   cipher: auto
+  #   tls: true
+  #   udp: true
+  #   skip-cert-verify: true
+  #   servername: static-web.prod.vidiocdn.com
+  #   network: ws
+  #   ws-opts:
+  #     path: /hello
+  #     headers:
+  #       host: static-web.prod.vidiocdn.com
     
 # https://github.com/ehwiwjqkaozg9291/djeowjabxi/tree/main
 # 🇮🇩 Jala
