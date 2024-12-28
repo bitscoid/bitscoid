@@ -1,0 +1,411 @@
+proxy-providers:
+  ID:
+    type: http
+    url: "https://raw.githubusercontent.com/bitscoid/bitscoid/android/id.yaml"
+    interval: 86400
+    path: "./vpn/id.yaml"
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SG:
+    type: http
+    url: "https://raw.githubusercontent.com/bitscoid/bitscoid/android/sg.yaml"
+    interval: 86400
+    path: "./vpn/sg.yaml"
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+proxy-groups:
+  - name: 🇮🇩 Premium
+    type: load-balance
+    strategy: round-robin
+    disable-udp: false
+    use:
+      - ID
+    url: http://www.gstatic.com/generate_204
+    interval: 360
+  - name: 🇸🇬 Premium
+    type: load-balance
+    strategy: round-robin
+    disable-udp: false
+    use:
+      - SG
+    url: http://www.gstatic.com/generate_204
+    interval: 360
+
+  - name: ❌ Reject
+    type: select
+    disable-udp: false
+    proxies:
+      - REJECT
+  - name: ⛔ Ads
+    type: select
+    disable-udp: false
+    proxies:
+      - ❌ Reject
+      - ⛅ Internet
+  - name: 🔞 Adults
+    type: select
+    disable-udp: false
+    proxies:
+      - ❌ Reject
+      - ⛅ Internet
+
+  - name: 🖥️ Manual
+    type: select
+    disable-udp: false
+    use:
+      - ID
+      - SG
+    proxies:
+      - DIRECT
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+  - name: 🎮 Latency
+    type: url-test
+    disable-udp: false
+    use:
+      - ID
+      - SG
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+  - name: 🎮 Game
+    type: select
+    disable-udp: false
+    proxies:
+      - 🎮 Latency
+      - ⛅ Internet
+
+  - name: 🇮🇩 Indonesia
+    type: select
+    disable-udp: false
+    proxies:
+      - 🇮🇩 Premium
+      - 🇸🇬 Premium
+      - 🖥️ Manual
+  - name: ⛅ Internet
+    type: select
+    disable-udp: false
+    proxies:
+      - 🇮🇩 Premium
+      - 🇸🇬 Premium
+      - 🖥️ Manual
+  - name: 🎬 Streaming
+    type: select
+    disable-udp: false
+    proxies:
+      - 🇮🇩 Premium
+      - 🇸🇬 Premium
+      - 🖥️ Manual
+  - name: 💎 Social
+    type: select
+    disable-udp: false
+    proxies:
+      - 🇮🇩 Premium
+      - 🇸🇬 Premium
+      - 🖥️ Manual
+rule-providers:
+  rule_direct:
+    type: file
+    behavior: classical
+    path: "./vpn/direct.yaml"
+  rule_umum:
+    type: file
+    behavior: classical
+    path: "./vpn/umum.yaml"
+rules:
+  - DST-PORT,9898,❌ Reject
+  - DST-PORT,9797,❌ Reject
+  - IP-CIDR,198.18.0.1/16,❌ Reject,no-resolve
+  - GEOIP,private,DIRECT,no-resolve
+  - GEOIP,id,🇮🇩 Indonesia
+  - GEOIP,netflix,🇮🇩 Indonesia
+  - GEOIP,facebook,💎 Social
+  - GEOIP,twitter,💎 Social
+  - GEOIP,telegram,💎 Social
+  - GEOSITE,google-ads,⛔ Ads
+  - GEOSITE,rule-malicious,❌ Reject
+  - GEOSITE,oisd-full,❌ Reject
+  - GEOSITE,d3ward,❌ Reject
+  - GEOSITE,rule-ads,❌ Reject
+  - GEOSITE,oisd-nsfw,🔞 Adults
+  - GEOSITE,category-porn,🔞 Adults
+  - GEOSITE,bank-id,🇮🇩 Indonesia
+  - GEOSITE,rule-indo,🇮🇩 Indonesia
+  - GEOSITE,rule-sosmed,💎 Social
+  - GEOSITE,youtube,🎬 Streaming
+  - GEOSITE,videoconference,🎬 Streaming
+  - GEOSITE,rule-streaming,🎬 Streaming
+  - GEOSITE,rule-gaming,🎮 Game
+  - RULE-SET,rule_direct,DIRECT
+  - RULE-SET,rule_umum,⛅ Internet
+  - DST-PORT,3478-3497/8801-8810/16384-16387/1853/8200/5004/9000/5090-5091/5349/10000/19302-19309/5938/5060-5061/500/4500,🎬 Streaming
+  - DST-PORT,5000-5221/5224-5227/5229-5241/5243-5287/5289-5352/5354-5509/5517/5520-5529/5551-5559/5601-5700/8443/9000-9010/9443/10003/30000-30300,🎮 Game,tcp
+  - DST-PORT,5517-5529/5551-5559/5601-5700/8001/8130/8443/9000-9010/9120/9992/10003/30000-30300,🎮 Game,udp
+  - DST-PORT,6006/6008/6674/7006-7008/7889/8001-8012/9006/9137/10000-10012/11000-11019/12006/12008/13006/15006/20561/39003/39006/39698/39779/39800,🎮 Game,tcp
+  - DST-PORT,6006/6008/6674/7006-7008/7889/8008/8001-8012/8130/8443/9008/9120/10000-10015/10100/11000-11019/12008/13008,🎮 Game,udp
+  - DST-PORT,7889/10012/13004/14000/17000/17500/18081/20000-20002/20371,🎮 Game,tcp
+  - DST-PORT,8011/9030/10491/10612/12235/13004/13748/17000/17500/20000-20002/7086-7995/10039/10096/11455/12070-12460/13894/13972/41182-41192,🎮 Game,udp
+  - DST-PORT,3013/10000-10019/18082/50000/65010/65050,🎮 Game,tcp
+  - DST-PORT,7085-7995/8700/9030/10010-10019/17000-20100,🎮 Game,udp
+  - DST-PORT,10001-10094,🎮 Game,tcp
+  - DST-PORT,10101-10201/10080-10110/17000-18000,🎮 Game,udp
+  - DST-PORT,5055-5058,🎮 Game,udp
+  - DST-PORT,42472,🎮 Game,tcp
+  - DST-PORT,42472/22101-22102,🎮 Game,udp
+  - DST-PORT,9330-9340,🎮 Game,tcp
+  - DST-PORT,9330-9340,🎮 Game,udp
+  - DST-PORT,2080-2099,🎮 Game,tcp
+  - DST-PORT,5100,🎮 Game,udp
+  - DST-PORT,9100-9200/8230-8250/8110-8120/27000-28998,🎮 Game,tcp
+  - DST-PORT,27000-28998/39000,🎮 Game,udp
+  - DST-PORT,7770-7790,🎮 Game,tcp
+  - DST-PORT,16300-16350,🎮 Game,udp
+  - DST-PORT,44590-44610,🎮 Game,tcp
+  - DST-PORT,40000-40010,🎮 Game,udp
+  - DST-PORT,10500-10515,🎮 Game,tcp
+  - DST-PORT,60970-60980,🎮 Game,udp
+  - DST-PORT,27015-27030/27036-27037,🎮 Game,tcp
+  - DST-PORT,4380/27000-27031/27036,🎮 Game,udp
+  - DST-PORT,14422,🎮 Game
+  - DST-PORT,16999,🎮 Game
+  - DST-PORT,8013/8888,🎮 Game
+  - DST-PORT,39190-39200/49001-49190,🎮 Game,tcp
+  - DST-PORT,40000-40010,🎮 Game,udp
+  - DST-PORT,14009/40005,🎮 Game
+  - NOT,((RULE-SET,rule_umum)),🎮 Game
+  - MATCH,⛅ Internet
+
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+sniffer:
+  enable: true
+  parse-pure-ip: true
+  force-domain:
+  - "+.netflix.com"
+  - "+.nflxvideo.net"
+  - "+.amazonaws.com"
+  - "+.media.dssott.com"
+  skip-domain:
+  - "+.apple.com"
+  - Mijia Cloud
+  - dlg.io.mi.com
+  sniff:
+    TLS:
+      ports:
+      - 443
+      - 2053
+      - 2083
+      - 2087
+      - 2096
+      - 8443
+    HTTP:
+      ports:
+      - 80
+      - 8080
+      - 8880
+      - 2052
+      - 2082
+      - 2086
+      - 2095
+      override-destination: true
+
+geox-url:
+  geoip: "https://raw.githubusercontent.com/malikshi/v2ray-rules-dat/release/geoip.dat"
+  geosite: "https://raw.githubusercontent.com/malikshi/v2ray-rules-dat/release/geosite.dat"
+  mmdb: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
+
+tun:
+  enable: false
+  device: tun3
+  stack: system
+  dns-hijack:
+    - "any:53"
+  auto-route: true
+  auto-detect-interface: true
+
+dns:
+  enable: true
+  ipv6: true
+  listen: 0.0.0.0:7874
+  enhanced-mode: fake-ip
+  default-nameserver:
+    - 1.1.1.1
+  nameserver:
+    - https://1dot1dot1dot1.cloudflare-dns.com
+  fallback:
+    - tls://1dot1dot1dot1.cloudflare-dns.com
+  proxy-server-nameserver:
+    - https://1dot1dot1dot1.cloudflare-dns.com
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.localdomain"
+    - "*.example"
+    - "*.invalid"
+    - "*.localhost"
+    - "*.test"
+    - "*.local"
+    - "*.home.arpa"
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time-ios.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - "*.time.edu.cn"
+    - "*.ntp.org.cn"
+    - "+.pool.ntp.org"
+    - time1.cloud.tencent.com
+    - music.163.com
+    - "*.music.163.com"
+    - "*.126.net"
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - "*.kuwo.cn"
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - y.qq.com
+    - "*.y.qq.com"
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - "*.xiami.com"
+    - "*.music.migu.cn"
+    - music.migu.cn
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - msftconnecttest.com
+    - msftncsi.com
+    - localhost.ptlogin2.qq.com
+    - localhost.sec.qq.com
+    - "+.srv.nintendo.net"
+    - "*.n.n.srv.nintendo.net"
+    - "+.stun.playstation.net"
+    - xbox.*.*.microsoft.com
+    - "*.*.xboxlive.com"
+    - xbox.*.microsoft.com
+    - xnotify.xboxlive.com
+    - "+.battlenet.com.cn"
+    - "+.wotgame.cn"
+    - "+.wggames.cn"
+    - "+.wowsgame.cn"
+    - "+.wargaming.net"
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - "+.stun.*.*"
+    - "+.stun.*.*.*"
+    - "+.stun.*.*.*.*"
+    - "+.stun.*.*.*.*.*"
+    - heartbeat.belkin.com
+    - "*.linksys.com"
+    - "*.linksyssmartwifi.com"
+    - "*.router.asus.com"
+    - mesu.apple.com
+    - swscan.apple.com
+    - swquery.apple.com
+    - swdownload.apple.com
+    - swcdn.apple.com
+    - swdist.apple.com
+    - lens.l.google.com
+    - stun.l.google.com
+    - "+.nflxvideo.net"
+    - "*.square-enix.com"
+    - "*.finalfantasyxiv.com"
+    - "*.ffxiv.com"
+    - "*.ff14.sdo.com"
+    - ff.dorado.sdo.com
+    - "*.mcdn.bilivideo.cn"
+    - "+.media.dssott.com"
+    - shark007.net
+    - "+.qq.com"
+    - "+.tencent.com"
+    - na.b.g-tun.com
+    - Mijia Cloud
+    - "+.cmbchina.com"
+    - "+.cmbimg.com"
+    - local.adguard.org
+    - "+.sandai.net"
+    - "+.n0808.com"
+  fallback-filter:
+    geoip: true
+    geoip-code: ID
+    geosite:
+    - rule-indo
+    ipcidr:
+    - 0.0.0.0/8
+    - 10.0.0.0/8
+    - 100.64.0.0/10
+    - 127.0.0.0/8
+    - 169.254.0.0/16
+    - 172.16.0.0/12
+    - 192.0.0.0/24
+    - 192.0.2.0/24
+    - 192.88.99.0/24
+    - 192.168.0.0/16
+    - 198.18.0.0/15
+    - 198.51.100.0/24
+    - 203.0.113.0/24
+    - 224.0.0.0/4
+    - 240.0.0.0/4
+    - 255.255.255.255/32
+    domain:
+    - "+.google.com"
+    - "+.facebook.com"
+    - "+.youtube.com"
+    - "+.githubusercontent.com"
+    - "+.googlevideo.com"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - msftconnecttest.com
+    - msftncsi.com
+    - "+.*"
+
+port: 7890
+socks-port: 7891
+redir-port: 9797
+mixed-port: 7893
+tproxy-port: 9898
+allow-lan: true
+ipv6: true
+unified-delay: true
+tcp-concurrent: true
+enable-process: true
+geodata-mode: true
+geodata-loader: memconservative
+mode: rule
+log-level: silent
+find-process-mode: strict
+global-client-fingerprint: chrome
+external-controller: 0.0.0.0:9090
+external-ui: ui
+secret: '123456'
+external-ui-name: yacd
+external-ui-url: https://mirror.ghproxy.com/https://github.com/MetaCubeX/Yacd-meta/archive/refs/heads/gh-pages.zip
+authentication:
+  - mihomo:123456
