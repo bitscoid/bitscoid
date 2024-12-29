@@ -15,3 +15,190 @@ proxies:
       path: /trojan
       headers:
           host: static-web.prod.vidiocdn.com
+
+  - name: 🇸🇬 Contabo 1
+    server: 46.250.232.228
+    port: 443
+    type: trojan
+    password: 6efabd571000bd29
+    skip-cert-verify: true
+    sni: static-web.prod.vidiocdn.com
+    network: ws
+    udp: true
+    ws-opts:
+      path: /buy-trojan-ws-pm-telegram-at-synricha
+      headers:
+          Host: static-web.prod.vidiocdn.com
+
+  - name: 🇸🇬 Contabo 2
+    type: vmess
+    server: 46.250.232.228
+    port: 443
+    uuid: e0e39ebc-0df5-4096-b553-1888980dd9bb
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: static-web.prod.vidiocdn.com
+    network: ws
+    ws-opts:
+      path: /buy-vmess-ws-pm-telegram-at-synricha
+      headers:
+        Host: static-web.prod.vidiocdn.com
+
+  - name: 🇸🇬 Contabo 3
+    type: vless
+    server: 46.250.232.228
+    port: 443
+    uuid: f24f4b7a-9d71-4c25-9070-15e2618e0b50
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: static-web.prod.vidiocdn.com
+    network: ws
+    ws-opts:
+      path: /buy-vless-ws-pm-telegram-at-synricha
+      headers:
+        Host: static-web.prod.vidiocdn.com
+        
+  - name: 🇸🇬 Contabo 4
+    server: 46.250.232.228
+    port: 443
+    type: trojan
+    password: 542324fe09e977f2
+    udp: true
+    skip-cert-verify: true
+    sni: static-web.prod.vidiocdn.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: buy-trojan-grpc-pm-telegram-at-synricha
+
+  - name: 🇸🇬 Contabo 5
+    server: 46.250.232.228
+    port: 443
+    type: vmess
+    uuid: e2a4b7c5-12af-4cd3-a9dd-869c826943ec
+    alterId: 0
+    cipher: auto
+    network: grpc
+    tls: true
+    servername: static-web.prod.vidiocdn.com
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: buy-vmess-grpc-pm-telegram-at-synricha
+      
+  - name: 🇸🇬 Contabo 6
+    server: 46.250.232.228
+    port: 443
+    type: vless
+    uuid: 0165bd00-7b1b-4fc0-af12-590d4d22d612
+    alterId: 0
+    cipher: auto
+    network: grpc
+    tls: true
+    servername: static-web.prod.vidiocdn.com
+    skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: buy-vless-grpc-pm-telegram-at-synricha
+      
+  - name: 🇸🇬 Contabo 7
+    server: 46.250.232.228
+    port: 443
+    type: trojan
+    password: 66059239a8d45062
+    skip-cert-verify: true
+    sni: static-web.prod.vidiocdn.com
+    network: ws
+    udp: true
+    ws-opts:
+      path: /buy-trojan-upgrade-pm-telegram-at-synricha
+      headers:
+        Host: static-web.prod.vidiocdn.com
+      v2ray-http-upgrade: true
+
+  - name: 🇸🇬 Contabo 8
+    type: vmess
+    server: 46.250.232.228
+    port: 443
+    uuid: 3e9f7bfc-e571-403e-93c1-926a1922f68c
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: static-web.prod.vidiocdn.com
+    network: ws
+    ws-opts:
+      path: /buy-vmess-upgrade-pm-telegram-at-synricha
+      headers:
+        Host: static-web.prod.vidiocdn.com
+      v2ray-http-upgrade: true
+
+  - name: 🇸🇬 Contabo 9
+    type: vless
+    server: 46.250.232.228
+    port: 443
+    uuid: e97c658c-79da-4f30-89a5-69e1f8dfd3eb
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: static-web.prod.vidiocdn.com
+    network: ws
+    ws-opts:
+      path: /buy-vless-upgrade-pm-telegram-at-synricha
+      headers:
+        Host: static-web.prod.vidiocdn.com
+      v2ray-http-upgrade: true
+
+  - name: 🇸🇬 Contabo 10
+    server: 46.250.232.228
+    port: 443
+    type: trojan
+    password: 0f38d7b91d31afd9
+    skip-cert-verify: true
+    sni: static-web.prod.vidiocdn.com
+    network: ws
+    udp: true
+    ws-opts:
+      path: /buy-trojan-ws-pm-telegram-at-synricha
+      headers:
+          Host: static-web.prod.vidiocdn.com
+
+  - name: 🇸🇬 Contabo 11
+    type: vmess
+    server: 46.250.232.228
+    port: 443
+    uuid: 412dc050-dfe0-4e2b-a72b-16c5b3766345
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: static-web.prod.vidiocdn.com
+    network: ws
+    ws-opts:
+      path: /buy-vmess-ws-pm-telegram-at-synricha
+      headers:
+        Host: static-web.prod.vidiocdn.com
+        
+  - name: 🇸🇬 Contabo 12
+    type: vless
+    server: 46.250.232.228
+    port: 443
+    uuid: b5418c26-4972-41d7-ba70-7f65cc3cf04a
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: static-web.prod.vidiocdn.com
+    network: ws
+    ws-opts:
+      path: /buy-vless-ws-pm-telegram-at-synricha
+      headers:
+        Host: static-web.prod.vidiocdn.com
