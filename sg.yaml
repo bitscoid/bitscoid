@@ -159,7 +159,7 @@ proxies:
     server: 46.250.232.228
     port: 443
     type: trojan
-    password: 0f38d7b91d31afd9
+    password: 761bf51fb950ec77
     skip-cert-verify: true
     sni: static-web.prod.vidiocdn.com
     network: ws
