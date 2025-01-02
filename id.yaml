@@ -16,20 +16,3 @@ proxies:
       path: /trojan
       headers:
           host: static-web.prod.vidiocdn.com
-# JagoanSSH - irwanssyyaahh2@gmail.com - 02-01-2025
-  - name: 🇮🇩 Biznet
-    type: vmess
-    server: 103.150.93.46
-    port: 443
-    uuid: 47550e1b-0a10-4d4c-8ceb-23934f65c38c
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    servername: static-web.prod.vidiocdn.com
-    network: ws
-    ws-opts:
-      path: /vvip
-      headers:
-        host: static-web.prod.vidiocdn.com
