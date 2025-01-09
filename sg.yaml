@@ -190,7 +190,7 @@ proxies:
     type: vless
     server: 46.250.232.228
     port: 443
-    uuid: b5418c26-4972-41d7-ba70-7f65cc3cf04a
+    uuid: 016bc4a6-fa14-4525-82dc-8ff016d71195
     alterId: 0
     cipher: auto
     udp: true
