@@ -20,7 +20,7 @@ proxies:
     server: 46.250.232.228
     port: 443
     type: trojan
-    password: 4a6171e7b275e371
+    password: c71763bd4d743fef
     skip-cert-verify: true
     sni: static-web.prod.vidiocdn.com
     network: ws
@@ -51,7 +51,7 @@ proxies:
     type: vless
     server: 46.250.232.228
     port: 443
-    uuid: f24f4b7a-9d71-4c25-9070-15e2618e0b50
+    uuid: a04280c0-19b0-4dbc-98a1-bbc20183879a
     alterId: 0
     cipher: auto
     udp: true
@@ -159,7 +159,7 @@ proxies:
     server: 46.250.232.228
     port: 443
     type: trojan
-    password: 3a3a6aca34a5c878
+    password: ca44debed371cc1a
     skip-cert-verify: true
     sni: static-web.prod.vidiocdn.com
     network: ws
