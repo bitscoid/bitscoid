@@ -1,26 +1,9 @@
 proxies:
-  - name: 🇸🇬 Melbi
-    type: trojan
-    server: 103.172.116.88
-    port: 443
-    password: vvip-melebie123
-    alterId: 0
-    cipher: auto
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    sni: static-web.prod.vidiocdn.com
-    network: ws
-    ws-opts:
-      path: /trojan
-      headers:
-          host: static-web.prod.vidiocdn.com
-
   - name: 🇸🇬 Contabo 1
     server: 46.250.232.228
     port: 443
     type: trojan
-    password: c5a6e6bfb181a0bf
+    password: 687d684947043fea
     skip-cert-verify: true
     sni: static-web.prod.vidiocdn.com
     network: ws
@@ -34,7 +17,7 @@ proxies:
     type: vmess
     server: 46.250.232.228
     port: 443
-    uuid: b5882131-6052-4ebe-abfb-9e37c841eff8
+    uuid: 3d10bfa4-9725-494f-838d-3acdee2ef0a5
     alterId: 0
     cipher: auto
     udp: true
@@ -51,7 +34,7 @@ proxies:
     type: vless
     server: 46.250.232.228
     port: 443
-    uuid: a04280c0-19b0-4dbc-98a1-bbc20183879a
+    uuid: 52d100f4-c3e5-4540-ba47-2c83042b14bd
     alterId: 0
     cipher: auto
     udp: true
@@ -108,7 +91,7 @@ proxies:
     server: 46.250.232.228
     port: 443
     type: trojan
-    password: 64a3d1550ca0e494
+    password: a98fba28b7fb0768
     skip-cert-verify: true
     sni: static-web.prod.vidiocdn.com
     network: ws
@@ -141,7 +124,7 @@ proxies:
     type: vless
     server: 46.250.232.228
     port: 443
-    uuid: 891398c6-0ca4-4d79-9dff-bff1acfa884a
+    uuid: 8e0fc7b5-b580-49f4-b2e2-9b4f1adee15a
     alterId: 0
     cipher: auto
     udp: true
@@ -159,7 +142,7 @@ proxies:
     server: 46.250.232.228
     port: 443
     type: trojan
-    password: b5205a6241acaba9
+    password: ca2f216cc527d972
     skip-cert-verify: true
     sni: static-web.prod.vidiocdn.com
     network: ws
@@ -173,7 +156,7 @@ proxies:
     type: vmess
     server: 46.250.232.228
     port: 443
-    uuid: 4246d98b-2749-4d46-9d52-c1f5e3e8abd9
+    uuid: 6028a74a-106e-41fe-943b-6afcf63fe7d6
     alterId: 0
     cipher: auto
     udp: true
@@ -190,7 +173,7 @@ proxies:
     type: vless
     server: 46.250.232.228
     port: 443
-    uuid: 016bc4a6-fa14-4525-82dc-8ff016d71195
+    uuid: d9de48f9-f473-441b-9818-cdeeb9a10764
     alterId: 0
     cipher: auto
     udp: true
