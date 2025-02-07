@@ -1,8 +1,8 @@
 proxies:
 # JagoanSSH - 57customer@gmail.com - 19-01-2025
-  - name: 🇮🇩 Nusa
+  - name: 🇮🇩 Biznet
     type: trojan
-    server: 43.229.254.96
+    server: 103.150.117.35
     port: 443
     password: vvip-iddelim5
     alterId: 0
