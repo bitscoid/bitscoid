@@ -112,77 +112,88 @@
   <img src="https://img.shields.io/badge/Corporate%20Training-15803d?style=for-the-badge&logo=googlescholar&logoColor=dcfce7" alt="Corporate Training" />
 </div>
 
-## Featured Projects
-
-<table>
-  <tr>
-    <td width="33%" valign="top">
-      <img src="https://cdn.sanity.io/images/j996ej4v/production/a22080acd38eef7cc070c5ac61e7f7ed4cf10e72-1408x768.png" alt="RUPBASAN SERANG" />
-      <h3>RUPBASAN SERANG</h3>
-      <p><strong>ID:</strong> Sistem operasional bisnis berbasis mobile untuk mendukung eksekusi yang lebih rapi dan terukur.</p>
-      <p><strong>EN:</strong> A mobile business operations system designed to improve execution quality and operational visibility.</p>
-      <p><code>React</code> <code>Node.js</code></p>
-    </td>
-    <td width="33%" valign="top">
-      <img src="https://cdn.sanity.io/images/j996ej4v/production/37ff4d5d0a5a5ebda433352e327697811c08f233-1408x768.png" alt="Tibbul Fahhs" />
-      <h3>Tibbul Fahhs</h3>
-      <p><strong>ID:</strong> Platform layanan digital modern untuk pengalaman pengguna yang lebih cepat dan lebih konsisten.</p>
-      <p><strong>EN:</strong> A modern digital service platform built for faster journeys and a more consistent user experience.</p>
-      <p><code>SvelteKit</code> <code>TypeScript</code></p>
-    </td>
-    <td width="33%" valign="top">
-      <img src="https://cdn.sanity.io/images/j996ej4v/production/54ab70183fd9ded670cf19055c59e21c882479cd-1408x768.png" alt="Universal Online Shop" />
-      <h3>Universal Online Shop</h3>
-      <p><strong>ID:</strong> Sistem kampanye digital marketing dan percetakan untuk mendukung distribusi promosi yang lebih luas.</p>
-      <p><strong>EN:</strong> A digital marketing and printing campaign system created to scale promotional reach and execution.</p>
-      <p><code>React</code> <code>Node.js</code></p>
-    </td>
-  </tr>
-</table>
-
 ## What We Build
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>ID</h3>
-      <p>🚀 Sistem operasional bisnis dan platform internal</p>
-      <p>📱 Aplikasi web dan mobile untuk sektor privat maupun publik</p>
-      <p>🏢 Lingkungan infrastruktur dan jaringan enterprise</p>
-      <p>⚙️ Workflow deployment cloud-native dan DevOps</p>
-      <p>🛍️ Portal layanan, e-commerce, dan ekosistem kampanye digital</p>
-      <p>🎯 Visual branding, materi promosi, dan aset kreatif</p>
+      <h3>🚀 Business Operations Systems</h3>
+      <p>Platform internal dan sistem operasional untuk membantu tim bekerja lebih terstruktur, cepat, dan terukur.</p>
     </td>
     <td width="50%" valign="top">
-      <h3>EN</h3>
-      <p>🚀 Business operations systems and internal platforms</p>
-      <p>📱 Web and mobile products for private and public organizations</p>
-      <p>🏢 Enterprise-grade infrastructure and networking environments</p>
-      <p>⚙️ Cloud-native delivery pipelines and DevOps workflows</p>
-      <p>🛍️ Service portals, e-commerce platforms, and campaign ecosystems</p>
-      <p>🎯 Brand visuals, promotional materials, and creative assets</p>
+      <h3>📱 Web & Mobile Applications</h3>
+      <p>Aplikasi digital untuk sektor privat, publik, pendidikan, dan organisasi yang membutuhkan pengalaman pengguna yang kuat.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🏢 Infrastructure & Network Environments</h3>
+      <p>Lingkungan infrastruktur enterprise untuk konektivitas, keamanan, monitoring, dan stabilitas operasional jangka panjang.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>⚙️ Cloud-Native Delivery Pipelines</h3>
+      <p>Pipeline CI/CD, deployment automation, container workloads, dan workflow DevOps untuk eksekusi yang lebih cepat.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🛍️ Service Portals & Commerce Platforms</h3>
+      <p>Portal layanan, e-commerce, sistem campaign, dan platform digital yang mendukung distribusi dan pertumbuhan bisnis.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🎯 Creative & Promotional Assets</h3>
+      <p>Visual branding, materi promosi, desain kreatif, dan aset kampanye untuk memperkuat identitas dan komunikasi brand.</p>
     </td>
   </tr>
 </table>
 
-## Selected Clients
+## Trusted By
+
+<p>Organizations across enterprise, public sector, education, media, retail, and local business trust BITS for dependable digital execution.</p>
 
 <div align="center">
-  <img src="https://cdn.sanity.io/images/j996ej4v/production/5f9dd49c5aaee85fc3274ad8b184003c433d0d07-714x334.png" alt="Banten IT Solutions Client" height="42" />
-  <img src="https://cdn.sanity.io/images/j996ej4v/production/2d57a849d38aa095fb27c7579616c6ee7d7e0ca4-348x120.png" alt="Cetak Aja Online" height="42" />
-  <img src="https://cdn.sanity.io/images/j996ej4v/production/4b867c61b08aa57d97c547571d4eed803b53d103-1240x390.png" alt="RUPBASAN SERANG" height="42" />
-  <img src="https://cdn.sanity.io/images/j996ej4v/production/1710c21f5bf127f5a452eefbda658fee329052fd-1194x413.png" alt="Tibbul Fahhs" height="42" />
-  <img src="https://cdn.sanity.io/images/j996ej4v/production/2b85eaaf5b921817812b804e2ca0be0dae92dbf3-1356x400.png" alt="Universal Online Shop" height="42" />
-  <img src="https://cdn.sanity.io/images/j996ej4v/production/280ad2bb644f2277b19e382d9633221dce27d156-1463x518.png" alt="Universitas Sultan Ageng Tirtayasa" height="42" />
-</div>
-
-<div align="center">
-  <img src="https://cdn.sanity.io/images/j996ej4v/production/4e27c38a79621822bc091a7042259733ee02f499-909x272.png" alt="PLN Indonesia Power" height="42" />
-  <img src="https://cdn.sanity.io/images/j996ej4v/production/9db34d66ffe3f58006337b9f8e3a2ee672c38008-974x527.png" alt="POLDA BANTEN" height="42" />
-  <img src="https://cdn.sanity.io/images/j996ej4v/production/e7213ad5bf1e44812ff39ade76ad8b1c37947327-1536x548.png" alt="Polres Metro Tangerang Kota" height="42" />
-  <img src="https://cdn.sanity.io/images/j996ej4v/production/7beb90f424ed63bdb29f82f9bc12920c873fa866-1370x358.png" alt="Jamkrida Banten" height="42" />
-  <img src="https://cdn.sanity.io/images/j996ej4v/production/ebdd5d59342d7a6fc48719c56f408173af5a938d-1391x448.png" alt="Jamkrida Kalteng" height="42" />
-  <img src="https://cdn.sanity.io/images/j996ej4v/production/18e10ff805244a8da82fc4dce548b493ff47f677-1178x458.png" alt="Jamkrida NTT" height="42" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/847d883dd5e27ee1562424afd66fa07d6c24ba64-1400x536.png" alt="Andaru Jaya Perdana" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/dd90ccf309e0c09414ab23e36ed53d95ca5cf0b7-1203x441.png" alt="ANS Chemicals" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/56ab84756d207c9d78c74cd8f5d297175a052daf-1220x346.png" alt="AQA Consultant" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/8164a97702f4a13b4dc4a0beffa6286d49a42eed-666x254.png" alt="Aya Kopi" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/cdbe2061b0417de02a77cb26c2b226fddd59e909-1178x402.png" alt="Bakoel Cemal Cemil" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/5f9dd49c5aaee85fc3274ad8b184003c433d0d07-714x334.png" alt="Banten IT Solutions" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/1d5a064382c00a1edc5de315211b7685856373f9-512x318.png" alt="Banyu Mili" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/826b8eab8cdb9d7bc1b17d115ce2be719605ac65-1233x411.png" alt="Bata Bagus" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/7f46d08f1d323144ccfd62a7f91378b6befea18b-1173x406.png" alt="Berita Fakta" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/47b36aa013d46f0db199972d64fed724348aa2df-1437x555.png" alt="Bhakti Purna Husada Serang" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/77a21c54bf0cbde2e3a724dd96c52b82bbfb3113-1064x388.png" alt="Bintang Wallpaper" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/5ac99b5ccb0bfb3b2d955e6d48241495da32ce19-1312x437.png" alt="Bola Nasional" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/2d57a849d38aa095fb27c7579616c6ee7d7e0ca4-348x120.png" alt="Cetak Aja Online" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/f1268408dcd0a09a6fe7ceb9bf2d66655bb89ad6-1492x608.png" alt="FKWT Kota Serang" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/20788928113835204914ee53e76421e421393d26-1090x244.png" alt="Gandasari Shipyard" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/4ed4f1d62a70cfa826cbf02e1fd6c7ab8c712d97-1335x481.png" alt="Gubah Massa Studio" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/bba3ab86d081e76a06a8644facb2fb9245a018b9-1261x397.png" alt="Hijrah Wisata Religi" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/519989caa18d4cbec1dafb533389d395f75c95ef-1085x298.png" alt="Honda Auto Serang" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/7beb90f424ed63bdb29f82f9bc12920c873fa866-1370x358.png" alt="Jamkrida Banten" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/ebdd5d59342d7a6fc48719c56f408173af5a938d-1391x448.png" alt="Jamkrida Kalteng" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/18e10ff805244a8da82fc4dce548b493ff47f677-1178x458.png" alt="Jamkrida NTT" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/389f66e3c453a256519559dd3e598b167e74c143-1331x506.png" alt="Jual Sapi dan Kerbau" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/89ab9d17b0ad9d48dc3caa6ec54f5fbdc7d03ebf-1340x487.png" alt="Kabar 6" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/f4b52fff023626b9346097b60f989d9ad8ff4a53-1136x332.png" alt="Konveksi Tas Serang" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/4eab47326cca0a0e115bd567b82a04b6052bbdf0-1192x381.png" alt="Lestari Smart Awning" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/47fd5d882a9517f46bfa7b3367bf8b6b76e74a5f-1261x411.png" alt="Mitra Karya Banten" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/3e386f331d3938426a105ebf616b4492477c895b-1213x295.png" alt="Mubadala Bangun Sejahtera" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/2532c745b78299d3aa0266b308797842e6c33a90-1291x402.png" alt="Pantau Banten" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/807f5c5a5546a7d455349e649abf015a123d1c6e-564x174.png" alt="Pengajian Islami" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/4e27c38a79621822bc091a7042259733ee02f499-909x272.png" alt="PLN Indonesia Power" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/9db34d66ffe3f58006337b9f8e3a2ee672c38008-974x527.png" alt="POLDA BANTEN" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/e7213ad5bf1e44812ff39ade76ad8b1c37947327-1536x548.png" alt="Polres Metro Tangerang Kota" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/c3e7f5726f1ccea5b8c4927a38eaef6ec7b10ea7-770x344.png" alt="Prima Galeri Phone Shop" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/6e34219a784753b8a4cabb5adb4245ace356870b-1141x362.png" alt="Qienzu Putri" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/bdb09d1b5adf11780041a29081f5b9b2e619d88e-859x255.png" alt="Riza Putra" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/4b867c61b08aa57d97c547571d4eed803b53d103-1240x390.png" alt="RUPBASAN SERANG" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/27117b6c588fc37a9aea1f1f120449bf1e981049-1046x372.png" alt="Santri Online" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/eba3d4157882837b7c767b17d95571a9aaa7a665-1338x502.png" alt="SMKN 3 Kota Cilegon" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/1710c21f5bf127f5a452eefbda658fee329052fd-1194x413.png" alt="Tibbul Fahhs" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/2b85eaaf5b921817812b804e2ca0be0dae92dbf3-1356x400.png" alt="Universal Online Shop" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/280ad2bb644f2277b19e382d9633221dce27d156-1463x518.png" alt="Universitas Sultan Ageng Tirtayasa" height="34" />
+  <img src="https://cdn.sanity.io/images/j996ej4v/production/d513a83485da7d94c7869c41c762543f1835d03a-1238x349.png" alt="Yayasan Hidayatut Thalibin" height="34" />
 </div>
 
 ## Live Metrics
@@ -194,7 +205,6 @@
 
 <div align="center">
   <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bitscoid&layout=compact&theme=transparent&hide_border=true&title_color=38bdf8&text_color=cbd5e1" alt="Top Languages" />
-  <img height="170" src="https://github-profile-trophy.vercel.app/?username=bitscoid&theme=algolia&no-frame=true&no-bg=true&row=2&column=3" alt="GitHub Trophies" />
 </div>
 
 ## Contribution Flow
@@ -205,24 +215,10 @@
 
 ## Connect
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>ID</h3>
-      <p>🌍 Website: <a href="https://bits.co.id/id">bits.co.id/id</a></p>
-      <p>🧾 Portfolio: <a href="https://bits.co.id/id/portfolio">bits.co.id/id/portfolio</a></p>
-      <p>📰 Blog: <a href="https://bits.co.id/id/blog">bits.co.id/id/blog</a></p>
-      <p>📬 Contact: <a href="https://bits.co.id/id/contact">bits.co.id/id/contact</a></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>EN</h3>
-      <p>🌍 Website: <a href="https://bits.co.id/en">bits.co.id/en</a></p>
-      <p>🧾 Portfolio: <a href="https://bits.co.id/id/portfolio">Project case studies and delivery examples</a></p>
-      <p>📰 Blog: <a href="https://bits.co.id/id/blog">Technology insights and practical guides</a></p>
-      <p>📬 Contact: <a href="https://bits.co.id/id/contact">Discuss your scope, timeline, and architecture</a></p>
-    </td>
-  </tr>
-</table>
+<p>🌍 Website: <a href="https://bits.co.id/id">bits.co.id/id</a></p>
+<p>🧾 Portfolio: <a href="https://bits.co.id/id/portfolio">bits.co.id/id/portfolio</a></p>
+<p>📰 Blog: <a href="https://bits.co.id/id/blog">bits.co.id/id/blog</a></p>
+<p>📬 Contact: <a href="https://bits.co.id/id/contact">bits.co.id/id/contact</a></p>
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:38bdf8,25:22c55e,50:0ea5e9,75:0f172a,100:020617&height=135&section=footer&animation=twinkling" alt="Footer Banner" />
