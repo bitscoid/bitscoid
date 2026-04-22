@@ -118,31 +118,37 @@
   <tr>
     <td width="50%" valign="top">
       <h3>🚀 Business Operations Systems</h3>
-      <p>Platform internal dan sistem operasional untuk membantu tim bekerja lebih terstruktur, cepat, dan terukur.</p>
+      <p><strong>ID:</strong> Platform internal dan sistem operasional untuk membantu tim bekerja lebih terstruktur, cepat, dan terukur.</p>
+      <p><strong>EN:</strong> Internal platforms and operational systems that help teams work with more structure, speed, and measurable execution.</p>
     </td>
     <td width="50%" valign="top">
       <h3>📱 Web & Mobile Applications</h3>
-      <p>Aplikasi digital untuk sektor privat, publik, pendidikan, dan organisasi yang membutuhkan pengalaman pengguna yang kuat.</p>
+      <p><strong>ID:</strong> Aplikasi digital untuk sektor privat, publik, pendidikan, dan organisasi yang membutuhkan pengalaman pengguna yang kuat.</p>
+      <p><strong>EN:</strong> Digital applications for private organizations, public institutions, education, and teams that need strong user experience.</p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <h3>🏢 Infrastructure & Network Environments</h3>
-      <p>Lingkungan infrastruktur enterprise untuk konektivitas, keamanan, monitoring, dan stabilitas operasional jangka panjang.</p>
+      <p><strong>ID:</strong> Lingkungan infrastruktur enterprise untuk konektivitas, keamanan, monitoring, dan stabilitas operasional jangka panjang.</p>
+      <p><strong>EN:</strong> Enterprise infrastructure environments built for connectivity, security, monitoring, and long-term operational stability.</p>
     </td>
     <td width="50%" valign="top">
       <h3>⚙️ Cloud-Native Delivery Pipelines</h3>
-      <p>Pipeline CI/CD, deployment automation, container workloads, dan workflow DevOps untuk eksekusi yang lebih cepat.</p>
+      <p><strong>ID:</strong> Pipeline CI/CD, deployment automation, container workloads, dan workflow DevOps untuk eksekusi yang lebih cepat.</p>
+      <p><strong>EN:</strong> CI/CD pipelines, deployment automation, containerized workloads, and DevOps workflows for faster delivery.</p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <h3>🛍️ Service Portals & Commerce Platforms</h3>
-      <p>Portal layanan, e-commerce, sistem campaign, dan platform digital yang mendukung distribusi dan pertumbuhan bisnis.</p>
+      <p><strong>ID:</strong> Portal layanan, e-commerce, sistem campaign, dan platform digital yang mendukung distribusi dan pertumbuhan bisnis.</p>
+      <p><strong>EN:</strong> Service portals, commerce systems, campaign platforms, and digital products that support distribution and business growth.</p>
     </td>
     <td width="50%" valign="top">
       <h3>🎯 Creative & Promotional Assets</h3>
-      <p>Visual branding, materi promosi, desain kreatif, dan aset kampanye untuk memperkuat identitas dan komunikasi brand.</p>
+      <p><strong>ID:</strong> Visual branding, materi promosi, desain kreatif, dan aset kampanye untuk memperkuat identitas dan komunikasi brand.</p>
+      <p><strong>EN:</strong> Brand visuals, promotional materials, creative design, and campaign assets that strengthen brand identity and communication.</p>
     </td>
   </tr>
 </table>
