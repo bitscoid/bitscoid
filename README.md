@@ -36,24 +36,13 @@
   <img src="https://img.shields.io/badge/Focus-Measurable%20Impact-082f49?style=for-the-badge&logo=googleanalytics&logoColor=7dd3fc" alt="Measurable Impact" />
 </div>
 
-## Profile Snapshot
+## About
+<p><strong>ID:</strong> Banten IT Solutions adalah mitra strategis untuk transformasi digital yang andal. Kami mengkombinasikan teknologi modern dengan pendekatan praktis untuk menghasilkan sistem yang benar-benar menjawab kebutuhan bisnis.</p>
+<p><strong>EN:</strong> Banten IT Solutions is a strategic partner for reliable digital transformation. We combine modern technology with practical approaches to build systems that truly address your business needs.</p>
 
-<table>
-  <tr>
-    <td width="52%" valign="top">
-      <h3>ID</h3>
-      <p>BITS membantu perusahaan membangun operasional digital yang aman, efisien, dan terukur melalui pengembangan software, infrastruktur modern, cloud adoption, desain kreatif, percetakan digital, dan konsultasi IT.</p>
-      <p>Kami fokus pada eksekusi yang rapi, komunikasi yang jelas, dan implementasi yang benar-benar dipakai untuk pertumbuhan bisnis.</p>
-    </td>
-    <td width="48%" valign="top">
-      <h3>EN</h3>
-      <p>BITS helps organizations build secure, efficient, and measurable digital operations through software engineering, modern infrastructure, cloud adoption, creative production, digital advertising, and IT consulting.</p>
-      <p>We prioritize clean delivery, transparent communication, and systems that create practical business impact.</p>
-    </td>
-  </tr>
-</table>
-
-## Service Matrix
+## Services
+<p><strong>ID:</strong> Kami menghadirkan solusi digital yang komprehensif untuk memenuhi kebutuhan bisnis dari perencanaan hingga implementasi.</p>
+<p><strong>EN:</strong> We deliver comprehensive digital solutions to meet your business needs from planning through execution.</p>
 
 <table>
   <tr>
