@@ -39,13 +39,19 @@
   </tr>
 </table>
 
-## Services
+<br />
 
 <div align="center">
   <img src="https://img.shields.io/badge/Execution-Enterprise%20Ready-0f172a?style=for-the-badge&logo=checkmarx&logoColor=38bdf8" alt="Enterprise Ready" />
   <img src="https://img.shields.io/badge/Approach-End--to--End-052e16?style=for-the-badge&logo=target&logoColor=86efac" alt="End to End" />
   <img src="https://img.shields.io/badge/Focus-Measurable%20Impact-082f49?style=for-the-badge&logo=googleanalytics&logoColor=7dd3fc" alt="Measurable Impact" />
 </div>
+
+<br />
+
+## Services
+
+<br />
 
 <table>
   <tr>
