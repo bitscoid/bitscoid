@@ -203,12 +203,12 @@
 ## Live Metrics
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats-eight-theta.vercel.app/api?username=bitscoid&show_icons=true&theme=transparent&hide_border=true&title_color=38bdf8&icon_color=22c55e&text_color=cbd5e1&rank_icon=github" alt="GitHub Stats" />
+  <img height="165" src="https://github-readme-stats-eight-theta.vercel.app/api?username=bitscoid&show_icons=true&theme=github_dark&hide_border=true&rank_icon=github" alt="GitHub Stats" />
   <img height="165" src="https://github-readme-streak-stats.herokuapp.com?user=bitscoid&theme=transparent&hide_border=true&ring=38bdf8&fire=22c55e&currStreakLabel=e2e8f0&sideLabels=cbd5e1&dates=94a3b8" alt="GitHub Streak" />
 </div>
 
 <div align="center">
-  <img height="170" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=bitscoid&layout=compact&theme=transparent&hide_border=true&title_color=38bdf8&text_color=cbd5e1" alt="Top Languages" />
+  <img height="170" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=bitscoid&layout=compact&theme=github_dark&hide_border=true" alt="Top Languages" />
 </div>
 
 ## Contribution Flow
