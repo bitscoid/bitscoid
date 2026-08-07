@@ -94,7 +94,15 @@
 
 ## Trusted By
 
-<p align="center"><strong>40+ organizations</strong> across enterprise, public sector, education, media, retail, and local business.</p>
+<div align="center">
+  <img src="https://img.shields.io/badge/40%2B-Organizations-0f172a?style=for-the-badge&logo=buildkite&logoColor=38bdf8" alt="40+ Organizations" />
+  <img src="https://img.shields.io/badge/🏢-Enterprise-082f49?style=for-the-badge&logoColor=7dd3fc" alt="Enterprise" />
+  <img src="https://img.shields.io/badge/🏛️-Public%20Sector-0c2340?style=for-the-badge&logoColor=93c5fd" alt="Public Sector" />
+  <img src="https://img.shields.io/badge/🎓-Education-052e16?style=for-the-badge&logoColor=86efac" alt="Education" />
+  <img src="https://img.shields.io/badge/📺-Media-1e1b4b?style=for-the-badge&logoColor=c4b5fd" alt="Media" />
+  <img src="https://img.shields.io/badge/🛍️-Retail-431407?style=for-the-badge&logoColor=fed7aa" alt="Retail" />
+  <img src="https://img.shields.io/badge/🤝-Local%20Business-14532d?style=for-the-badge&logoColor=bbf7d0" alt="Local Business" />
+</div>
 
 <p align="center">
   <img src="https://cdn.sanity.io/images/j996ej4v/production/847d883dd5e27ee1562424afd66fa07d6c24ba64-1400x536.png" alt="Andaru Jaya Perdana" height="32" style="margin: 8px 12px;" />
