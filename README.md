@@ -100,18 +100,6 @@
 
 <br />
 
-<div align="center">
-  <img src="https://img.shields.io/badge/40%2B-Organizations-0f172a?style=for-the-badge&logo=buildkite&logoColor=38bdf8" alt="40+ Organizations" />
-  <img src="https://img.shields.io/badge/🏢-Enterprise-082f49?style=for-the-badge&logoColor=7dd3fc" alt="Enterprise" />
-  <img src="https://img.shields.io/badge/🏛️-Public%20Sector-0c2340?style=for-the-badge&logoColor=93c5fd" alt="Public Sector" />
-  <img src="https://img.shields.io/badge/🎓-Education-052e16?style=for-the-badge&logoColor=86efac" alt="Education" />
-  <img src="https://img.shields.io/badge/📺-Media-1e1b4b?style=for-the-badge&logoColor=c4b5fd" alt="Media" />
-  <img src="https://img.shields.io/badge/🛍️-Retail-431407?style=for-the-badge&logoColor=fed7aa" alt="Retail" />
-  <img src="https://img.shields.io/badge/🤝-Local%20Business-14532d?style=for-the-badge&logoColor=bbf7d0" alt="Local Business" />
-</div>
-
-<br />
-
 ## Trusted By
 
 <p align="center">
@@ -158,6 +146,20 @@
   <img src="https://cdn.sanity.io/images/j996ej4v/production/280ad2bb644f2277b19e382d9633221dce27d156-1463x518.png" alt="Universitas Sultan Ageng" height="32" style="margin: 8px 12px;" />
   <img src="https://cdn.sanity.io/images/j996ej4v/production/d513a83485da7d94c7869c41c762543f1835d03a-1238x349.png" alt="Yayasan Hidayatut Thalibin" height="32" style="margin: 8px 12px;" />
 </p>
+
+<br />
+
+<div align="center">
+  <img src="https://img.shields.io/badge/40%2B-Organizations-0f172a?style=for-the-badge&logo=buildkite&logoColor=38bdf8" alt="40+ Organizations" />
+  <img src="https://img.shields.io/badge/🏢-Enterprise-082f49?style=for-the-badge&logoColor=7dd3fc" alt="Enterprise" />
+  <img src="https://img.shields.io/badge/🏛️-Public%20Sector-0c2340?style=for-the-badge&logoColor=93c5fd" alt="Public Sector" />
+  <img src="https://img.shields.io/badge/🎓-Education-052e16?style=for-the-badge&logoColor=86efac" alt="Education" />
+  <img src="https://img.shields.io/badge/📺-Media-1e1b4b?style=for-the-badge&logoColor=c4b5fd" alt="Media" />
+  <img src="https://img.shields.io/badge/🛍️-Retail-431407?style=for-the-badge&logoColor=fed7aa" alt="Retail" />
+  <img src="https://img.shields.io/badge/🤝-Local%20Business-14532d?style=for-the-badge&logoColor=bbf7d0" alt="Local Business" />
+</div>
+
+<br />
 
 ## Live Metrics
 
