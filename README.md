@@ -203,12 +203,9 @@
 ## Live Metrics
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats-eight-theta.vercel.app/api?username=bitscoid&show_icons=true&theme=dark&hide_border=true&rank_icon=github" alt="GitHub Stats" />
-  <img height="165" src="https://github-readme-streak-stats.herokuapp.com?user=bitscoid&theme=transparent&hide_border=true&ring=38bdf8&fire=22c55e&currStreakLabel=e2e8f0&sideLabels=cbd5e1&dates=94a3b8" alt="GitHub Streak" />
-</div>
-
-<div align="center">
-  <img height="170" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=bitscoid&layout=compact&theme=dark&hide_border=true" alt="Top Languages" />
+  <img height="155" src="https://github-readme-stats-eight-theta.vercel.app/api?username=bitscoid&show_icons=true&theme=dark&hide_border=true&rank_icon=github" alt="GitHub Stats" />
+  <img height="155" src="https://github-readme-streak-stats.herokuapp.com?user=bitscoid&theme=dark&hide_border=true" alt="GitHub Streak" />
+  <img height="155" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=bitscoid&layout=compact&theme=dark&hide_border=true" alt="Top Languages" />
 </div>
 
 ## Contribution Flow
@@ -219,10 +216,14 @@
 
 ## Connect
 
-<p>🌍 Website: <a href="https://bits.co.id/id">bits.co.id/id</a></p>
-<p>🧾 Portfolio: <a href="https://bits.co.id/id/portfolio">bits.co.id/id/portfolio</a></p>
-<p>📰 Blog: <a href="https://bits.co.id/id/blog">bits.co.id/id/blog</a></p>
-<p>📬 Contact: <a href="https://bits.co.id/id/contact">bits.co.id/id/contact</a></p>
+<div align="center">
+  <a href="https://bits.co.id/id"><img src="https://img.shields.io/badge/🌍%20Website-bits.co.id-020617?style=for-the-badge&logoColor=38bdf8" alt="Website" /></a>
+  <a href="https://bits.co.id/id/portfolio"><img src="https://img.shields.io/badge/🧾%20Portfolio-Case%20Studies-0f172a?style=for-the-badge&logoColor=22c55e" alt="Portfolio" /></a>
+  <a href="https://bits.co.id/id/blog"><img src="https://img.shields.io/badge/📰%20Blog-Insights-111827?style=for-the-badge&logoColor=38bdf8" alt="Blog" /></a>
+  <a href="https://bits.co.id/id/contact"><img src="https://img.shields.io/badge/📬%20Contact-Free%20Consultation-052e16?style=for-the-badge&logoColor=86efac" alt="Contact" /></a>
+  <a href="https://x.com/bitscoid"><img src="https://img.shields.io/badge/X-@bitscoid-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
+  <a href="https://github.com/bitscoid"><img src="https://img.shields.io/badge/GitHub-bitscoid-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+</div>
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:38bdf8,25:22c55e,50:0ea5e9,75:0f172a,100:020617&height=135&section=footer&animation=twinkling" alt="Footer Banner" />
