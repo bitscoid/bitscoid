@@ -20,11 +20,6 @@
   <a href="https://bits.co.id/id/contact"><img src="https://img.shields.io/badge/Contact-Free%20Consultation-052e16?style=for-the-badge&logo=gmail&logoColor=86efac" alt="Contact" /></a>
 </p>
 
-<p>
-  <a href="https://github.com/bitscoid"><img src="https://img.shields.io/badge/GitHub-bitscoid-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-  <img src="https://komarev.com/ghpvc/?username=bitscoid&label=Profile%20Views&color=0ea5e9&style=for-the-badge" alt="Profile Views" />
-</p>
-
 </div>
 
 <div align="center">
