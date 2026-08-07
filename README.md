@@ -98,7 +98,7 @@
   <img src="https://skillicons.dev/icons?i=html,css,js,ts,php,laravel,nodejs,react,vue,svelte,go,python,mysql,postgres,mongodb,redis,docker,kubernetes,linux,nginx,git,githubactions,figma,aws,gcp" alt="Tech Stack" />
 </div>
 
-## Trusted By
+<br />
 
 <div align="center">
   <img src="https://img.shields.io/badge/40%2B-Organizations-0f172a?style=for-the-badge&logo=buildkite&logoColor=38bdf8" alt="40+ Organizations" />
@@ -109,6 +109,10 @@
   <img src="https://img.shields.io/badge/🛍️-Retail-431407?style=for-the-badge&logoColor=fed7aa" alt="Retail" />
   <img src="https://img.shields.io/badge/🤝-Local%20Business-14532d?style=for-the-badge&logoColor=bbf7d0" alt="Local Business" />
 </div>
+
+<br />
+
+## Trusted By
 
 <p align="center">
   <img src="https://cdn.sanity.io/images/j996ej4v/production/847d883dd5e27ee1562424afd66fa07d6c24ba64-1400x536.png" alt="Andaru Jaya Perdana" height="32" style="margin: 8px 12px;" />
