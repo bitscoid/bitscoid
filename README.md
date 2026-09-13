@@ -178,7 +178,7 @@
 ## Connect
 
 <div align="center">
-  <a href="https://x.com/bantenitsolutions"><img src="https://img.shields.io/badge/X-@bantenitsolutions-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
+  <a href="https://x.com/bits_coid"><img src="https://img.shields.io/badge/X-@bits__coid-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
   <a href="https://instagram.com/nurulimamnotes"><img src="https://img.shields.io/badge/Instagram-@nurulimamnotes-E1306C?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
   <a href="https://www.linkedin.com/in/nurulimamstudio"><img src="https://img.shields.io/badge/LinkedIn-nurulimamstudio-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="https://wa.me/62819678048"><img src="https://img.shields.io/badge/WhatsApp-+62819678048-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" /></a>
